@@ -130,9 +130,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
     padding-left: 2rem;
     padding-right: 2rem;
+    height: 9rem;
   }
 
   .page-width--narrow {
@@ -2402,6 +2403,9 @@ input[type='checkbox'] {
 
   .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
     margin-top: 1.05rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
 
@@ -2426,7 +2430,7 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  margin-top: -10px;
+  transform: translateY(-10px);
   padding: 1px;
   text-decoration: none;
   word-break: break-word;
@@ -2808,7 +2812,9 @@ details[open] > .header__submenu {
 
 @media screen and (min-width: 990px) {
   .header__inline-menu {
-    display: block;
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
 
   .header--top-center .header__inline-menu {
