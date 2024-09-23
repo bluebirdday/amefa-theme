@@ -45,7 +45,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/website_banner_home_soprano_black.webp",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 30,
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
