@@ -83,7 +83,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "",
+            "content": "<p>{{ product.metafields.plytix.setsize.value }}<\/p>",
             "page": ""
           }
         },
