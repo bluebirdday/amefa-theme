@@ -46,7 +46,6 @@
 }
 
 .footer__content-bottom {
-  background-image: url('./pattern-linnen.png');
   padding-top: 3rem;
 }
 
@@ -524,8 +523,4 @@
       padding-left: 3rem;
     }
   }
-}
-
-.footer__content-bottom {
-  background: url('./pattern-linnen.webp') repeat;
 }

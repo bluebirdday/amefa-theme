@@ -25,6 +25,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .footer__content-bottom {
+  background: url({{ 'pattern-linnen.webp' | asset_img_url: 'original' }}') repeat;
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
