@@ -2502,7 +2502,7 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+  padding-right: 0;
 }
 
 .header__icons .shopify-app-block {
@@ -2605,7 +2605,7 @@ menu-drawer + .header__search {
     left: 0;
     position: absolute;
     top: 70px;
-    width: 100vw;
+    width: calc(100dvw - 2rem);
   }
 }
 
