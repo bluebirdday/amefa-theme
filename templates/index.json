@@ -23,17 +23,17 @@
           "type": "text",
           "settings": {
             "text": "En passend bij elk budget",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Bekijk alle besteksets",
-            "button_link_1": "shopify:\/\/collections\/besteksets",
+            "button_link_1": "shopify://collections/besteksets",
             "button_style_secondary_1": false,
             "button_label_2": "Bekijk onze volledige collectie",
-            "button_link_2": "shopify:\/\/collections\/collectie",
+            "button_link_2": "shopify://collections/collectie",
             "button_style_secondary_2": true
           }
         }
@@ -44,13 +44,13 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/amefa-bg.jpg",
+        "image": "shopify://shop_images/website_banner_home_soprano_black.webp",
         "image_overlay_opacity": 40,
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
@@ -110,7 +110,7 @@
         "text_tTa7ML": {
           "type": "text",
           "settings": {
-            "text": "<p>Het kiezen van de juiste bestekset is  niet gemakkelijk. Gelukkig hebben we een keuzehulp samengesteld zodat je zeker weet dat je de juiste set kiest!<\/p>",
+            "text": "<p>Het kiezen van de juiste bestekset is  niet gemakkelijk. Gelukkig hebben we een keuzehulp samengesteld zodat je zeker weet dat je de juiste set kiest!</p>",
             "text_style": "body"
           }
         },
@@ -129,7 +129,6 @@
         "button_H79iUb"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Over_amefa_felicity.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
