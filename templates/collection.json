@@ -77,11 +77,18 @@
         "show_collection_image": false,
         "color_scheme": "scheme-1"
       }
+    },
+    "17271006391055c802": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "collection_row_FPhT34",
     "product-grid",
-    "banner"
+    "banner",
+    "17271006391055c802"
   ]
 }
