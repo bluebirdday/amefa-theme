@@ -93,6 +93,12 @@
   text-align: var(--text-alignment);
 }
 
+.card__product-title,
+.card__product-meta {
+  color: var(--color-foreground);
+  display: block;
+}
+
 .card__media,
 .card .media {
   bottom: 0;

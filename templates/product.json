@@ -12,11 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "title": {
+          "type": "title",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
           }
         },
         "title": {
@@ -40,7 +38,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "square"
           }
         },
         "quantity_selector": {
@@ -83,7 +81,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "<p>{{ product.metafields.plytix.setsize.value }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -92,7 +90,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "<p>{{ product.metafields.plytix.onderhoudsinstructies | metafield_tag }}<\/p>",
+            "content": "",
             "page": ""
           }
         },
@@ -104,7 +102,6 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "caption",
         "price",
@@ -121,104 +118,72 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
+    "image_banner_czDJ9X": {
+      "type": "image-banner",
       "blocks": {
-        "image-with-text-0": {
+        "heading_QBkyiB": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Moeite met kiezen?",
             "heading_size": "h1"
           }
         },
-        "image-with-text-1": {
+        "text_F7ALdF": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "Bestek is er in allerlei variaties. Denk hierbij aan materiaal, kleur en samenstelling. En jouw voorkeur? Die is heel persoonlijk. Met deze tips hopen we je te kunnen helpen met je keuze.",
             "text_style": "body"
           }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         },
-        "column-1": {
-          "type": "column",
+        "buttons_Nc9qbj": {
+          "type": "buttons",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "button_label_1": "Help mij kiezen!",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "column-0",
-        "column-1"
+        "heading_QBkyiB",
+        "text_F7ALdF",
+        "buttons_Nc9qbj"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/amefa-sfeer1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
+        "heading": "Bekijk ook eens",
+        "heading_size": "h1",
         "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
@@ -231,12 +196,31 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "17200897008fb31ad8": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_HwxA4t": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "157082",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_HwxA4t"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
+    "image_banner_czDJ9X",
     "related-products"
   ]
 }
