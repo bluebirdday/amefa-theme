@@ -2430,7 +2430,7 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  transform: translateY(-10px);
+  transform: translateY(-14px);
   padding: 1px;
   text-decoration: none;
   word-break: break-word;
