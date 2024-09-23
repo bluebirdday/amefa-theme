@@ -525,3 +525,7 @@
     }
   }
 }
+
+.footer__content-bottom {
+  background: url('./pattern-linnen.webp') repeat;
+}
