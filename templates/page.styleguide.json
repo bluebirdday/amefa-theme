@@ -20,7 +20,7 @@
     "styleguide_section_wj9WzF": {
       "type": "styleguide-section",
       "settings": {
-        "title": "Welcome to <b>Amefa</b>",
+        "title": "Welcome to <strong>Amefa</strong>",
         "paragraph": "<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit.</p><p>Proin molestie velit eget varius viverra.</p><p>Cras lectus ligula, varius in pretium non, ultrices ac turpis.</p>",
         "button-text": "Shop now"
       }
