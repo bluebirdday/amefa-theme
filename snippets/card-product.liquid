@@ -145,21 +145,23 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <h3
-            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
+          <div
+            class="card__heading"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
           >
+              {% assign metafields = card_product.metafields.custom %}
             <a
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
-              class="full-unstyled-link"
+              class="full-unstyled-link card__product-title h3"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
-              {{ card_product.title | escape }}
+              {{ metafields.naam_kleur_plp }}
             </a>
-          </h3>
+              <span class="card__product-meta h5 light">{{ metafields.grootte_personen_plp }}</span>
+          </div>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -257,7 +259,7 @@
                     type="button"
                     aria-label="{{ 'accessibility.close' | t }}"
                   >
-                    {{- 'icon-close.svg' | inline_asset_content -}}
+                    {%- render 'icon-close' -%}
                   </button>
                   {%- if card_product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                     <volume-pricing class="parent-display">
@@ -303,16 +305,14 @@
                   id="{{ product_form_id }}-submit"
                   type="submit"
                   name="add"
-                  class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
+                  class="quick-add__submit button button--full-width button--primary{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
                   aria-haspopup="dialog"
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
                 >
                   {{ 'products.product.choose_options' | t }}
                   {%- if horizontal_quick_add -%}
-                    <span class="icon-wrap">
-                      {{- 'icon-arrow.svg' | inline_asset_content -}}
-                    </span>
+                    <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                   {%- endif -%}
                   {%- render 'loading-spinner' -%}
                 </button>
@@ -331,7 +331,7 @@
                     class="quick-add-modal__toggle"
                     aria-label="{{ 'accessibility.close' | t }}"
                   >
-                    {{- 'icon-close.svg' | inline_asset_content -}}
+                    {% render 'icon-close' %}
                   </button>
                   <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info"></div>
                 </div>
@@ -358,7 +358,7 @@
                     id="{{ product_form_id }}-submit"
                     type="submit"
                     name="add"
-                    class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+                    class="quick-add__submit button button--full-width button--primary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
                     aria-haspopup="dialog"
                     aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                     aria-live="polite"
@@ -378,9 +378,7 @@
                       {{ 'products.product.sold_out' | t }}
                     </span>
                     {%- if horizontal_quick_add -%}
-                      <span class="icon-wrap">
-                        {{- 'icon-plus.svg' | inline_asset_content -}}
-                      </span>
+                      <span class="icon-wrap">{% render 'icon-plus' %}</span>
                     {%- endif -%}
                     {%- render 'loading-spinner' -%}
                   </button>
@@ -401,7 +399,7 @@
                   id="{{ product_form_id }}-submit"
                   type="submit"
                   name="add"
-                  class="quick-add__submit button button--full-width button--secondary"
+                  class="quick-add__submit button button--full-width button--primary"
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-sold-out-message="true"
                   disabled
@@ -432,7 +430,7 @@
                   id="{{ product_form_id }}-submit"
                   type="submit"
                   name="add"
-                  class="quick-add__submit button button--full-width button--secondary"
+                  class="quick-add__submit button button--full-width button--primary"
                   aria-haspopup="dialog"
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
@@ -458,7 +456,7 @@
                     class="quick-add-modal__toggle"
                     aria-label="{{ 'accessibility.close' | t }}"
                   >
-                    {{- 'icon-close.svg' | inline_asset_content -}}
+                    {% render 'icon-close' %}
                   </button>
                   <div
                     id="QuickAddInfo-{{ card_product.id }}"
@@ -505,7 +503,7 @@
                           class="link product__view-details animate-arrow small-hide medium-hide"
                         >
                           {{ 'products.product.view_full_details' | t -}}
-                          {{- 'icon-arrow.svg' | inline_asset_content -}}
+                          {% render 'icon-arrow' %}
                         </a>
                       </div>
                       <div class="quick-add-modal__content-info--bulk-details large-up-hide">
@@ -571,7 +569,6 @@
 {%- else -%}
   {%- liquid
     assign ratio = 1
-    assign placeholder = true
     if media_aspect_ratio == 'portrait'
       assign ratio = 0.8
     endif
@@ -615,7 +612,7 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
-            {% render 'price', placeholder: placeholder, show_compare_at_price: true %}
+            {% render 'price', show_compare_at_price: true %}
           </div>
         </div>
       </div>

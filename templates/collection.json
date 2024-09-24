@@ -1,5 +1,75 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
+    "collection_row_FPhT34": {
+      "type": "collection-row",
+      "blocks": {
+        "featured_collection_jMd7WV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collectie"
+          }
+        },
+        "featured_collection_Xm9FEK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets"
+          }
+        },
+        "featured_collection_H8WNLh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bestek-in-luxe-kist"
+          }
+        },
+        "featured_collection_fw6GTH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "steakbestek"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_jMd7WV",
+        "featured_collection_Xm9FEK",
+        "featured_collection_H8WNLh",
+        "featured_collection_fw6GTH"
+      ],
+      "settings": {
+        "image_ratio": "square",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -8,25 +78,17 @@
         "color_scheme": "scheme-1"
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "17271006391055c802": {
+      "type": "apps",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_filtering": true,
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     }
   },
   "order": [
+    "collection_row_FPhT34",
+    "product-grid",
     "banner",
-    "product-grid"
+    "17271006391055c802"
   ]
 }

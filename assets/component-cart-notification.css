@@ -1,4 +1,5 @@
 .cart-notification-wrapper {
+  display: none;
   position: relative;
 }
 

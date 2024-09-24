@@ -1,0 +1,35 @@
+.breadcrumbs {
+    font-size: .85em;
+}
+
+.breadcrumbs ol {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.breadcrumbs a {
+    text-decoration: underline;
+}
+
+.breadcrumbs li:not(:last-child):after {
+    content: "\2014";
+    display: inline-block;
+    padding-left: .75ch;
+    speak: none;
+}
+
+.breadcrumbs [aria-current="page"] {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.breadcrumbs [aria-current="page"]:hover,
+.breadcrumbs [aria-current="page"]:focus {
+    text-decoration: underline;
+}

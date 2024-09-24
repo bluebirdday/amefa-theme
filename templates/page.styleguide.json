@@ -1,0 +1,33 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "styleguide_section_wj9WzF": {
+      "type": "styleguide-section",
+      "settings": {
+        "title": "Welcome to <strong>Amefa</strong>",
+        "paragraph": "<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit.</p><p>Proin molestie velit eget varius viverra.</p><p>Cras lectus ligula, varius in pretium non, ultrices ac turpis.</p>",
+        "button-text": "Shop now"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "styleguide_section_wj9WzF"
+  ]
+}
