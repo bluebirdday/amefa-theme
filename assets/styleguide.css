@@ -1,5 +1,10 @@
+:root {
+    --amefa-primary: #0079BF;
+}
+
 .amefa-styleguide {
     background-color: #ffffff;
+    color: black;
     padding: 20px;
 
     .title {
@@ -11,11 +16,8 @@
     .colors {
         display: flex;
         gap: 15px;
-        justify-content: space-between;
-
-        @media screen and (max-width: 749px) {
-            flex-wrap: wrap;
-        }
+        justify-content: flex-start;
+        flex-wrap: wrap;
 
         .color {
             display: inline-block;
@@ -26,6 +28,7 @@
                 height: 150px;
                 margin-bottom: 10px;
                 width: 150px;
+                border: 1px solid #f0f0f0;
             }
 
             span {
@@ -37,7 +40,6 @@
     }
 
     .form--preview {
-        background-color: rgb(var(--color-sage));
         padding: 3.5rem;
     }
 }
