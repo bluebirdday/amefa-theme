@@ -107,8 +107,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .header.page-width,
   .utility-bar__grid.page-width {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .page-width--narrow {
@@ -2683,8 +2683,8 @@ menu-drawer + .header__search {
     }
 
     .field {
-      width: calc(100% - 6rem);
-      margin-left: 3rem;
+      width: calc(100% - 3rem);
+      margin-left: 1.5rem;
       padding-left: 0;
     }
   }
@@ -2710,12 +2710,14 @@ menu-drawer + .header__search {
   margin: 0;
   width: 100%;
   box-sizing: border-box;
+  padding-left: 0
 }
 
 @media screen and (min-width: 750px) {
   .header__search .search__input.field__input {
     width: 20rem;
     height: 4rem;
+    border-bottom: 1px solid #000;
   }
 }
 
@@ -2726,8 +2728,7 @@ menu-drawer + .header__search {
 }
 
 .header__search .search__input.field__input:focus {
-  padding: 0.5rem 0;
-  margin: var(--inputs-border-width);
+  padding: 0;
 }
 
 .header--top-center > .header__search {
