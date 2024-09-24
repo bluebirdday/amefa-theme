@@ -102,7 +102,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .header.page-width,
@@ -301,13 +301,13 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: calc(var(--font-heading-scale) * 2.5rem);
 }
 
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 6rem);
   }
 }
 
@@ -319,19 +319,19 @@ h2,
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
+    font-size: calc(var(--font-heading-scale) * 3rem);
   }
 }
 
 h3,
 .h3 {
-  font-size: calc(var(--font-heading-scale) * 1.7rem);
+  font-size: calc(var(--font-heading-scale) * 1.75rem);
 }
 
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
+    font-size: calc(var(--font-heading-scale) * 2.625rem);
   }
 }
 
@@ -2672,13 +2672,20 @@ menu-drawer + .header__search {
 
 @media screen and (max-width: 749px) {
   .header__search {
-    left: 3rem;
+    left: 0rem;
     position: absolute;
     top: 70px;
-    width: calc(100dvw - 6rem);
+    width: 100%;
+    background: white;
 
     div[role="dialog"] {
       width: 100%;
+    }
+
+    .field {
+      width: calc(100% - 6rem);
+      margin-left: 3rem;
+      padding-left: 0;
     }
   }
 }
