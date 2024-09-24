@@ -1766,6 +1766,12 @@ select.field__input {
   text-align: left;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  padding: 1rem 2rem;
+
+  &::placeholder {
+    color: #d8d8d8;
+    font-size: 1.6rem;
+  }
 }
 
 .field__label,
@@ -1796,11 +1802,6 @@ select.field__input {
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
-}
-
-.field__input::placeholder,
-.customer .field input::placeholder {
-  opacity: 0;
 }
 
 .field__button {
