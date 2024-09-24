@@ -1,0 +1,43 @@
+.amefa-styleguide {
+    background-color: #ffffff;
+    padding: 20px;
+
+    .title {
+        display: block;
+        font-weight: 800;
+        margin: 15px 0;
+    }
+
+    .colors {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+
+        @media screen and (max-width: 749px) {
+            flex-wrap: wrap;
+        }
+
+        .color {
+            display: inline-block;
+
+            .color-circle {
+                border-radius: 50%;
+                display: block;
+                height: 150px;
+                margin-bottom: 10px;
+                width: 150px;
+            }
+
+            span {
+                display: block;
+                font-weight: 800;
+                text-align: center;
+            }
+        }
+    }
+
+    .form--preview {
+        background-color: rgb(var(--color-sage));
+        padding: 3.5rem;
+    }
+}

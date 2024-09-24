@@ -1,0 +1,240 @@
+<div class="section amefa-styleguide-container">
+  <span class="title">H1 XXL:</span>
+  <h1 class="hxxl">{{ section.settings.title }}</h1>
+  <span class="title">H1 XL:</span>
+  <h1 class="hxl">{{ section.settings.title }}</h1>
+  <span class="title">H1:</span>
+  <h1>{{ section.settings.title }}</h1>
+  <span class="title">H2:</span>
+  <h2>{{ section.settings.title }}</h2>
+  <span class="title">H3:</span>
+  <h3>{{ section.settings.title }}</h3>
+  <span class="title">H4:</span>
+  <h4>{{ section.settings.title }}</h4>
+  <span class="title">H5:</span>
+  <h5>{{ section.settings.title }}</h5>
+  <span class="title">H6:</span>
+  <h6>{{ section.settings.title }}</h6>
+  <hr>
+  <span class="title">Paragraph:</span>
+  {{ section.settings.paragraph }}
+  <span class="title">Caption:</span>
+  <span class="caption">{{ section.settings.paragraph }}</span>
+  <span class="title">Caption with letter spacing:</span>
+  <span class="caption-with-letter-spacing">{{ section.settings.paragraph }}</span>
+  <span class="title">Blockquote:</span>
+  <blockquote>{{ section.settings.paragraph }}</blockquote>
+  <hr>
+  <span class="title">Colors:</span>
+  <div class="colors">
+    <div class="color">
+      <span class="color-circle" style="background-color: #fffffa;"></span>
+      <span>Off White</span>
+      <span>#fffffa</span>
+    </div>
+    <div class="color">
+      <span class="color-circle" style="background-color: #eaffb0;"></span>
+      <span>Lemongrass</span>
+      <span>#eaffb0</span>
+    </div>
+    <div class="color">
+      <span class="color-circle" style="background-color: #eff94f;"></span>
+      <span>Lime</span>
+      <span>#eff94f</span>
+    </div>
+    <div class="color">
+      <span class="color-circle" style="background-color: #cde2c9;"></span>
+      <span>Sage</span>
+      <span>#cde2c9</span>
+    </div>
+    <div class="color">
+      <span class="color-circle" style="background-color: #214d3f;"></span>
+      <span>Verdant Eclipse</span>
+      <span>#214d3f</span>
+    </div>
+  </div>
+  <hr>
+  <span class="title">A-tag Link:</span>
+  <a href="#" class="link">{{ section.settings.button-text }}</a>
+  <span class="title">Default Link:</span>
+  {{ section.settings.button-text | link_to: '#' }}
+  <span class="title">Primary Button:</span>
+  <Button class="button button--primary">{{ section.settings.button-text }}</Button>
+  <span class="title">Secondary Button:</span>
+  <Button class="button button--secondary">{{ section.settings.button-text }}</Button>
+  <span class="title">Tertiary Button:</span>
+  <Button class="button button--tertiary">{{ section.settings.button-text }}</Button>
+  <span class="title">Disabled Button:</span>
+  <Button class="button button--primary disabled">{{ section.settings.button-text }}</Button>
+  <span class="title">Small Button:</span>
+  <Button class="button button--primary button--small">{{ section.settings.button-text }}</Button>
+  <span class="title">Large Button:</span>
+  <Button class="button button--primary button--large">{{ section.settings.button-text }}</Button>
+  <hr>
+  <span class="title">Unsorted List:</span>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+    <li>List item 6</li>
+    <li>List item 7</li>
+    <li>List item 8</li>
+  </ul>
+  <span class="title">Ordered List:</span>
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+    <li>List item 5</li>
+    <li>List item 6</li>
+    <li>List item 7</li>
+    <li>List item 8</li>
+  </ol>
+  <hr>
+  <span class="title">Table:</span>
+  <table>
+    <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="3">Footer</td>
+    </tr>
+    </tfoot>
+  </table>
+  <span class="title">Customer/Order Table:</span>
+  <table class="table customer">
+    <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="3">Footer</td>
+    </tr>
+    </tfoot>
+  </table>
+  <span class="title">Striped Table:</span>
+  <table class="table table--zebra">
+    <tbody>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    <tr>
+      <td>Item 1</td>
+      <td>Item 2</td>
+      <td>Item 3</td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+  <span class="title">Form:</span>
+  <form class="form form--preview">
+    <div class="field">
+      <input class="field__input" type="text" id="text-input" name="text-input" placeholder="Text input">
+      <label class="field__label" for="text-input">Text input</label>
+    </div>
+    <div class="field">
+      <input class="field__input" type="number" id="number-inputlname" name="number-input" value="1" min="1" max="10">
+      <label class="field__label" for="number-input">Number input</label>
+    </div>
+    <div class="field">
+      <select class="field__input" name="dropdown" id="dropdown">
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+        <option value="option-3">Option 3</option>
+        <option value="option-4">Option 4</option>
+        <option value="option-5">Option 5</option>
+      </select>
+      <label class="field__label" for="dropdown">Dropdown</label>
+    </div>
+    <div class="field form__field">
+      <label class="label" for="textfield">Textfield</label>
+      <textarea id="textfield" name="textfield" rows="4" cols="50">Textfield</textarea>
+    </div>
+    <div class="field">
+      <input type="submit" value="Submit Button" class="button button--primary">
+    </div>
+  </form>
+</div>
+
+{{ 'styleguide.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+{
+  "name": "Styleguide",
+  "tag": "section",
+  "class": "ecg-styleguide",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Welcome to <b>Amefa</b>",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "text",
+      "id": "button-text",
+      "label": "Button text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Styleguide",
+      "settings": {
+        "paragraph": "<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit.</p><p>Proin molestie velit eget varius viverra.</p><p>Cras lectus ligula, varius in pretium non, ultrices ac turpis.</p>",
+        "button-text": "Shop now"
+      }
+    }
+  ]
+}
+{% endschema %}
