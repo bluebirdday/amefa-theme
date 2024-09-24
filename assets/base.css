@@ -313,25 +313,25 @@ h1,
 
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 3.2rem);
 }
 
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 3rem);
+    font-size: calc(var(--font-heading-scale) * 4.8rem);
   }
 }
 
 h3,
 .h3 {
-  font-size: calc(var(--font-heading-scale) * 1.75rem);
+  font-size: calc(var(--font-heading-scale) * 2.8rem);
 }
 
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
-    font-size: calc(var(--font-heading-scale) * 2.625rem);
+    font-size: calc(var(--font-heading-scale) * 4.2rem);
   }
 }
 
@@ -339,19 +339,12 @@ h4,
 .h4 {
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
-  font-size: calc(var(--font-heading-scale) * 1.5rem);
+  font-size: calc(var(--font-heading-scale) * 2.0rem);
 }
 
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 1.2rem);
-}
-
-@media only screen and (min-width: 750px) {
-  h5,
-  .h5 {
-    font-size: calc(var(--font-heading-scale) * 1.3rem);
-  }
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
 }
 
 h6,
@@ -1226,6 +1219,7 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+  border-radius: 3px;
 }
 
 .button:before,
@@ -1316,6 +1310,26 @@ button.shopify-payment-button__button--unbranded {
   padding: 1rem 1.5rem;
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+}
+
+.button--secondary {
+  border: 1px solid #000;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+}
+
+.button--secondary:hover {
+  border: 1px solid var(--amefa-primary);
+  color: var(--amefa-primary);
+  box-shadow: none;
+
+  &:before,
+  &:after {
+    display: none;
+  }
 }
 
 .button--large {
@@ -1766,7 +1780,7 @@ select.field__input {
   text-align: left;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 
   &::placeholder {
     color: #d8d8d8;
@@ -1795,7 +1809,7 @@ select.field__input {
 .customer .field input:focus,
 .customer .field input:not(:placeholder-shown),
 .customer .field input:-webkit-autofill {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   margin: var(--inputs-border-width);
 }
 
@@ -2686,6 +2700,7 @@ menu-drawer + .header__search {
       width: calc(100% - 3rem);
       margin-left: 1.5rem;
       padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -2694,7 +2709,8 @@ menu-drawer + .header__search {
   margin-bottom: .8rem;
 }
 
-.header__search .field__label {
+.header__search .field__label,
+form[role="search"] .field__label {
   position: absolute;
   width: 1px;
   height: 1px;
