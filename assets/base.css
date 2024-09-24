@@ -1219,6 +1219,7 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+  border-radius: 3px;
 }
 
 .button:before,
@@ -1309,6 +1310,26 @@ button.shopify-payment-button__button--unbranded {
   padding: 1rem 1.5rem;
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+}
+
+.button--secondary {
+  border: 1px solid #000;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+}
+
+.button--secondary:hover {
+  border: 1px solid var(--amefa-primary);
+  color: var(--amefa-primary);
+  box-shadow: none;
+
+  &:before,
+  &:after {
+    display: none;
+  }
 }
 
 .button--large {
@@ -1759,7 +1780,7 @@ select.field__input {
   text-align: left;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 
   &::placeholder {
     color: #d8d8d8;
@@ -1788,7 +1809,7 @@ select.field__input {
 .customer .field input:focus,
 .customer .field input:not(:placeholder-shown),
 .customer .field input:-webkit-autofill {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   margin: var(--inputs-border-width);
 }
 
