@@ -9,42 +9,6 @@
 */
 {
   "sections": {
-    "image_banner_fChe9k": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_DAdypU": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ page.title }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_7PLiTi": {
-          "type": "text",
-          "settings": {
-            "text": "Als je uit eten gaat, is de kans groot dat je daar met Amefa bestek eet. Al tientallen jaren zijn wij de grootste leverancier van bestek in de horeca. En dat is niet zonder reden. Al sinds 1931 maakt Amefa bestek met oog voor detail en altijd in het nu. ",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_DAdypU",
-        "text_7PLiTi"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/3319_FELICITY_MOS_SOCIAL_desktop_2.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -53,68 +17,457 @@
         "padding_bottom": 28
       }
     },
-    "multirow_HU9b87": {
-      "type": "multirow",
+    "image_banner_fChe9k": {
+      "type": "image-banner",
       "blocks": {
-        "row_QPQ7eY": {
-          "type": "row",
+        "buttons_C9WKV7": {
+          "type": "buttons",
           "settings": {
-            "image": "shopify://shop_images/Over_amefa_felicity.jpg",
-            "caption": "Elke dag",
-            "heading": "Voor de genieters, de liefhebbers en de fijnproevers",
-            "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
-            "button_label": "Bekijk onze collectie",
-            "button_link": "shopify://collections/collectie"
-          }
-        },
-        "row_fyr3bL": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/onze_geschiedenis_copy.jpg",
-            "caption": "1931 - Nu",
-            "heading": "Onze geschiedenis",
-            "text": "<p>Op 25-jarige leeftijd kwam Eugen Hollaender vanuit Duitsland naar Apeldoorn. Hij begon in 1931 vanuit een schuur zijn bedrijf in de productie en verkoop van scheermesjes. De Apeldoornse Messenfabriek was geboren. Afgekort werd het A-Me-Fa (Amefa).</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_4j884w": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/amefa_onze_merken_copy_2.jpg",
-            "caption": "Amefa & meer",
-            "heading": "Onze merken",
-            "text": "<p>Amefa ontwerpt, produceert en levert producten voor in de keuken en op tafel. Van bestek tot gietijzeren braadpannen en keukenmessen. Onze merken Amefa, Richardson Sheffield, Lou Laguiole, Cuisinox en Sabatier Trompette leveren wij aan horeca, retail en consumenten.</p>",
-            "button_label": "Bekijk ons volledige assortiment",
-            "button_link": "shopify://collections/collectie"
+            "button_label_1": "Bekijk de Soprano Collectie",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "Bekijk al het steakbestek",
+            "button_link_2": "shopify://pages/contact",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "row_QPQ7eY",
-        "row_fyr3bL",
-        "row_4j884w"
+        "buttons_C9WKV7"
       ],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
+        "image": "shopify://shop_images/website_banner_home_soprano_black.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collection_list_jyJGrT": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_MTpcz6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets"
+          }
+        },
+        "featured_collection_JcRcwq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets-18-0-bestek"
+          }
+        },
+        "featured_collection_GynaRR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_pHGhXA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_MTpcz6",
+        "featured_collection_JcRcwq",
+        "featured_collection_GynaRR",
+        "featured_collection_pHGhXA"
+      ],
+      "settings": {
+        "title": "",
         "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "scheme-3",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "featured_collection_EaWM8E": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Populaire sets",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "besteksets",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_Wi6Xzh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ReEnFL": {
+          "type": "column",
+          "settings": {
+            "title": "Voor iedere smaak, passend bij elk budget",
+            "text": "<p>Bestek voor de kookclub, de snelle hap en de feestdagen. Voor de foodies, de carnivoren en de fijnproevers - ontdek de mooiste producten van Amefa.</p>",
+            "link_label": "Bekijk onze besteksets",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "column_MRAVYx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3319_felicity_2pc_composing_webshop.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_p6zXkk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2520_royal_steak_ambiance_maroon_grijs-groen_staand_lr.jpg",
+            "title": "Bestek voor de grillmasters",
+            "text": "",
+            "link_label": "Bekijk al het steakbestek",
+            "link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "column_ReEnFL",
+        "column_MRAVYx",
+        "column_p6zXkk"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_eEz8H3": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3E8MXe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Over Amefa",
+            "heading_size": "h2"
+          }
+        },
+        "text_GFLW6X": {
+          "type": "text",
+          "settings": {
+            "text": "Als je uit eten gaat, is de kans groot dat je daar met Amefa bestek eet. Al tientallen jaren zijn wij de grootste leverancier van bestek in de horeca. En dat is niet zonder reden. Al sinds 1931 maakt Amefa bestek met oog voor detail en altijd in het nu. ",
+            "text_style": "body"
+          }
+        },
+        "buttons_8YxkMT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Lees verder",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3E8MXe",
+        "text_GFLW6X",
+        "buttons_8YxkMT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/3319_FELICITY_MOS_SOCIAL_desktop.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_blog_9KcKJB": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Een vleugje inspiratie voor jou",
+        "heading_size": "h2",
+        "blog": "",
+        "post_limit": 4,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_HpyCQJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6LPdLj": {
+          "type": "column",
+          "settings": {
+            "title": "Voor de dagelijkse genieters, de liefhebbers en de fijnproevers",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iJbcWg": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qqxpAy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Over_amefa_felicity.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6LPdLj",
+        "column_iJbcWg",
+        "column_qqxpAy"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_MCdAbb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wLAFzL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ons verhaal",
+            "heading_size": "h1"
+          }
+        },
+        "text_tXrYMd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Écht Nederlands meesterschap is niet voor iedereen.<br/>Meesterschap vraagt tijd, geduld en een onstilbare honger om iedere dag beter te worden. <br/>Om jezelf opnieuw te blijven uitvinden en om nooit te stoppen bij goed genoeg. <br/>Om al sinds 1931 altijd de beste te kunnen zijn.</p><p>En hoewel meesterschap niet voor iedereen is,<br/>zijn wij er voor ons allemaal.</p><p>Wij zijn er voor de eerste hapjes. <br/>Voor iedereen die ons ooit heeft vastgehouden, maar toen nog geen idee had wie we zijn.<br/>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers.</p><p>Wij zijn er voor iedereen die vandaag de allereerste keer voor zichzelf gekookt heeft. <br/>Voor iedereen die ons ooit trillend vasthield op een eerste date, <br/>en voor iedereen die samen dé taart aansnijdt. <br/>Wij zijn er op de grote en de kleine momenten. Wij zijn er voor tussendoor.</p><p>Wij zijn er voor iedereen die van lekker eten kan genieten. Thuis. Als gast, of meesterchef. <br/>Wij zijn er voor iedereen die op zoek is naar sterk, scherp of bijzonder.<br/>Met oog voor detail en altijd in het nu. Wij zijn er altijd en wij zijn overal.</p><p>Wij zijn er voor iedereen bij wie zelfstandig eten niet vanzelfsprekend is. <br/>Voor de groep die meesterschap nóg harder nodig heeft.<br/>Wij zijn er voor iedereen die, dat wat waarde heeft, liever doorgeeft dan weggooit. <br/>Die het meeneemt, koestert en bewaart.</p><p>Amefa. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wLAFzL",
+        "text_tXrYMd"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "slideshow_gd7fCP": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6Y7N4G": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/onze_geschiedenis_copy.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6Y7N4G"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Diavoorstelling over ons merk"
+      }
+    },
+    "multicolumn_XkDzH6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nqGK8C": {
+          "type": "column",
+          "settings": {
+            "title": "Onze geschiedenis",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UzphdD": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Op 25-jarige leeftijd kwam Eugen Hollaender vanuit Duitsland naar Apeldoorn. Hij begon in 1931 vanuit een schuur zijn bedrijf in de productie en verkoop van scheermesjes. De Apeldoornse Messenfabriek was geboren. Afgekort werd het A-Me-Fa (Amefa).</p>",
+            "link_label": "Verder lezen",
+            "link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "column_nqGK8C",
+        "column_UzphdD"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_d4krbV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_yfTUpQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Onze merken",
+            "heading_size": "h2"
+          }
+        },
+        "text_TH6ADx": {
+          "type": "text",
+          "settings": {
+            "text": "Amefa ontwerpt, produceert en levert producten voor in de keuken en op tafel. Van bestek tot gietijzeren braadpannen en keukenmessen. Onze merken Amefa, Richardson Sheffield, Lou Laguiole, Cuisinox en Sabatier Trompette leveren wij aan horeca, retail en consumenten. ",
+            "text_style": "body"
+          }
+        },
+        "buttons_pHwgQ4": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Verder lezen",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yfTUpQ",
+        "text_TH6ADx",
+        "buttons_pHwgQ4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/amefa_onze_merken_copy_2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-right",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
-    "image_banner_fChe9k",
     "main",
-    "multirow_HU9b87"
+    "image_banner_fChe9k",
+    "collection_list_jyJGrT",
+    "featured_collection_EaWM8E",
+    "multicolumn_Wi6Xzh",
+    "image_banner_eEz8H3",
+    "featured_blog_9KcKJB",
+    "multicolumn_HpyCQJ",
+    "rich_text_MCdAbb",
+    "slideshow_gd7fCP",
+    "multicolumn_XkDzH6",
+    "image_banner_d4krbV"
   ]
 }
