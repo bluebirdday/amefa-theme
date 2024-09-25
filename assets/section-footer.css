@@ -7,10 +7,17 @@
 }
 
 .footer__content-middle {
+  display: none;
   padding: 40px 0;
   text-align: center;
   border-top: 1px solid #e5e5e5;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .footer__content-middle {
+    display: block;
+  }
 }
 
 .footer__content-top {
