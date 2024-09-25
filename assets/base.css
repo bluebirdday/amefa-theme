@@ -2863,6 +2863,22 @@ details[open] .modal-overlay::after {
   transition: transform 150ms ease, opacity 150ms ease;
 }
 
+.menu-drawer-container .header__icon {
+  display: flex;
+  width: auto;
+  align-items: center;
+
+  .menu__icon {
+    width: 4.4rem;
+    height: auto;
+  }
+  .menu__label {
+    height: auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
 details:not([open]) > .header__icon--menu .icon-close,
 details[open] > .header__icon--menu .icon-hamburger {
   visibility: hidden;
