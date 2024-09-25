@@ -2816,8 +2816,10 @@ details[open] .modal-overlay::after {
 .search-modal__form {
   width: 100%;
   display: flex;
+}
 
-  .search__button {
+@media screen and (min-width: 990px) {
+  .search-modal__form .search__button {
     position: static;
     margin-left: -.5rem;
     transform: translateY(2px);
@@ -3095,6 +3097,15 @@ details-disclosure > details {
 @media screen and (min-width: 990px) {
   .overflow-hidden-tablet {
     overflow: auto;
+  }
+}
+
+.header__search .predictive-search {
+
+}
+@media screen and (min-width: 750px) {
+  .header__search .predictive-search {
+    width: calc(183% + 0.2rem);
   }
 }
 
