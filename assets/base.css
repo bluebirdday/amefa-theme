@@ -2856,6 +2856,10 @@ details[open] .modal-overlay::after {
     margin-right: 1rem;
 }
 
+.desktop-localization-wrapper .header-localization:not(.menu-drawer__localization) .localization-form:only-child .localization-form__select {
+  justify-content: flex-end;
+}
+
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
