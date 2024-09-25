@@ -13,13 +13,18 @@
 .list-social__item .icon {
   height: 2.2rem;
   width: 2.2rem;
+  transition: transform .3s;
 }
 
 .list-social__link {
   align-items: center;
   display: flex;
   padding: 1.1rem;
-  color: rgb(var(--color-foreground));
+  border-radius: 3px;
+  color: rgb(var(--color-foreground), 60%);
+  background: white;
+  margin: 0 .75rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,.25)
 }
 
 .utility-bar .list-social__link {
