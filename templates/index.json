@@ -125,91 +125,60 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_RPwJDY": {
-      "type": "image-with-text",
+    "image_banner_bTqgPp": {
+      "type": "image-banner",
       "blocks": {
-        "heading_eiJq4X": {
+        "heading_HxxUxW": {
           "type": "heading",
           "settings": {
-            "heading": "Keuzestress?",
-            "heading_size": "h1"
+            "heading": "Over Amefa",
+            "heading_size": "h0"
           }
         },
-        "text_tTa7ML": {
+        "text_jwJK6z": {
           "type": "text",
           "settings": {
-            "text": "<p>Het kiezen van de juiste bestekset is  niet gemakkelijk. Gelukkig hebben we een keuzehulp samengesteld zodat je zeker weet dat je de juiste set kiest!</p>",
+            "text": "Als je uit eten gaat, is de kans groot dat je daar met Amefa bestek eet. Al tientallen jaren zijn wij de grootste leverancier van bestek in de horeca. En dat is niet zonder reden. Al sinds 1931 maakt Amefa bestek met oog voor detail en altijd in het nu. ",
             "text_style": "body"
           }
         },
-        "button_H79iUb": {
-          "type": "button",
+        "buttons_q9UMYx": {
+          "type": "buttons",
           "settings": {
-            "button_label": "Naar de keuzewijzer",
-            "button_link": "#quiz-ogHzXnw",
-            "button_style_secondary": false
+            "button_label_1": "Lees verder",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_style_link_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "button_style_link_2": false,
+            "inline_buttons": false
           }
         }
       },
       "block_order": [
-        "heading_eiJq4X",
-        "text_tTa7ML",
-        "button_H79iUb"
+        "heading_HxxUxW",
+        "text_jwJK6z",
+        "buttons_q9UMYx"
       ],
       "settings": {
-        "image": "shopify://shop_images/3319ZTTR24C40_001.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
+        "image": "shopify://shop_images/3319_FELICITY_MOS_SOCIAL_desktop.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "full_width_banner": false,
+        "rounded_corners": false,
+        "desktop_content_position": "middle-left",
+        "desktop_content_width": "half",
+        "show_text_box": true,
+        "text_box_color": "#cdb149",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
         "color_scheme": "",
-        "image_behavior": "zoom-in",
+        "dark_text": false,
+        "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "austin"
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "austin-24-delige-bestekset-voor-6-personen-goud",
-            "second_image": true
-          }
-        },
-        "product_9tCbAx": {
-          "type": "product",
-          "settings": {
-            "product": "austin-24-delige-bestekset-voor-6-personen",
-            "second_image": true
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "product_9tCbAx"
-      ],
-      "settings": {
-        "heading": "Bekijk nu de Austin Collectie",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
@@ -217,7 +186,6 @@
     "image_banner",
     "collection_list_figdmd",
     "featured_collection_KwXmPb",
-    "image_with_text_RPwJDY",
-    "collage"
+    "image_banner_bTqgPp"
   ]
 }
