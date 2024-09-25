@@ -243,6 +243,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_HpyCQJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6LPdLj": {
+          "type": "column",
+          "settings": {
+            "title": "Voor de dagelijkse genieters, de liefhebbers en de fijnproevers",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iJbcWg": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qqxpAy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Over_amefa_felicity.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6LPdLj",
+        "column_iJbcWg",
+        "column_qqxpAy"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -252,6 +306,7 @@
     "featured_collection_EaWM8E",
     "multicolumn_Wi6Xzh",
     "image_banner_eEz8H3",
-    "featured_blog_9KcKJB"
+    "featured_blog_9KcKJB",
+    "multicolumn_HpyCQJ"
   ]
 }
