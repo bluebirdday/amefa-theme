@@ -2155,8 +2155,8 @@ input[type='checkbox'] {
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  bottom: 1.8rem;
+  left: 0.4rem;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 }
 
@@ -2608,6 +2608,7 @@ input[type='checkbox'] {
 
 .header__icon span {
   height: 100%;
+  line-height: 1;
 }
 
 .header__icon::after {
@@ -2684,7 +2685,7 @@ menu-drawer + .header__search {
   line-height: 0;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .header__search {
     left: 0rem;
     position: absolute;
@@ -2729,7 +2730,7 @@ form[role="search"] .field__label {
   padding-left: 0
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .header__search .search__input.field__input {
     width: 20rem;
     height: 4rem;
@@ -2814,6 +2815,13 @@ details[open] .modal-overlay::after {
 
 .search-modal__form {
   width: 100%;
+  display: flex;
+
+  .search__button {
+    position: static;
+    margin-left: -.5rem;
+    transform: translateY(2px);
+  }
 }
 
 .search-modal__close-button {
@@ -2840,6 +2848,10 @@ details[open] .modal-overlay::after {
     position: initial;
     margin-left: 0.5rem;
   }
+}
+
+.desktop-localization-wrapper {
+    margin-right: 1rem;
 }
 
 /* Header menu drawer */
@@ -2950,22 +2962,18 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: .5rem 0;
   text-decoration: none;
   color: rgba(var(--color-foreground), 1);
+  border-bottom: 1px solid transparent;
+  margin: 0 1.2rem;
+  font-size: 1.6rem;
 }
 
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
-}
-
-.header__menu-item span {
-  transition: text-decoration var(--duration-short) ease;
-}
-
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration: none;
+  border-bottom: 2px solid black;
 }
 
 details[open] > .header__menu-item {
