@@ -3098,6 +3098,15 @@ details-disclosure > details {
   }
 }
 
+.header__search .predictive-search {
+
+}
+@media screen and (min-width: 750px) {
+  .header__search .predictive-search {
+    width: calc(183% + 0.2rem);
+  }
+}
+
 .badge {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
