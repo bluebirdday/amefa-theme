@@ -6,6 +6,34 @@
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-amefa-blue: #0079BF;
+  --color-equator: #dcbb60;
+  --color-fiery-orange: #a24410;
+  --color-glade-green: #648167;
+  --color-cararra: #e5e5dc;
+  --color-eagle: #bfbda8;
+  --color-citrine-white: #f7edc9;
+  --color-rob-roy: #ead177;
+  --color-french-gray: #c7c7c9;
+  --color-jumbo: #747378;
+  --color-tana: #d8d6bc;
+  --color-barley-corn: #9d9858;
+  --color-gray-nurse: #e5e7e5;
+  --color-merino: #f5ede3;
+  --color-spanish-white: #e7d3ba;
+  --color-pumice: #bdc2be;
+  --color-janna: #f3e5d3;
+  --color-calico: #e2bd90;
+  --color-tana-flat: #ddd6c3;
+  --color-sandal: #ab9969;
+  --color-akaroa: #dabcab;
+  --color-paarl: #a3582e;
+  --color-hush-puppy: #e3b096;
+  --color-antiqued-aqua: #bbcdc2;
+  --color-kettle-corn: #f6e4bd;
 }
 
 .product-card-wrapper .card,
@@ -1034,10 +1062,6 @@ summary::-webkit-details-marker {
     min-width: 35%;
   }
 
-  .grid--peek.slider .grid__item:first-of-type {
-    margin-left: 1.5rem;
-  }
-
   /* Fix to show some space at the end of our sliders in all browsers */
   .grid--peek.slider:after {
     margin-left: calc(-1 * var(--grid-mobile-horizontal-spacing));
@@ -1362,7 +1386,7 @@ button.shopify-payment-button__button--unbranded {
     border: none;
     position: static;
     box-shadow: none;
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuNTc1IDYuODI1YzIuNTI1IDAgNi4yNS0xLjM1IDYuMjUtM3MtMy43MjUtMy02LjI1LTNjLTIuMTI1IDAtMi43MjUuOTUtMi44NzUgMi4yNUwuOTUgMi4zNWEuNzQyLjc0MiAwIDAgMC0uNzc1Ljc1djEuNDc1YzAgLjQyNS4zNS43NS43NzUuNzVMMTQuNyA0LjZjLjE1IDEuMjc1Ljc1IDIuMjI1IDIuODc1IDIuMjI1WiIgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+");
+    background: url('./spoon.svg');
   }
 
   &:hover:after {

@@ -38,7 +38,7 @@
       "settings": {
         "image": "shopify://shop_images/website_banner_home_soprano_black.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",

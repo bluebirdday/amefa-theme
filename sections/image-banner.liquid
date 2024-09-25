@@ -53,7 +53,14 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}
+    {% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}
+    {% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}
+    {% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}
+    {% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}
+    {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}
+    {% if section.settings.full_width_banner == false %} page-width{% endif %}
+    {% if section.settings.rounded_corners %} rounded-corners{% endif %}"
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -115,8 +122,12 @@
       }}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }}
+        {% if section.settings.full_width_banner %} page-width{% endif %}
+        {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient content-width-{{ section.settings.desktop_content_width }}
+          {% if section.settings.dark_text == false %} light-text{% endif %}"
+         style="{% if section.settings.show_text_box and section.settings.text_box_color %}background-color: {{ section.settings.text_box_color }};{% endif %}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
@@ -132,7 +143,9 @@
             </div>
           {%- when 'buttons' -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="banner__buttons
+                {% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}
+                {% if block.settings.inline_buttons %} banner__buttons--inline{% endif %}"
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
@@ -142,7 +155,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% elsif block.settings.button_style_link_1 %} button--link{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -154,7 +167,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% elsif block.settings.button_style_link_2 %} button--link{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
@@ -221,6 +234,18 @@
       "info": "t:sections.image-banner.settings.image_height.info"
     },
     {
+      "type": "checkbox",
+      "id": "full_width_banner",
+      "default": true,
+      "label": "Full width banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded_corners",
+      "default": true,
+      "label": "Rounded corners"
+    },
+    {
       "type": "select",
       "id": "desktop_content_position",
       "options": [
@@ -265,10 +290,40 @@
       "label": "t:sections.image-banner.settings.desktop_content_position.label"
     },
     {
+      "type": "select",
+      "id": "desktop_content_width",
+      "options": [
+        {
+          "value": "quarter",
+          "label": "25%"
+        },
+        {
+          "value": "half",
+          "label": "50%"
+        },
+        {
+          "value": "three-quarters",
+          "label": "75%"
+        },
+        {
+          "value": "full",
+          "label": "100%"
+        }
+      ],
+      "default": "half",
+      "label": "Desktop content width"
+    },
+    {
       "type": "checkbox",
       "id": "show_text_box",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+    {
+      "type": "color",
+      "id": "text_box_color",
+      "label": "Container background color",
+      "default": "#ffffff"
     },
     {
       "type": "select",
@@ -295,6 +350,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "dark_text",
+      "default": true,
+      "label": "Dark text"
     },
     {
       "type": "header",
@@ -460,6 +521,12 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
         },
         {
+          "type": "checkbox",
+          "id": "button_style_link_1",
+          "default": false,
+          "label": "Use link button style"
+        },
+        {
           "type": "text",
           "id": "button_label_2",
           "default": "t:sections.image-banner.blocks.buttons.settings.button_label_2.default",
@@ -476,6 +543,18 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_link_2",
+          "default": false,
+          "label": "Use link button style"
+        },
+        {
+          "type": "checkbox",
+          "id": "inline_buttons",
+          "default": false,
+          "label": "Show buttons inline?"
         }
       ]
     }

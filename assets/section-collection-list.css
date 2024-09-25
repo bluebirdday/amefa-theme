@@ -1,6 +1,41 @@
 .collection-list {
   margin-top: 0;
   margin-bottom: 0;
+
+  .card-wrapper {
+    .card {
+      position: relative;
+
+      .card__inner {
+        border-radius: var(--media-radius);
+        overflow: hidden;
+      }
+
+      > .card__content {
+        left: 2rem;
+        position: absolute;
+        top: 2rem;
+        width: calc(100% - 4rem);
+
+        .card__information {
+          padding: 0;
+
+          .card__heading {
+            .full-unstyled-link {
+              color: rgb(var(--color-background));
+              font-size: 1.8rem;
+              font-weight: 700;
+              line-height: 2.7rem;
+
+              .icon-wrap {
+                vertical-align: text-bottom;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .collection-list-title {
@@ -9,11 +44,6 @@
 
 @media screen and (max-width: 749px) {
   .collection-list:not(.slider) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .section-collection-list .page-width {
     padding-left: 0;
     padding-right: 0;
   }
