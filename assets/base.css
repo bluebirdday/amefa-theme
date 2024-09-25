@@ -1362,7 +1362,7 @@ button.shopify-payment-button__button--unbranded {
     border: none;
     position: static;
     box-shadow: none;
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTcuNTc1IDYuODI1YzIuNTI1IDAgNi4yNS0xLjM1IDYuMjUtM3MtMy43MjUtMy02LjI1LTNjLTIuMTI1IDAtMi43MjUuOTUtMi44NzUgMi4yNUwuOTUgMi4zNWEuNzQyLjc0MiAwIDAgMC0uNzc1Ljc1djEuNDc1YzAgLjQyNS4zNS43NS43NzUuNzVMMTQuNyA0LjZjLjE1IDEuMjc1Ljc1IDIuMjI1IDIuODc1IDIuMjI1WiIgZmlsbD0iIzAwMCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9zdmc+");
+    background: url('./spoon.svg');
   }
 
   &:hover:after {
