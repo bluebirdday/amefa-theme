@@ -297,6 +297,36 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_MCdAbb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wLAFzL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ons verhaal",
+            "heading_size": "h1"
+          }
+        },
+        "text_tXrYMd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Écht Nederlands meesterschap is niet voor iedereen.<br/>Meesterschap vraagt tijd, geduld en een onstilbare honger om iedere dag beter te worden. <br/>Om jezelf opnieuw te blijven uitvinden en om nooit te stoppen bij goed genoeg. <br/>Om al sinds 1931 altijd de beste te kunnen zijn.</p><p>En hoewel meesterschap niet voor iedereen is,<br/>zijn wij er voor ons allemaal.</p><p>Wij zijn er voor de eerste hapjes. <br/>Voor iedereen die ons ooit heeft vastgehouden, maar toen nog geen idee had wie we zijn.<br/>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers.</p><p>Wij zijn er voor iedereen die vandaag de allereerste keer voor zichzelf gekookt heeft. <br/>Voor iedereen die ons ooit trillend vasthield op een eerste date, <br/>en voor iedereen die samen dé taart aansnijdt. <br/>Wij zijn er op de grote en de kleine momenten. Wij zijn er voor tussendoor.</p><p>Wij zijn er voor iedereen die van lekker eten kan genieten. Thuis. Als gast, of meesterchef. <br/>Wij zijn er voor iedereen die op zoek is naar sterk, scherp of bijzonder.<br/>Met oog voor detail en altijd in het nu. Wij zijn er altijd en wij zijn overal.</p><p>Wij zijn er voor iedereen bij wie zelfstandig eten niet vanzelfsprekend is. <br/>Voor de groep die meesterschap nóg harder nodig heeft.<br/>Wij zijn er voor iedereen die, dat wat waarde heeft, liever doorgeeft dan weggooit. <br/>Die het meeneemt, koestert en bewaart.</p><p>Amefa. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wLAFzL",
+        "text_tXrYMd"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -307,6 +337,7 @@
     "multicolumn_Wi6Xzh",
     "image_banner_eEz8H3",
     "featured_blog_9KcKJB",
-    "multicolumn_HpyCQJ"
+    "multicolumn_HpyCQJ",
+    "rich_text_MCdAbb"
   ]
 }
