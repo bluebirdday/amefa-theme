@@ -9,42 +9,6 @@
 */
 {
   "sections": {
-    "image_banner_fChe9k": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_DAdypU": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ page.title }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_7PLiTi": {
-          "type": "text",
-          "settings": {
-            "text": "Als je uit eten gaat, is de kans groot dat je daar met Amefa bestek eet. Al tientallen jaren zijn wij de grootste leverancier van bestek in de horeca. En dat is niet zonder reden. Al sinds 1931 maakt Amefa bestek met oog voor detail en altijd in het nu. ",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_DAdypU",
-        "text_7PLiTi"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/3319_FELICITY_MOS_SOCIAL_desktop_2.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -53,68 +17,89 @@
         "padding_bottom": 28
       }
     },
-    "multirow_HU9b87": {
-      "type": "multirow",
+    "image_banner_fChe9k": {
+      "type": "image-banner",
       "blocks": {
-        "row_QPQ7eY": {
-          "type": "row",
+        "buttons_C9WKV7": {
+          "type": "buttons",
           "settings": {
-            "image": "shopify://shop_images/Over_amefa_felicity.jpg",
-            "caption": "Elke dag",
-            "heading": "Voor de genieters, de liefhebbers en de fijnproevers",
-            "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
-            "button_label": "Bekijk onze collectie",
-            "button_link": "shopify://collections/collectie"
-          }
-        },
-        "row_fyr3bL": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/onze_geschiedenis_copy.jpg",
-            "caption": "1931 - Nu",
-            "heading": "Onze geschiedenis",
-            "text": "<p>Op 25-jarige leeftijd kwam Eugen Hollaender vanuit Duitsland naar Apeldoorn. Hij begon in 1931 vanuit een schuur zijn bedrijf in de productie en verkoop van scheermesjes. De Apeldoornse Messenfabriek was geboren. Afgekort werd het A-Me-Fa (Amefa).</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_4j884w": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/amefa_onze_merken_copy_2.jpg",
-            "caption": "Amefa & meer",
-            "heading": "Onze merken",
-            "text": "<p>Amefa ontwerpt, produceert en levert producten voor in de keuken en op tafel. Van bestek tot gietijzeren braadpannen en keukenmessen. Onze merken Amefa, Richardson Sheffield, Lou Laguiole, Cuisinox en Sabatier Trompette leveren wij aan horeca, retail en consumenten.</p>",
-            "button_label": "Bekijk ons volledige assortiment",
-            "button_link": "shopify://collections/collectie"
+            "button_label_1": "Bekijk de Soprano Collectie",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "Bekijk al het steakbestek",
+            "button_link_2": "shopify://pages/contact",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "row_QPQ7eY",
-        "row_fyr3bL",
-        "row_4j884w"
+        "buttons_C9WKV7"
       ],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
+        "image": "shopify://shop_images/website_banner_home_soprano_black.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collection_list_jyJGrT": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_MTpcz6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets"
+          }
+        },
+        "featured_collection_JcRcwq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets-18-0-bestek"
+          }
+        },
+        "featured_collection_GynaRR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_pHGhXA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "besteksets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_MTpcz6",
+        "featured_collection_JcRcwq",
+        "featured_collection_GynaRR",
+        "featured_collection_pHGhXA"
+      ],
+      "settings": {
+        "title": "",
         "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "scheme-3",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner_fChe9k",
     "main",
-    "multirow_HU9b87"
+    "image_banner_fChe9k",
+    "collection_list_jyJGrT"
   ]
 }
