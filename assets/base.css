@@ -3130,6 +3130,10 @@ details-disclosure > details {
   }
 }
 
+.shopify-section-header-hidden .header__search .field {
+  margin-bottom: 0;
+}
+
 .badge {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
