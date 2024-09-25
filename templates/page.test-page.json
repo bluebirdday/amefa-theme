@@ -226,6 +226,23 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "featured_blog_9KcKJB": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Een vleugje inspiratie voor jou",
+        "heading_size": "h2",
+        "blog": "",
+        "post_limit": 4,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -234,6 +251,7 @@
     "collection_list_jyJGrT",
     "featured_collection_EaWM8E",
     "multicolumn_Wi6Xzh",
-    "image_banner_eEz8H3"
+    "image_banner_eEz8H3",
+    "featured_blog_9KcKJB"
   ]
 }
