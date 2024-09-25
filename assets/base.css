@@ -6,6 +6,31 @@
   --focused-base-outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   --focused-base-outline-offset: 0.3rem;
   --focused-base-box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-amefa-blue: #0079BF;
+  --color-equator: #dcbb60;
+  --color-fiery-orange: #a24410;
+  --color-glade-green: #648167;
+  --color-cararra: #e5e5dc;
+  --color-eagle: #bfbda8;
+  --color-citrine-white: #f7edc9;
+  --color-rob-roy: #ead177;
+  --color-french-gray: #c7c7c9;
+  --color-jumbo: #747378;
+  --color-tana: #d8d6bc;
+  --color-barley-corn: #9d9858;
+  --color-gray-nurse: #e5e7e5;
+  --color-merino: #f5ede3;
+  --color-spanish-white: #e7d3ba;
+  --color-pumice: #bdc2be;
+  --color-janna: #f3e5d3;
+  --color-calico: #e2bd90;
+  --color-tana-flat: #ddd6c3;
+  --color-sandal: #ab9969;
+  --color-akaroa: #dabcab;
+  --color-paarl: #a3582e;
 }
 
 .product-card-wrapper .card,
