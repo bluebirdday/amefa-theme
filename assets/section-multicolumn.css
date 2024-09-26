@@ -44,6 +44,10 @@
   margin-right: auto;
 }
 
+.multicolumn-list__item.right .multicolumn-card__image-wrapper:not(.multicolumn-card__image-wrapper--full-width) {
+  margin-left: auto;
+}
+
 .multicolumn .button {
   margin-top: 1.5rem;
 }
@@ -60,12 +64,76 @@
   padding: 0;
 }
 
+.multicolumn-list__item:not(.no-background) {
+  padding: 2rem 2rem 3rem;
+
+  &.slider__slide {
+    padding-bottom: 3rem;
+  }
+
+  &.separate-image {
+    .multicolumn-card__info {
+      padding: 2rem 2rem 3rem;
+    }
+  }
+}
+
 .multicolumn-list__item:only-child {
   max-width: 72rem;
 }
 
 .multicolumn-list__item--empty {
   display: none;
+}
+
+.multicolumn-list__item.rounded-corners.separate-image {
+  padding: 0;
+
+  &.slider__slide {
+    padding-bottom: 0;
+  }
+
+  .media,
+  .multicolumn-card__info {
+    border-radius: var(--media-radius);
+    overflow: hidden;
+  }
+
+  .content-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .multicolumn-card__image-wrapper {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.multicolumn-list__item.rounded-corners:not(.separate-image) {
+  border-radius: var(--media-radius);
+  overflow: hidden;
+
+  .media {
+    border-radius: var(--media-radius);
+    overflow: hidden;
+  }
+}
+
+.multicolumn-list__item.light-text {
+  .multicolumn-card__info {
+    h3,
+    p,
+    a {
+      border-color: rgb(var(--color-background));
+      color: rgb(var(--color-background));
+
+      &::after {
+        filter: invert(1);
+      }
+    }
+  }
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
@@ -83,7 +151,7 @@
 }
 
 .multicolumn-list h3,
-.multicolumn-list p {
+.multicolumn-list p:last-of-type {
   margin: 0;
 }
 
@@ -146,6 +214,10 @@
   margin: 0;
 }
 
+.multicolumn-card__image-wrapper + .multicolumn-card__info {
+  margin-top: auto;
+}
+
 .multicolumn-card__info {
   padding: 2.5rem;
 }
@@ -188,16 +260,17 @@
 }
 
 @media screen and (min-width: 750px) {
-  .background-none .multicolumn-card__image-wrapper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .background-none .multicolumn-list .multicolumn-card__info,
   .background-none .multicolumn-list:not(.slider) .center .multicolumn-card__info {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
+}
+
+.multicolumn-card.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .multicolumn-card {

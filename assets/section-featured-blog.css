@@ -1,3 +1,17 @@
+.blog {
+  @media screen and (min-width: 750px) {
+    .blog--wrapper {
+      position: relative;
+
+      .blog__view-all {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
 .blog-placeholder-svg {
   height: 100%;
 }
@@ -10,6 +24,14 @@
 
 .blog__title {
   margin: 0;
+}
+
+.blog__posts .blog__post:nth-of-type(odd) {
+  margin-top: 3rem;
+
+  @media screen and (min-width: 750px) {
+    margin-top: 8rem;
+  }
 }
 
 .blog__posts.articles-wrapper {

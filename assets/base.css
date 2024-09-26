@@ -31,6 +31,9 @@
   --color-sandal: #ab9969;
   --color-akaroa: #dabcab;
   --color-paarl: #a3582e;
+  --color-hush-puppy: #e3b096;
+  --color-antiqued-aqua: #bbcdc2;
+  --color-kettle-corn: #f6e4bd;
 }
 
 .product-card-wrapper .card,
@@ -320,7 +323,7 @@ h5,
 
 @media only screen and (min-width: 750px) {
   .h0 {
-    font-size: calc(var(--font-heading-scale) * 5.2rem);
+    font-size: calc(var(--font-heading-scale) * 6.1rem);
   }
 }
 
@@ -806,8 +809,8 @@ summary::-webkit-details-marker {
 
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media screen and (min-width: 750px) {
@@ -999,21 +1002,41 @@ summary::-webkit-details-marker {
   .grid--6-col-desktop .grid__item {
     width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
     max-width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
+
+    &.grid__item-double {
+      width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+      max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+    }
   }
 
   .grid--5-col-desktop .grid__item {
     width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
     max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+
+    &.grid__item-double {
+      width: calc(40% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+      max-width: calc(40% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    }
   }
 
   .grid--4-col-desktop .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
     max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+
+    &.grid__item-double {
+      width: calc(50% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+      max-width: calc(50% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+    }
   }
 
   .grid--3-col-desktop .grid__item {
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
     max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+
+    &.grid__item-double {
+      width: calc(66.66% - var(--grid-desktop-horizontal-spacing) / 2);
+      max-width: calc(66.66% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
   }
 
   .grid--2-col-desktop .grid__item {
@@ -1057,10 +1080,6 @@ summary::-webkit-details-marker {
 
   .grid--peek .grid__item {
     min-width: 35%;
-  }
-
-  .grid--peek.slider .grid__item:first-of-type {
-    margin-left: 1.5rem;
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
@@ -1131,6 +1150,16 @@ summary::-webkit-details-marker {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.media.media--full {
+  font-size: 0;
+
+  > *:not(.zoom):not(.deferred-media__poster-button) {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .media > img {

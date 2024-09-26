@@ -26,9 +26,12 @@
             "button_label_1": "Bekijk de Soprano Collectie",
             "button_link_1": "shopify://pages/contact",
             "button_style_secondary_1": false,
+            "button_style_link_1": false,
             "button_label_2": "Bekijk al het steakbestek",
             "button_link_2": "shopify://pages/contact",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_style_link_2": false,
+            "inline_buttons": true
           }
         }
       },
@@ -38,15 +41,20 @@
       "settings": {
         "image": "shopify://shop_images/website_banner_home_soprano_black.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "adapt",
+        "full_width_banner": false,
+        "rounded_corners": true,
         "desktop_content_position": "bottom-center",
+        "desktop_content_width": "three-quarters",
         "show_text_box": false,
+        "text_box_color": "#ffffff",
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-1",
+        "dark_text": true,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "collection_list_jyJGrT": {
@@ -88,6 +96,7 @@
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
@@ -100,7 +109,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Populaire sets",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -109,16 +118,16 @@
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "solid",
+        "view_all_style": "link",
         "enable_desktop_slider": true,
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
@@ -130,30 +139,60 @@
         "column_ReEnFL": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "rgba(0,0,0,0)",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "double",
+            "column_alignment": "left",
             "title": "Voor iedere smaak, passend bij elk budget",
+            "heading_size": "h2",
             "text": "<p>Bestek voor de kookclub, de snelle hap en de feestdagen. Voor de foodies, de carnivoren en de fijnproevers - ontdek de mooiste producten van Amefa.</p>",
             "link_label": "Bekijk onze besteksets",
-            "link": "shopify://pages/contact"
+            "link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "button_style_link": false
           }
         },
         "column_MRAVYx": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/3319_felicity_2pc_composing_webshop.png",
+            "image": "shopify://shop_images/3319_felicity_2pc_composing_webshop_e3382671-3254-434c-8671-e8abe948e5d5.png",
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "#eeaa89",
+            "rounded_corners": true,
+            "dark_text": false,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "",
-            "link_label": "",
-            "link": ""
+            "link_label": "Bekijk de Felicity besteklijn",
+            "link": "shopify://products/amefa-felicity-bestekset-24-delig-6-personen",
+            "button_style_secondary": false,
+            "button_style_link": true
           }
         },
         "column_p6zXkk": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/2520_royal_steak_ambiance_maroon_grijs-groen_staand_lr.jpg",
+            "image_ratio": "adapt",
+            "separate_image": true,
+            "column_background_color": "#54867c",
+            "rounded_corners": true,
+            "dark_text": false,
+            "column_width": "single",
+            "column_alignment": "right",
             "title": "Bestek voor de grillmasters",
+            "heading_size": "h3",
             "text": "",
             "link_label": "Bekijk al het steakbestek",
-            "link": "shopify://pages/contact"
+            "link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_style_link": true
           }
         }
       },
@@ -165,10 +204,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
+        "columns_desktop": 4,
         "background_style": "none",
         "button_label": "",
         "button_link": "",
@@ -202,9 +238,12 @@
             "button_label_1": "Lees verder",
             "button_link_1": "shopify://pages/contact",
             "button_style_secondary_1": false,
+            "button_style_link_1": true,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_style_link_2": false,
+            "inline_buttons": false
           }
         }
       },
@@ -217,10 +256,15 @@
         "image": "shopify://shop_images/3319_FELICITY_MOS_SOCIAL_desktop.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "full_width_banner": true,
+        "rounded_corners": true,
         "desktop_content_position": "middle-left",
+        "desktop_content_width": "half",
         "show_text_box": true,
+        "text_box_color": "#cdb149",
         "desktop_content_alignment": "left",
         "color_scheme": "",
+        "dark_text": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -232,14 +276,16 @@
       "settings": {
         "heading": "Een vleugje inspiratie voor jou",
         "heading_size": "h2",
-        "blog": "",
+        "blog": "news",
         "post_limit": 4,
         "columns_desktop": 3,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "show_image": true,
         "show_date": false,
         "show_author": false,
         "show_view_all": true,
+        "view_all_style": "solid",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -250,29 +296,59 @@
         "column_6LPdLj": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "rgba(0,0,0,0)",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "Voor de dagelijkse genieters, de liefhebbers en de fijnproevers",
+            "heading_size": "h3",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         },
         "column_iJbcWg": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "rgba(0,0,0,0)",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         },
         "column_qqxpAy": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Over_amefa_felicity.jpg",
+            "image_ratio": "adapt",
+            "separate_image": false,
+            "column_background_color": "rgba(0,0,0,0)",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         }
       },
@@ -284,10 +360,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
         "columns_desktop": 3,
-        "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
@@ -370,19 +443,39 @@
         "column_nqGK8C": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "rgba(0,0,0,0)",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "Onze geschiedenis",
+            "heading_size": "h1",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         },
         "column_UzphdD": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "rgba(0,0,0,0)",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "<p>Op 25-jarige leeftijd kwam Eugen Hollaender vanuit Duitsland naar Apeldoorn. Hij begon in 1931 vanuit een schuur zijn bedrijf in de productie en verkoop van scheermesjes. De Apeldoornse Messenfabriek was geboren. Afgekort werd het A-Me-Fa (Amefa).</p>",
             "link_label": "Verder lezen",
-            "link": "shopify://pages/contact"
+            "link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "button_style_link": false
           }
         }
       },
@@ -393,10 +486,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
@@ -430,9 +520,12 @@
             "button_label_1": "Verder lezen",
             "button_link_1": "shopify://pages/contact",
             "button_style_secondary_1": true,
+            "button_style_link_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_style_link_2": false,
+            "inline_buttons": false
           }
         }
       },
@@ -445,10 +538,15 @@
         "image": "shopify://shop_images/amefa_onze_merken_copy_2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
+        "full_width_banner": true,
+        "rounded_corners": true,
         "desktop_content_position": "middle-right",
+        "desktop_content_width": "quarter",
         "show_text_box": true,
+        "text_box_color": "#a34a0a",
         "desktop_content_alignment": "left",
         "color_scheme": "",
+        "dark_text": false,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
