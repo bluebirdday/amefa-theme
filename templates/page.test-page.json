@@ -139,30 +139,60 @@
         "column_ReEnFL": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "transparent",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "double",
+            "column_alignment": "left",
             "title": "Voor iedere smaak, passend bij elk budget",
+            "heading_size": "h1",
             "text": "<p>Bestek voor de kookclub, de snelle hap en de feestdagen. Voor de foodies, de carnivoren en de fijnproevers - ontdek de mooiste producten van Amefa.</p>",
             "link_label": "Bekijk onze besteksets",
-            "link": "shopify://pages/contact"
+            "link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "button_style_link": false
           }
         },
         "column_MRAVYx": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/3319_felicity_2pc_composing_webshop.png",
+            "image": "shopify://shop_images/3319_felicity_2pc_composing_webshop_e3382671-3254-434c-8671-e8abe948e5d5.png",
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "#eeaa89",
+            "rounded_corners": true,
+            "dark_text": false,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "",
-            "link_label": "",
-            "link": ""
+            "link_label": "Bekijk de Felicity besteklijn",
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": true
           }
         },
         "column_p6zXkk": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/2520_royal_steak_ambiance_maroon_grijs-groen_staand_lr.jpg",
+            "image_ratio": "adapt",
+            "separate_image": true,
+            "column_background_color": "#54867c",
+            "rounded_corners": true,
+            "dark_text": false,
+            "column_width": "single",
+            "column_alignment": "right",
             "title": "Bestek voor de grillmasters",
+            "heading_size": "h2",
             "text": "",
             "link_label": "Bekijk al het steakbestek",
-            "link": "shopify://pages/contact"
+            "link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_style_link": true
           }
         }
       },
@@ -174,10 +204,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
+        "columns_desktop": 4,
         "background_style": "none",
         "button_label": "",
         "button_link": "",
@@ -267,29 +294,59 @@
         "column_6LPdLj": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "transparent",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "Voor de dagelijkse genieters, de liefhebbers en de fijnproevers",
+            "heading_size": "h1",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         },
         "column_iJbcWg": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "transparent",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         },
         "column_qqxpAy": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Over_amefa_felicity.jpg",
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "transparent",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         }
       },
@@ -301,10 +358,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
         "columns_desktop": 3,
-        "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
@@ -387,19 +441,39 @@
         "column_nqGK8C": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "transparent",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "Onze geschiedenis",
+            "heading_size": "h1",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         },
         "column_UzphdD": {
           "type": "column",
           "settings": {
+            "image_ratio": "full",
+            "separate_image": false,
+            "column_background_color": "transparent",
+            "rounded_corners": true,
+            "dark_text": true,
+            "column_width": "single",
+            "column_alignment": "left",
             "title": "",
+            "heading_size": "h1",
             "text": "<p>Op 25-jarige leeftijd kwam Eugen Hollaender vanuit Duitsland naar Apeldoorn. Hij begon in 1931 vanuit een schuur zijn bedrijf in de productie en verkoop van scheermesjes. De Apeldoornse Messenfabriek was geboren. Afgekort werd het A-Me-Fa (Amefa).</p>",
             "link_label": "Verder lezen",
-            "link": "shopify://pages/contact"
+            "link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_style_link": false
           }
         }
       },
@@ -410,10 +484,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
