@@ -176,8 +176,8 @@
 
         --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
         --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
-        --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical | divided_by: 2 }}px;
-        --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
+        --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
+        --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
 
         --text-boxes-border-opacity: {{ settings.text_boxes_border_opacity | divided_by: 100.0 }};
         --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
@@ -376,7 +376,7 @@
       account: "V7EF77",
       platform: "shopify"
     });
-    klaviyo.enable("backinstock",{ 
+    klaviyo.enable("backinstock",{
     trigger: {
       product_page_text: "Notify Me When Available",
       product_page_class: "button",
