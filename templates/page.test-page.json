@@ -141,7 +141,7 @@
           "settings": {
             "image_ratio": "full",
             "separate_image": false,
-            "column_background_color": "transparent",
+            "column_background_color": "rgba(0,0,0,0)",
             "rounded_corners": true,
             "dark_text": true,
             "column_width": "double",
@@ -296,7 +296,7 @@
           "settings": {
             "image_ratio": "full",
             "separate_image": false,
-            "column_background_color": "transparent",
+            "column_background_color": "rgba(0,0,0,0)",
             "rounded_corners": true,
             "dark_text": true,
             "column_width": "single",
@@ -315,7 +315,7 @@
           "settings": {
             "image_ratio": "full",
             "separate_image": false,
-            "column_background_color": "transparent",
+            "column_background_color": "rgba(0,0,0,0)",
             "rounded_corners": true,
             "dark_text": true,
             "column_width": "single",
@@ -335,7 +335,7 @@
             "image": "shopify://shop_images/Over_amefa_felicity.jpg",
             "image_ratio": "adapt",
             "separate_image": false,
-            "column_background_color": "transparent",
+            "column_background_color": "rgba(0,0,0,0)",
             "rounded_corners": true,
             "dark_text": true,
             "column_width": "single",
@@ -443,7 +443,7 @@
           "settings": {
             "image_ratio": "full",
             "separate_image": false,
-            "column_background_color": "transparent",
+            "column_background_color": "rgba(0,0,0,0)",
             "rounded_corners": true,
             "dark_text": true,
             "column_width": "single",
@@ -462,7 +462,7 @@
           "settings": {
             "image_ratio": "full",
             "separate_image": false,
-            "column_background_color": "transparent",
+            "column_background_color": "rgba(0,0,0,0)",
             "rounded_corners": true,
             "dark_text": true,
             "column_width": "single",
