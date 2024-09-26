@@ -32,9 +32,12 @@
             "button_label_1": "Bekijk alle besteksets",
             "button_link_1": "shopify://collections/besteksets",
             "button_style_secondary_1": false,
+            "button_style_link_1": false,
             "button_label_2": "Bekijk onze volledige collectie",
             "button_link_2": "shopify://collections/collectie",
-            "button_style_secondary_2": true
+            "button_style_secondary_2": false,
+            "button_style_link_2": false,
+            "inline_buttons": true
           }
         }
       },
@@ -47,10 +50,15 @@
         "image": "shopify://shop_images/website_banner_home_soprano_black.webp",
         "image_overlay_opacity": 30,
         "image_height": "small",
+        "full_width_banner": false,
+        "rounded_corners": true,
         "desktop_content_position": "bottom-center",
+        "desktop_content_width": "half",
         "show_text_box": false,
+        "text_box_color": "#ffffff",
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-2",
+        "dark_text": true,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
@@ -63,32 +71,40 @@
         "featured_collection_MbwUQG": {
           "type": "featured_collection",
           "settings": {
-            "collection": "austin"
+            "collection": "besteksets"
           }
         },
         "featured_collection_zr4PjM": {
           "type": "featured_collection",
           "settings": {
-            "collection": "eclat"
+            "collection": "besteksets-18-0-bestek"
           }
         },
         "featured_collection_QcRGt4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "kinderbestek"
+            "collection": "18-0-bestek"
+          }
+        },
+        "featured_collection_iyGcMN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
           }
         }
       },
       "block_order": [
         "featured_collection_MbwUQG",
         "featured_collection_zr4PjM",
-        "featured_collection_QcRGt4"
+        "featured_collection_QcRGt4",
+        "featured_collection_iyGcMN"
       ],
       "settings": {
-        "title": "Populaire sets",
+        "title": "",
         "heading_size": "h0",
         "image_ratio": "square",
         "columns_desktop": 3,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
@@ -148,7 +164,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Onze populairste producten",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -163,10 +179,10 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
