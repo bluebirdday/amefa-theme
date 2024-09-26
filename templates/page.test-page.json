@@ -472,7 +472,7 @@
             "text": "<p>Op 25-jarige leeftijd kwam Eugen Hollaender vanuit Duitsland naar Apeldoorn. Hij begon in 1931 vanuit een schuur zijn bedrijf in de productie en verkoop van scheermesjes. De Apeldoornse Messenfabriek was geboren. Afgekort werd het A-Me-Fa (Amefa).</p>",
             "link_label": "Verder lezen",
             "link": "shopify://pages/contact",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "button_style_link": false
           }
         }
