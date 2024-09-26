@@ -302,7 +302,7 @@
             "column_width": "single",
             "column_alignment": "left",
             "title": "Voor de dagelijkse genieters, de liefhebbers en de fijnproevers",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "text": "",
             "link_label": "",
             "link": "",
@@ -333,7 +333,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Over_amefa_felicity.jpg",
-            "image_ratio": "full",
+            "image_ratio": "adapt",
             "separate_image": false,
             "column_background_color": "transparent",
             "rounded_corners": true,
