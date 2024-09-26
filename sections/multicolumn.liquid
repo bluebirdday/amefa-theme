@@ -58,6 +58,7 @@
         -%}
         {%- for block in section.blocks -%}
           {%- assign empty_column = '' -%}
+          {%- assign no_background = false -%}
           {%- if block.settings.image == blank
             and block.settings.title == blank
             and block.settings.text == blank
@@ -65,7 +66,10 @@
           -%}
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
-
+          {%- if block.settings.column_background_color == 'rgba(0,0,0,0)'
+            or block.settings.column_background_color == 'transparent' -%}
+            {%- assign no_background = true -%}
+          {%- endif -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="multicolumn-list__item grid__item{{ empty_column }}
@@ -77,7 +81,7 @@
               {% if block.settings.dark_text == false %} light-text{% endif %}
               {% if block.settings.separate_image %} separate-image{% endif %}
               {% if block.settings.column_width == 'double' %} grid__item-double{% endif %}
-              {% if block.settings.column_background_color == 'rgba(0,0,0,0)' %} no-background{% endif %}"
+              {% if no_background %} no-background{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll or block.settings.column_background_color %}
               {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
@@ -123,7 +127,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info{% if block.settings.column_background_color == 'rgba(0,0,0,0)' %} no-background{% endif %}" style="{% if block.settings.column_background_color and block.settings.separate_image %}background-color: {{ block.settings.column_background_color }};{% endif %}">
+              <div class="multicolumn-card__info{% if no_background %} no-background{% endif %}" style="{% if block.settings.column_background_color and block.settings.separate_image %}background-color: {{ block.settings.column_background_color }};{% endif %}">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext {{ block.settings.heading_size }}">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -437,27 +441,27 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h2",
+              "value": "h5",
               "label": "t:sections.all.heading_size.options__1.label"
             },
             {
-              "value": "h1",
+              "value": "h4",
               "label": "t:sections.all.heading_size.options__2.label"
             },
             {
-              "value": "h0",
+              "value": "h3",
               "label": "t:sections.all.heading_size.options__3.label"
             },
             {
-              "value": "hxl",
+              "value": "h2",
               "label": "t:sections.all.heading_size.options__4.label"
             },
             {
-              "value": "hxxl",
+              "value": "h1",
               "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
-          "default": "h1",
+          "default": "h3",
           "label": "t:sections.all.heading_size.label"
         },
         {

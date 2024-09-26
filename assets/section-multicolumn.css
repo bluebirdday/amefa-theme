@@ -128,6 +128,10 @@
     a {
       border-color: rgb(var(--color-background));
       color: rgb(var(--color-background));
+
+      &::after {
+        filter: invert(1);
+      }
     }
   }
 }
@@ -147,7 +151,7 @@
 }
 
 .multicolumn-list h3,
-.multicolumn-list p {
+.multicolumn-list p:last-of-type {
   margin: 0;
 }
 
