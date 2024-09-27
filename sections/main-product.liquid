@@ -717,6 +717,155 @@
     <script type="application/ld+json">
       {{ product | structured_data }}
     </script>
+
+    {%- if product.metafields.plytix.setsize -%}
+      <h4>Set size</h4>
+      {{ product.metafields.plytix.setsize | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.onderhoudsinstructies -%}
+      <h4>Onderhoudsinstructies</h4>
+      {{ product.metafields.plytix.onderhoudsinstructies | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.kleur -%}
+      <h4>Kleur</h4>
+      <span style="height: 20px; width: 20px; display: block; border-radius: 50%; background-color: {{ product.metafields.plytix.kleur.value }};"></span>
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.surface -%}
+      <h4>Surface</h4>
+      {{ product.metafields.plytix.surface | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.material_handle -%}
+      <h4>Material Handle</h4>
+      {{ product.metafields.plytix.material_handle | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.material_thickness -%}
+      <h4>Material Thickness</h4>
+      {{ product.metafields.plytix.material_thickness | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.material_thickness_taf -%}
+      <h4>Material Thickness TAF</h4>
+      {{ product.metafields.plytix.material_thickness_taf | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.pattern_name -%}
+      <h4>Pattern Name</h4>
+      {{ product.metafields.plytix.pattern_name | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.set_size_description -%}
+      <h4>Set Size Description</h4>
+      {{ product.metafields.plytix.set_size_description | raw }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.style -%}
+      <h4>Style</h4>
+      {{ product.metafields.plytix.style | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.length_of_blade -%}
+      <h4>Length of Blade</h4>
+      {{ product.metafields.plytix.length_of_blade | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.material -%}
+      <h4>Material</h4>
+      {{ product.metafields.plytix.material | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.pattern_description -%}
+      <h4>Pattern Description</h4>
+      {{ product.metafields.plytix.pattern_description | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.handle_shape -%}
+      <h4>Handle Shape</h4>
+      {{ product.metafields.plytix.handle_shape | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.highlight_1 -%}
+      <h4>Highlight 1</h4>
+      {{ product.metafields.plytix.highlight_1 | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.highlight_2 -%}
+      <h4>Highlight 2</h4>
+      {{ product.metafields.plytix.highlight_2 | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.highlight_3 -%}
+      <h4>Highlight 3</h4>
+      {{ product.metafields.plytix.highlight_3 | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.item_length -%}
+      <h4>Item Length</h4>
+      {{ product.metafields.plytix.item_length | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.brand_description -%}
+      <h4>Brand Description</h4>
+      {{ product.metafields.plytix.brand_description | raw }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.cleaning_instructions -%}
+      <h4>Cleaning instructions</h4>
+      {{ product.metafields.plytix.cleaning_instructions | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.plytix.finishing -%}
+      <h4>Finishing</h4>
+      {{ product.metafields.plytix.finishing | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.mm-google-shopping.custom_product -%}
+      <h4>Google: Custom Product</h4>
+      {{ product.metafields.mm-google-shopping.custom_product | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.shopify--discovery--product_recommendation.complementary_products -%}
+        <h4>Complementary products</h4>
+        <ul>
+            {%- for complementary_product in product.metafields.shopify--discovery--product_recommendation.complementary_products.value -%}
+                {%- assign complementary_product_obj = complementary_product | product -%}
+                {%- if complementary_product_obj -%}
+                    <li>
+                        <a href="{{ complementary_product_obj.url }}">{{ complementary_product_obj.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+    {%- endif -%}
+
+    {%- if product.metafields.shopify--discovery--product_recommendation.related_products_display -%}
+      <h4>Related products settings</h4>
+      {{ product.metafields.shopify--discovery--product_recommendation.related_products_display | metafield_tag }}
+    {%- endif -%}
+
+    {%- if product.metafields.shopify--discovery--product_recommendation.related_products -%}
+        <h4>Related products</h4>
+        <ul>
+            {%- for related_product in product.metafields.shopify--discovery--product_recommendation.related_products.value -%}
+                {%- assign related_product_obj = related_product | product -%}
+                {%- if related_product_obj -%}
+                    <li>
+                        <a href="{{ related_product_obj.url }}">{{ related_product_obj.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+    {%- endif -%}
+
+    {%- if product.metafields.shopify--discovery--product_search_boost.queries -%}
+      <h4>Search product boosts</h4>
+      {{ product.metafields.shopify--discovery--product_search_boost.queries | metafield_tag }}
+    {%- endif -%}
+
   </div>
 </product-info>
 
