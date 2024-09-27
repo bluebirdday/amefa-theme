@@ -718,154 +718,440 @@
       {{ product | structured_data }}
     </script>
 
+    <h2>Meta fields:</h2>
     {%- if product.metafields.plytix.setsize -%}
-      <h4>Set size</h4>
-      {{ product.metafields.plytix.setsize | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Set size</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.setsize | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.onderhoudsinstructies -%}
-      <h4>Onderhoudsinstructies</h4>
-      {{ product.metafields.plytix.onderhoudsinstructies | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Onderhoudsinstructies</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.onderhoudsinstructies | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.kleur -%}
-      <h4>Kleur</h4>
-      <span style="height: 20px; width: 20px; display: block; border-radius: 50%; background-color: {{ product.metafields.plytix.kleur.value }};"></span>
+    <div class="accordion">
+      <details>
+        <summary role="button">
+          <div class="summary__title">
+            <h2 class="h4 accordion__title">Kleur</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            <span style="height: 20px; width: 20px; display: block; border-radius: 50%; background-color: {{ product.metafields.plytix.kleur.value }};"></span>
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.surface -%}
-      <h4>Surface</h4>
-      {{ product.metafields.plytix.surface | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Surface</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.surface | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.material_handle -%}
-      <h4>Material Handle</h4>
-      {{ product.metafields.plytix.material_handle | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Material Handle</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.material_handle | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.material_thickness -%}
-      <h4>Material Thickness</h4>
-      {{ product.metafields.plytix.material_thickness | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Material Thickness</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.material_thickness | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.material_thickness_taf -%}
-      <h4>Material Thickness TAF</h4>
-      {{ product.metafields.plytix.material_thickness_taf | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Material Thickness TAF</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.material_thickness_taf | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.pattern_name -%}
-      <h4>Pattern Name</h4>
-      {{ product.metafields.plytix.pattern_name | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Pattern Name</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.pattern_name | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.set_size_description -%}
-      <h4>Set Size Description</h4>
-      {{ product.metafields.plytix.set_size_description | raw }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Set Size Description</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.set_size_description | raw }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.style -%}
-      <h4>Style</h4>
-      {{ product.metafields.plytix.style | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Style</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.style | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.length_of_blade -%}
-      <h4>Length of Blade</h4>
-      {{ product.metafields.plytix.length_of_blade | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Length of Blade</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.length_of_blade | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.material -%}
-      <h4>Material</h4>
-      {{ product.metafields.plytix.material | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Material</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.material | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.pattern_description -%}
-      <h4>Pattern Description</h4>
-      {{ product.metafields.plytix.pattern_description | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Pattern Description</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.pattern_description | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.handle_shape -%}
-      <h4>Handle Shape</h4>
-      {{ product.metafields.plytix.handle_shape | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Handle Shape</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.handle_shape | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.highlight_1 -%}
-      <h4>Highlight 1</h4>
-      {{ product.metafields.plytix.highlight_1 | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Highlight 1</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.highlight_1 | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.highlight_2 -%}
-      <h4>Highlight 2</h4>
-      {{ product.metafields.plytix.highlight_2 | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Highlight 2</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.highlight_2 | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.highlight_3 -%}
-      <h4>Highlight 3</h4>
-      {{ product.metafields.plytix.highlight_3 | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Highlight 3</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.highlight_3 | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.item_length -%}
-      <h4>Item Length</h4>
-      {{ product.metafields.plytix.item_length | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Item Length</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.item_length | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.brand_description -%}
-      <h4>Brand Description</h4>
-      {{ product.metafields.plytix.brand_description | raw }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Brand Description</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.brand_description | raw }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.cleaning_instructions -%}
-      <h4>Cleaning instructions</h4>
-      {{ product.metafields.plytix.cleaning_instructions | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Cleaning instructions</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.cleaning_instructions | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.plytix.finishing -%}
-      <h4>Finishing</h4>
-      {{ product.metafields.plytix.finishing | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Finishing</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.plytix.finishing | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.mm-google-shopping.custom_product -%}
-      <h4>Google: Custom Product</h4>
-      {{ product.metafields.mm-google-shopping.custom_product | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Google: Custom Product</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.mm-google-shopping.custom_product | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.shopify--discovery--product_recommendation.complementary_products -%}
-        <h4>Complementary products</h4>
-        <ul>
-            {%- for complementary_product in product.metafields.shopify--discovery--product_recommendation.complementary_products.value -%}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Complementary products</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            <ul>
+              {%- for complementary_product in product.metafields.shopify--discovery--product_recommendation.complementary_products.value -%}
                 {%- assign complementary_product_obj = complementary_product | product -%}
                 {%- if complementary_product_obj -%}
-                    <li>
-                        <a href="{{ complementary_product_obj.url }}">{{ complementary_product_obj.title }}</a>
-                    </li>
+                  <li>
+                    <a href="{{ complementary_product_obj.url }}">{{ complementary_product_obj.title }}</a>
+                  </li>
                 {%- endif -%}
-            {%- endfor -%}
-        </ul>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.shopify--discovery--product_recommendation.related_products_display -%}
-      <h4>Related products settings</h4>
-      {{ product.metafields.shopify--discovery--product_recommendation.related_products_display | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Related products settings</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.shopify--discovery--product_recommendation.related_products_display | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.shopify--discovery--product_recommendation.related_products -%}
-        <h4>Related products</h4>
-        <ul>
-            {%- for related_product in product.metafields.shopify--discovery--product_recommendation.related_products.value -%}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Related products</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            <ul>
+              {%- for related_product in product.metafields.shopify--discovery--product_recommendation.related_products.value -%}
                 {%- assign related_product_obj = related_product | product -%}
                 {%- if related_product_obj -%}
-                    <li>
-                        <a href="{{ related_product_obj.url }}">{{ related_product_obj.title }}</a>
-                    </li>
+                  <li>
+                    <a href="{{ related_product_obj.url }}">{{ related_product_obj.title }}</a>
+                  </li>
                 {%- endif -%}
-            {%- endfor -%}
-        </ul>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </details>
+      </div>
     {%- endif -%}
 
     {%- if product.metafields.shopify--discovery--product_search_boost.queries -%}
-      <h4>Search product boosts</h4>
-      {{ product.metafields.shopify--discovery--product_search_boost.queries | metafield_tag }}
+      <div class="accordion">
+        <details>
+          <summary role="button">
+            <div class="summary__title">
+              <h2 class="h4 accordion__title">Search product boosts</h2>
+              {% render 'icon-caret' %}
+            </div>
+          </summary>
+          <div class="accordion__content">
+            {{ product.metafields.shopify--discovery--product_search_boost.queries | metafield_tag }}
+          </div>
+        </details>
+      </div>
     {%- endif -%}
-
   </div>
 </product-info>
 
