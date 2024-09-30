@@ -43,10 +43,13 @@ product-info {
             &::before {
               background: url('./checkmark.svg');
               content: '';
+              filter: invert(1);
+              height: 10px;
               left: 50%;
               position: absolute;
               top: 50%;
               transform: translate(-50%, -50%);
+              width: 12px;
             }
           }
         }
