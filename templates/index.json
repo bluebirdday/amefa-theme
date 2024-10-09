@@ -77,19 +77,19 @@
         "featured_collection_zr4PjM": {
           "type": "featured_collection",
           "settings": {
-            "collection": "besteksets-18-0-bestek"
+            "collection": "steakbestek"
           }
         },
         "featured_collection_QcRGt4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "18-0-bestek"
+            "collection": "messenblokken"
           }
         },
         "featured_collection_iyGcMN": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "koffie-en-theelepels"
           }
         }
       },
@@ -145,8 +145,8 @@
         "button_H79iUb"
       ],
       "settings": {
-        "image": "shopify://shop_images/3319ZTTR24C40_001.jpg",
-        "height": "adapt",
+        "image": "shopify://shop_images/192300RT41C40_001.jpg",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
