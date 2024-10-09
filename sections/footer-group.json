@@ -24,8 +24,8 @@
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Producten",
-            "menu": ""
+            "heading": "Onze merken",
+            "menu": "onze-merken-menu"
           }
         },
         "link_list_WWJBYQ": {
