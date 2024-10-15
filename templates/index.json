@@ -247,23 +247,37 @@
           "settings": {
             "collection": "alle-lou-laguiole-producten"
           }
+        },
+        "featured_collection_XbLKrh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alle-sabatier-trompette-producten"
+          }
+        },
+        "featured_collection_yNFknd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alle-couzon-producten"
+          }
         }
       },
       "block_order": [
         "featured_collection_43kWhC",
         "featured_collection_U4XBxX",
-        "featured_collection_xGtP7Q"
+        "featured_collection_xGtP7Q",
+        "featured_collection_XbLKrh",
+        "featured_collection_yNFknd"
       ],
       "settings": {
         "title": "Onze merken",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
