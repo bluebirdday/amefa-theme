@@ -226,6 +226,47 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collection_list_V8y77J": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_43kWhC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alle-amefa-producten"
+          }
+        },
+        "featured_collection_U4XBxX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alle-richardson-sheffield-producten"
+          }
+        },
+        "featured_collection_xGtP7Q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "alle-lou-laguiole-producten"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_43kWhC",
+        "featured_collection_U4XBxX",
+        "featured_collection_xGtP7Q"
+      ],
+      "settings": {
+        "title": "Onze merken",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -233,6 +274,7 @@
     "collection_list_figdmd",
     "image_with_text_RPwJDY",
     "featured_collection_KwXmPb",
-    "collage"
+    "collage",
+    "collection_list_V8y77J"
   ]
 }
