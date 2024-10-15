@@ -1633,3 +1633,7 @@ ul.usps {
     }
   }
 }
+
+.product-availability {
+  min-height: 4.7rem;
+}
