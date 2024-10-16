@@ -162,6 +162,9 @@
                     {{ card_product.title | escape }}
                   </a>
                 </h3>
+                <div class="subtitle">
+                  {{ card_product.metafields.plytix.setsize }} - {{ card_product.metafields.plytix.Personen }} - {{ card_product.metafields.plytix.kleur }}
+                </div>
                 {%- if show_vendor -%}
                   <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
                   <div>{{ card_product.vendor }}</div>

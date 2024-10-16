@@ -104,6 +104,9 @@
                       {{ product.title | escape }}
                     </h2>
                   </a>
+                  <div class="subtitle">
+                    {{ product.metafields.plytix.setsize }} - {{ product.metafields.plytix.Personen }} - {{ product.metafields.plytix.kleur }}
+                  </div>
                 </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
