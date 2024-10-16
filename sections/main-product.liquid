@@ -742,7 +742,7 @@
     <div class="product-info">
       {%- if product.description -%}
         <div class="product-description">
-          {% render 'accordion', title: 'Beschrijving', content: product.description %}
+          {% render 'accordion', title: 'product-description', content: product.description %}
         </div>
       {%- endif -%}
 
@@ -750,132 +750,132 @@
         <h2 class="h4">Meta fields:</h2>
         {%- if product.metafields.plytix.setsize -%}
           {%- assign content = product.metafields.plytix.setsize | metafield_tag -%}
-          {% render 'accordion', title: 'Set size', content: content %}
+          {% render 'accordion', title: 'set-size', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.onderhoudsinstructies -%}
           {%- assign content = product.metafields.plytix.onderhoudsinstructies | raw -%}
-          {% render 'accordion', title: 'Onderhoudsinstructies', content: content %}
+          {% render 'accordion', title: 'maintenance-instructions', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.kleur -%}
           {%- assign content = product.metafields.plytix.kleur.value -%}
-          {% render 'accordion', title: 'Kleur', content: content, swatch: true %}
+          {% render 'accordion', title: 'color', content: content, swatch: true %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.surface -%}
           {%- assign content = product.metafields.plytix.surface | metafield_tag -%}
-          {% render 'accordion', title: 'Surface', content: content %}
+          {% render 'accordion', title: 'surface', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.material_handle -%}
           {%- assign content = product.metafields.plytix.material_handle | metafield_tag -%}
-          {% render 'accordion', title: 'Material Handle', content: content %}
+          {% render 'accordion', title: 'material-handle', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.material_thickness -%}
           {%- assign content = product.metafields.plytix.material_thickness | metafield_tag -%}
-          {% render 'accordion', title: 'Material Thickness', content: content %}
+          {% render 'accordion', title: 'material-thickness', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.material_thickness_taf -%}
           {%- assign content = product.metafields.plytix.material_thickness_taf | metafield_tag -%}
-          {% render 'accordion', title: 'Material Thickness TAF', content: content %}
+          {% render 'accordion', title: 'material-thickness-taf', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.pattern_name -%}
           {%- assign content = product.metafields.plytix.pattern_name | metafield_tag -%}
-          {% render 'accordion', title: 'Pattern Name', content: content %}
+          {% render 'accordion', title: 'pattern-name', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.set_size_description -%}
           {%- assign content = product.metafields.plytix.set_size_description | raw -%}
-          {% render 'accordion', title: 'Set Size Description', content: content %}
+          {% render 'accordion', title: 'set-size-description', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.style -%}
           {%- assign content = product.metafields.plytix.style | metafield_tag -%}
-          {% render 'accordion', title: 'Style', content: content %}
+          {% render 'accordion', title: 'style', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.length_of_blade -%}
           {%- assign content = product.metafields.plytix.length_of_blade | metafield_tag -%}
-          {% render 'accordion', title: 'Length of Blade', content: content %}
+          {% render 'accordion', title: 'length-of-blade', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.material -%}
           {%- assign content = product.metafields.plytix.material | metafield_tag -%}
-          {% render 'accordion', title: 'Material', content: content %}
+          {% render 'accordion', title: 'material', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.pattern_description -%}
           {%- assign content = product.metafields.plytix.pattern_description | metafield_tag -%}
-          {% render 'accordion', title: 'Pattern Description', content: content %}
+          {% render 'accordion', title: 'pattern-description', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.handle_shape -%}
           {%- assign content = product.metafields.plytix.handle_shape | metafield_tag -%}
-          {% render 'accordion', title: 'Handle Shape', content: content %}
+          {% render 'accordion', title: 'handle-shape', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.highlight_1 -%}
           {%- assign content = product.metafields.plytix.highlight_1 | metafield_tag -%}
-          {% render 'accordion', title: 'Highlight 1', content: content %}
+          {% render 'accordion', title: 'highlight-1', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.highlight_2 -%}
           {%- assign content = product.metafields.plytix.highlight_2 | metafield_tag -%}
-          {% render 'accordion', title: 'Highlight 2', content: content %}
+          {% render 'accordion', title: 'highlight-2', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.highlight_3 -%}
           {%- assign content = product.metafields.plytix.highlight_3 | metafield_tag -%}
-          {% render 'accordion', title: 'Highlight 3', content: content %}
+          {% render 'accordion', title: 'highlight-3', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.item_length -%}
           {%- assign content = product.metafields.plytix.item_length | metafield_tag -%}
-          {% render 'accordion', title: 'Item Length', content: content %}
+          {% render 'accordion', title: 'item-length', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.brand_description -%}
         {%- assign content = product.metafields.plytix.brand_description | raw -%}
-          {% render 'accordion', title: 'Brand Description', content: content %}
+          {% render 'accordion', title: 'brand-description', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.cleaning_instructions -%}
           {%- assign content = product.metafields.plytix.cleaning_instructions | metafield_tag -%}
-          {% render 'accordion', title: 'Cleaning instructions', content: content %}
+          {% render 'accordion', title: 'cleaning-instructions', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.plytix.finishing -%}
           {%- assign content = product.metafields.plytix.finishing | metafield_tag -%}
-          {% render 'accordion', title: 'Finishing', content: content %}
+          {% render 'accordion', title: 'finishing', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.mm-google-shopping.custom_product -%}
           {%- assign content = product.metafields.mm-google-shopping.custom_product | metafield_tag -%}
-          {% render 'accordion', title: 'Google: Custom Product', content: content %}
+          {% render 'accordion', title: 'google-custom-product', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.shopify--discovery--product_recommendation.complementary_products.value != blank -%}
           {%- assign content = product.metafields.shopify--discovery--product_recommendation.complementary_products.value  -%}
-          {% render 'accordion', title: 'Complementary products', content: content, productList: true %}
+          {% render 'accordion', title: 'complementary-products', content: content, productList: true %}
         {%- endif -%}
 
         {%- if product.metafields.shopify--discovery--product_recommendation.related_products_display -%}
           {%- assign content = product.metafields.shopify--discovery--product_recommendation.related_products_display | metafield_tag -%}
-          {% render 'accordion', title: 'Related products settings', content: content %}
+          {% render 'accordion', title: 'related-product-settings', content: content %}
         {%- endif -%}
 
         {%- if product.metafields.shopify--discovery--product_recommendation.related_products.value != blank -%}
           {%- assign content = product.metafields.shopify--discovery--product_recommendation.related_products.value -%}
-          {% render 'accordion', title: 'Related products', content: content, productList: true %}
+          {% render 'accordion', title: 'related-products', content: content, productList: true %}
         {%- endif -%}
 
         {%- if product.metafields.shopify--discovery--product_search_boost.queries -%}
           {%- assign content = product.metafields.shopify--discovery--product_search_boost.queries | metafield_tag -%}
-          {% render 'accordion', title: 'Search product boosts', content: content %}
+          {% render 'accordion', title: 'search-product-boosts', content: content %}
         {%- endif -%}
       </div>
     </div>
