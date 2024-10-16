@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -52,6 +52,15 @@
         "seo_variants_variants_dqVPxJ": {
           "type": "shopify://apps/seo-variants/blocks/variants/1a12d8ea-3d28-4abf-b7a1-d161ffe1dc17",
           "settings": {
+          }
+        },
+        "rebuy_personalization_engine_rebuy_widget_yFfqnB": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "175792",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
           }
         },
         "quantity_selector": {
@@ -113,6 +122,7 @@
         "price",
         "variant_picker_dbT8an",
         "seo_variants_variants_dqVPxJ",
+        "rebuy_personalization_engine_rebuy_widget_yFfqnB",
         "quantity_selector",
         "buy_buttons",
         "collapsible-row-0",
