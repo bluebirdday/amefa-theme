@@ -335,10 +335,14 @@ slider-component.slider-component-full-width {
   border: none;
   cursor: pointer;
   width: 44px;
-  height: 44px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 750px) {
+    height: 44px;
+  }
 }
 
 .slider-button:not([disabled]):hover {
