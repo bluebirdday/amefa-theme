@@ -41,12 +41,6 @@
         "padding_bottom": 40
       }
     },
-    "1720106243966d94c5": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "172917392195f593a4": {
       "type": "apps",
       "blocks": {
@@ -69,9 +63,8 @@
     }
   },
   "order": [
+    "172917392195f593a4",
     "cart-items",
-    "cart-footer",
-    "1720106243966d94c5",
-    "172917392195f593a4"
+    "cart-footer"
   ]
 }
