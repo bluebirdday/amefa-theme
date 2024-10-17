@@ -8,6 +8,9 @@
 * ------------------------------------------------------------
 */
 {
+  "details": "Details",
+  "care": "Onderhoud",
+  "reviews": "Reviews",
   "product-description": "Beschrijving",
   "set-size": "Set grootte",
   "maintenance-instructions": "Onderhoudsinstructies",

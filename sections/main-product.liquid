@@ -1,3 +1,15 @@
+{% capture subtitleItems %}
+  {% if product.metafields.plytix.setsize %}
+    {{ product.metafields.plytix.setsize }},
+  {% endif %}
+  {% if product.metafields.plytix.Personen %}
+    {{ product.metafields.plytix.Personen }},
+  {% endif %}
+  {% if product.metafields.plytix.kleur %}
+    {{ product.metafields.plytix.kleur }},
+  {% endif %}
+{% endcapture %}
+{% assign subtitle = subtitleItems | split: "," %}
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -88,7 +100,15 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
-                {% render block %}
+                {% unless block.id contains 'klaviyo_reviews_product_reviews' %}
+                  {% if block.id contains 'seo_variants' %}
+                    {% if product.metafields.plytix.has_variants %}
+                      {% render block %}
+                    {% endif %}
+                  {% else %}
+                    {% render block %}
+                  {% endif %}
+                {% endunless %}
               {%- when 'text' -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -98,15 +118,20 @@
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1 class="h3">{{ product.title | escape }}</h1>
+                  <h1 class="h3">{{ product.metafields.plytix.productname | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
-                      {{ product.title | escape }}
+                      {{ product.metafields.plytix.productname | escape }}
                     </h2>
                   </a>
-                  <div class="subtitle">
-                    {{ product.metafields.plytix.setsize }} - {{ product.metafields.plytix.Personen }} - {{ product.metafields.plytix.kleur }}
-                  </div>
+                  {% if subtitle %}
+                    <div class="subtitle">
+                      {% for subtitleItem in subtitle -%}
+                        {% if forloop.index > 1 and forloop.index < forloop.length %} - {% endif %}
+                        {{ subtitleItem }}
+                      {%- endfor %}
+                    </div>
+                  {% endif %}
                 </div>
               {%- when 'price' -%}
                 <div class="price__wrapper" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -743,143 +768,156 @@
     </script>
 
     <div class="product-info">
-      {%- if product.description -%}
-        <div class="product-description">
-          {% render 'accordion', title: 'product-description', content: product.description %}
-        </div>
-      {%- endif -%}
-
+      <div class="product-media-images">
+        {% for media in product.media %}
+          {% if forloop.index > 1 %}
+            <div class="product-media-images__image-wrapper">
+              {{ media | image_url: width: 300, height: 300 | image_tag: class: 'product-media-images__image' }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
       <div class="product-meta-data">
-        <h2 class="h4">Meta fields:</h2>
-        {%- if product.metafields.plytix.setsize -%}
-          {%- assign content = product.metafields.plytix.setsize | metafield_tag -%}
-          {% render 'accordion', title: 'set-size', content: content %}
+        {%- if product.description -%}
+          {% render 'accordion', title: 'product-description', content: product.description %}
         {%- endif -%}
 
-        {%- if product.metafields.plytix.onderhoudsinstructies -%}
-          {%- assign content = product.metafields.plytix.onderhoudsinstructies | raw -%}
-          {% render 'accordion', title: 'maintenance-instructions', content: content %}
-        {%- endif -%}
+        <div class="accordion">
+          <details>
+            <summary role="button">
+              <div class="summary__title">
+                <h2 class="h4 accordion__title">{{ 'details' |  t }}</h2>
+                {% render 'icon-caret' %}
+              </div>
+            </summary>
+            <div class="accordion__content">
+              {%- if product.metafields.plytix.surface -%}
+                <h5>{{ 'surface' |  t }}</h5>
+                {{ product.metafields.plytix.surface | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.kleur -%}
-          {%- assign content = product.metafields.plytix.kleur.value -%}
-          {% render 'accordion', title: 'color', content: content, swatch: true %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.material_handle -%}
+                <h5>{{ 'material-handle' |  t }}</h5>
+                {{ product.metafields.plytix.material_handle | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.surface -%}
-          {%- assign content = product.metafields.plytix.surface | metafield_tag -%}
-          {% render 'accordion', title: 'surface', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.material_thickness -%}
+                <h5>{{ 'material-thickness' |  t }}</h5>
+                {{ product.metafields.plytix.material_thickness | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.material_handle -%}
-          {%- assign content = product.metafields.plytix.material_handle | metafield_tag -%}
-          {% render 'accordion', title: 'material-handle', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.material_thickness_taf -%}
+                <h5>{{ 'material-thickness-taf' |  t }}</h5>
+                {{ product.metafields.plytix.material_thickness_taf | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.material_thickness -%}
-          {%- assign content = product.metafields.plytix.material_thickness | metafield_tag -%}
-          {% render 'accordion', title: 'material-thickness', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.pattern_name -%}
+                <h5>{{ 'pattern-name' |  t }}</h5>
+                {{ product.metafields.plytix.pattern_name | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.material_thickness_taf -%}
-          {%- assign content = product.metafields.plytix.material_thickness_taf | metafield_tag -%}
-          {% render 'accordion', title: 'material-thickness-taf', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.set_size_description -%}
+                <h5>{{ 'set-size-description' |  t }}</h5>
+                {{ product.metafields.plytix.set_size_description | raw }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.pattern_name -%}
-          {%- assign content = product.metafields.plytix.pattern_name | metafield_tag -%}
-          {% render 'accordion', title: 'pattern-name', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.style -%}
+                <h5>{{ 'style' |  t }}</h5>
+                {{ product.metafields.plytix.style | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.set_size_description -%}
-          {%- assign content = product.metafields.plytix.set_size_description | raw -%}
-          {% render 'accordion', title: 'set-size-description', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.length_of_blade -%}
+                <h5>{{ 'length-of-blade' |  t }}</h5>
+                {{ product.metafields.plytix.length_of_blade | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.style -%}
-          {%- assign content = product.metafields.plytix.style | metafield_tag -%}
-          {% render 'accordion', title: 'style', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.material -%}
+                <h5>{{ 'material' |  t }}</h5>
+                {{ product.metafields.plytix.material | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.length_of_blade -%}
-          {%- assign content = product.metafields.plytix.length_of_blade | metafield_tag -%}
-          {% render 'accordion', title: 'length-of-blade', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.pattern_description -%}
+                <h5>{{ 'pattern-description' |  t }}</h5>
+                {{ product.metafields.plytix.pattern_description | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.material -%}
-          {%- assign content = product.metafields.plytix.material | metafield_tag -%}
-          {% render 'accordion', title: 'material', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.handle_shape -%}
+                <h5>{{ 'handle-shape' |  t }}</h5>
+                {{ product.metafields.plytix.handle_shape | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.pattern_description -%}
-          {%- assign content = product.metafields.plytix.pattern_description | metafield_tag -%}
-          {% render 'accordion', title: 'pattern-description', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.highlight_1 -%}
+                <h5>{{ 'highlight-1' |  t }}</h5>
+                {{ product.metafields.plytix.highlight_1 | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.handle_shape -%}
-          {%- assign content = product.metafields.plytix.handle_shape | metafield_tag -%}
-          {% render 'accordion', title: 'handle-shape', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.highlight_2 -%}
+                <h5>{{ 'highlight-2' |  t }}</h5>
+                {{ product.metafields.plytix.highlight_2 | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.highlight_1 -%}
-          {%- assign content = product.metafields.plytix.highlight_1 | metafield_tag -%}
-          {% render 'accordion', title: 'highlight-1', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.highlight_3 -%}
+                <h5>{{ 'highlight-3' |  t }}</h5>
+                {{ product.metafields.plytix.highlight_3 | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.highlight_2 -%}
-          {%- assign content = product.metafields.plytix.highlight_2 | metafield_tag -%}
-          {% render 'accordion', title: 'highlight-2', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.item_length -%}
+                <h5>{{ 'item-length' |  t }}</h5>
+                {{ product.metafields.plytix.item_length | metafield_tag }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.highlight_3 -%}
-          {%- assign content = product.metafields.plytix.highlight_3 | metafield_tag -%}
-          {% render 'accordion', title: 'highlight-3', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.brand_description -%}
+                <h5>{{ 'brand-description' |  t }}</h5>
+                {{ product.metafields.plytix.brand_description | raw }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.item_length -%}
-          {%- assign content = product.metafields.plytix.item_length | metafield_tag -%}
-          {% render 'accordion', title: 'item-length', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.finishing -%}
+                <h5>{{ 'finishing' |  t }}</h5>
+                {{ product.metafields.plytix.finishing | metafield_tag }}
+              {%- endif -%}
+            </div>
+          </details>
+        </div>
 
-        {%- if product.metafields.plytix.brand_description -%}
-        {%- assign content = product.metafields.plytix.brand_description | raw -%}
-          {% render 'accordion', title: 'brand-description', content: content %}
-        {%- endif -%}
+        <div class="accordion">
+          <details>
+            <summary role="button">
+              <div class="summary__title">
+                <h2 class="h4 accordion__title">{{ 'care' |  t }}</h2>
+                {% render 'icon-caret' %}
+              </div>
+            </summary>
+            <div class="accordion__content">
+              {%- if product.metafields.plytix.onderhoudsinstructies -%}
+                <h5>{{ 'maintenance-instructions' |  t }}</h5>
+                {{ product.metafields.plytix.onderhoudsinstructies | raw }}
+              {%- endif -%}
 
-        {%- if product.metafields.plytix.cleaning_instructions -%}
-          {%- assign content = product.metafields.plytix.cleaning_instructions | metafield_tag -%}
-          {% render 'accordion', title: 'cleaning-instructions', content: content %}
-        {%- endif -%}
+              {%- if product.metafields.plytix.cleaning_instructions -%}
+                <h5>{{ 'cleaning-instructions' |  t }}</h5>
+                {{ product.metafields.plytix.cleaning_instructions | metafield_tag }}
+              {%- endif -%}
+            </div>
+          </details>
+        </div>
 
-        {%- if product.metafields.plytix.finishing -%}
-          {%- assign content = product.metafields.plytix.finishing | metafield_tag -%}
-          {% render 'accordion', title: 'finishing', content: content %}
-        {%- endif -%}
-
-        {%- if product.metafields.mm-google-shopping.custom_product -%}
-          {%- assign content = product.metafields.mm-google-shopping.custom_product | metafield_tag -%}
-          {% render 'accordion', title: 'google-custom-product', content: content %}
-        {%- endif -%}
-
-        {%- if product.metafields.shopify--discovery--product_recommendation.complementary_products.value != blank -%}
-          {%- assign content = product.metafields.shopify--discovery--product_recommendation.complementary_products.value  -%}
-          {% render 'accordion', title: 'complementary-products', content: content, productList: true %}
-        {%- endif -%}
-
-        {%- if product.metafields.shopify--discovery--product_recommendation.related_products_display -%}
-          {%- assign content = product.metafields.shopify--discovery--product_recommendation.related_products_display | metafield_tag -%}
-          {% render 'accordion', title: 'related-product-settings', content: content %}
-        {%- endif -%}
-
-        {%- if product.metafields.shopify--discovery--product_recommendation.related_products.value != blank -%}
-          {%- assign content = product.metafields.shopify--discovery--product_recommendation.related_products.value -%}
-          {% render 'accordion', title: 'related-products', content: content, productList: true %}
-        {%- endif -%}
-
-        {%- if product.metafields.shopify--discovery--product_search_boost.queries -%}
-          {%- assign content = product.metafields.shopify--discovery--product_search_boost.queries | metafield_tag -%}
-          {% render 'accordion', title: 'search-product-boosts', content: content %}
-        {%- endif -%}
+        <div class="accordion">
+          <details>
+            <summary role="button">
+              <div class="summary__title">
+                <h2 class="h4 accordion__title">{{ 'reviews' |  t }}</h2>
+                {% render 'icon-caret' %}
+              </div>
+            </summary>
+            <div class="accordion__content">
+              {%- for block in section.blocks -%}
+                {% if block.id contains 'klaviyo_reviews_product_reviews' %}
+                  {% render block %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </details>
+        </div>
       </div>
     </div>
   </div>
