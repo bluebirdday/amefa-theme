@@ -200,6 +200,29 @@
         "include_margins": true
       }
     },
+    "rich_text_c3JEg4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Xgfnz6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Maak je tafel af:",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xgfnz6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "1729167986ba948d34": {
       "type": "apps",
       "blocks": {
@@ -209,7 +232,7 @@
             "enabled": true,
             "id": "176128",
             "product_id_enabled": true,
-            "collection_id_enabled": false
+            "collection_id_enabled": true
           }
         }
       },
@@ -228,6 +251,7 @@
     "related-products",
     "image-with-text",
     "1727092571b3240962",
+    "rich_text_c3JEg4",
     "1729167986ba948d34"
   ]
 }
