@@ -111,7 +111,7 @@
             "enabled": true,
             "id": "175792",
             "product_id_enabled": true,
-            "collection_id_enabled": false
+            "collection_id_enabled": true
           }
         }
       },
@@ -181,8 +181,8 @@
   },
   "order": [
     "main",
-    "172908641394b344ae",
     "related-products",
-    "image-with-text"
+    "image-with-text",
+    "172908641394b344ae"
   ]
 }
