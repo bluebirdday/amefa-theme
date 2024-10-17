@@ -870,15 +870,10 @@ summary::-webkit-details-marker {
 }
 
 .subtitle {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   letter-spacing: 0.06rem;
   color: rgba(var(--color-foreground), 0.7);
-}
-
-.subtitle--small {
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
 }
 
 .subtitle--medium {
@@ -2003,10 +1998,14 @@ input[type='checkbox'] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  width: calc(10rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
+
+  @media screen and (min-width: 750px) {
+    width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  }
 }
 
 .quantity:after {
@@ -2058,7 +2057,7 @@ input[type='checkbox'] {
 }
 
 .quantity__button {
-  width: calc(4.5rem / var(--font-body-scale));
+  width: calc(3rem / var(--font-body-scale));
   flex-shrink: 0;
   font-size: 1.8rem;
   border: 0;
@@ -2069,6 +2068,10 @@ input[type='checkbox'] {
   justify-content: center;
   color: rgb(var(--color-foreground));
   padding: 0;
+
+  @media screen and (min-width: 750px) {
+    width: calc(4.5rem / var(--font-body-scale));
+  }
 }
 
 .quantity__button:first-child {
@@ -3835,11 +3838,40 @@ details-disclosure > details {
 
 .shopify-app-block {
   &[id^='shopify-block-seo_variants_variants'] {
-    min-height: 15rem;
+    min-height: 7.5rem;
   }
 
   &[id^='shopify-block-klaviyo_reviews_average_rating'] {
-    min-height: 30px;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+    padding-bottom: 1.5rem;
+    float: left;
+    width: 60%;
+
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    + .price__wrapper {
+      float: right;
+      text-align: right;
+      width: 40%;
+
+      &::after {
+        clear: both;
+        content: '';
+        display: table;
+      }
+
+      + * {
+        clear: both;
+      }
+    }
+
+    .klaviyo-star-rating-widget {
+      height: 2.9rem;
+    }
   }
 }
 
