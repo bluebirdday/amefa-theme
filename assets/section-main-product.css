@@ -15,7 +15,83 @@ product-info {
   margin: 0 auto;
 }
 
+.product__info-wrapper {
+  margin-bottom: 2.5rem;
+
+  .seo-variants__label {
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    .optionvalue {
+      font-weight: 800;
+    }
+  }
+
+  .seo-variants__list {
+    gap: 1rem;
+    margin: 1rem 0;
+
+    &.is-style-color {
+      .seo-variants__item {
+        &.active {
+          button {
+            border-color: var(--color-amefa-blue);
+            box-shadow: none;
+            outline: 1px solid var(--color-amefa-blue);
+            position: relative;
+
+            &::before {
+              background: url('./checkmark.svg');
+              content: '';
+              filter: invert(1);
+              height: 10px;
+              left: 50%;
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: 12px;
+            }
+          }
+        }
+
+        button {
+          border: 1px solid var(--color-black);
+          box-shadow: none;
+          height: 2.4rem;
+          width: 2.4rem;
+
+          .seo-variants__color {
+            border: none;
+          }
+        }
+      }
+    }
+
+    &:not(.is-style-color) {
+      .seo-variants__item {
+        &.active {
+          button {
+            background: var(--color-white);
+            border-color: var(--color-amefa-blue);
+            box-shadow: none;
+            color: var(--color-black);
+            outline: 1px solid var(--color-amefa-blue);
+          }
+        }
+
+        button {
+          border: 1px solid var(--color-black);
+          box-shadow: none;
+          height: 2.4rem;
+          padding: 0 1.6rem;
+        }
+      }
+    }
+  }
+}
+
 .product__media-wrapper {
+  margin-bottom: 2.5rem;
   padding-left: 0;
 }
 
@@ -31,8 +107,8 @@ product-info {
     padding-right: var(--media-shadow-horizontal-offset);
   }
 
-  .product__info-wrapper {
-    padding: 0 0 0 5rem;
+  .product__media-wrapper {
+    padding: 0 5rem 0 0;
   }
 
   .product__info-wrapper--extra-padding {
@@ -62,12 +138,13 @@ product-info {
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
+    padding: 0 4rem 0 0;
     max-width: 65%;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 0 0 0 4rem;
+    padding: 0;
     max-width: 35%;
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
   }
@@ -78,14 +155,14 @@ product-info {
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 55%;
-    width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 50%;
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 45%;
-    width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 50%;
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
@@ -172,7 +249,6 @@ product-info {
   flex: 0 0 100%;
   padding: 0;
   margin: 0 0 1.2rem 0;
-  max-width: 44rem;
   min-width: fit-content;
   border: none;
 }
@@ -221,7 +297,6 @@ product-info {
   max-width: 100%;
 }
 
-.product__info-container .product-form,
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
   margin: 2.5rem 0;
@@ -1474,5 +1549,87 @@ a.product__text {
 
   .recipient-form > input[type='checkbox']:checked + label .icon-checkmark {
     border: none;
+  }
+}
+
+.quantity-buy-buttons {
+  align-items: flex-start;
+  display: flex;
+  gap: 2rem;
+
+  .price-per-item__container {}
+
+  .buy-buttons {
+    .button.product-form__submit {
+      font-weight: 400;
+      transition: all var(--duration-short) ease;
+
+      &:hover,
+      &:active {
+        background: var(--color-poisonous-pesticide);
+
+        &::after {
+          box-shadow: none;
+        }
+      }
+
+      span {
+        svg {
+          filter: invert(1);
+          margin-left: 1rem;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-wrap: wrap;
+
+  .product-description,
+  .product-meta-data {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+    width: 100%;
+
+    @media screen and (min-width: 750px) {
+      width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+
+    @media screen and (min-width: 990px) {
+      max-width: 50%;
+    }
+  }
+
+  .product-description {
+    @media screen and (min-width: 750px) {
+      padding-right: 5rem;
+    }
+  }
+}
+
+.product__inventory {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+ul.usps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+
+    .icon {
+      display: inline-block;
+      margin-right: 1rem;
+      width: 12px;
+    }
   }
 }

@@ -12,23 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "klaviyo_reviews_average_rating_LEWNCc": {
@@ -66,60 +52,25 @@
             "show_gift_card_recipient": true
           }
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
+        "usps_XdzjcR": {
+          "type": "usps",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "<p>{{ product.metafields.plytix.setsize.value }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "<p>{{ product.metafields.plytix.onderhoudsinstructies | metafield_tag }}</p>",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
+            "usp-1": "Gratis bezorging vanaf € 50 in NL/BE",
+            "usp-2": "Meesterschap sinds 1931",
+            "usp-3": "Veilig betalen, ook achteraf",
+            "usp-4": "Levertijd 1 tot 3 werkdagen"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "caption",
         "klaviyo_reviews_average_rating_LEWNCc",
         "price",
         "variant_picker_dbT8an",
         "seo_variants_variants_dqVPxJ",
         "quantity_selector",
         "buy_buttons",
-        "collapsible-row-0",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share",
-        "description"
+        "usps_XdzjcR"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -133,7 +84,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 12
       }
     },

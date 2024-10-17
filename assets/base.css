@@ -34,6 +34,7 @@
   --color-hush-puppy: #e3b096;
   --color-antiqued-aqua: #bbcdc2;
   --color-kettle-corn: #f6e4bd;
+  --color-poisonous-pesticide: #32d13d;
 }
 
 .product-card-wrapper .card,
@@ -3830,6 +3831,16 @@ details-disclosure > details {
 
 .progress-bar .progress-bar-value {
   display: block;
+}
+
+.shopify-app-block {
+  &[id^='shopify-block-seo_variants_variants'] {
+    min-height: 15rem;
+  }
+
+  &[id^='shopify-block-klaviyo_reviews_average_rating'] {
+    min-height: 30px;
+  }
 }
 
 @keyframes indeterminateAnimation {

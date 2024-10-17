@@ -154,7 +154,7 @@
                   {% endif %}
                 >
                   <a
-                    href="{{ card_product.url }}"
+                    href="{{ card_product.url | within: collection }}"
                     id="CardLink-{{ section_id }}-{{ card_product.id }}"
                     class="full-unstyled-link"
                     aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
@@ -162,6 +162,9 @@
                     {{ card_product.title | escape }}
                   </a>
                 </h3>
+                <div class="subtitle">
+                  {{ card_product.metafields.plytix.setsize }} - {{ card_product.metafields.plytix.Personen }} - {{ card_product.metafields.plytix.kleur }}
+                </div>
                 {%- if show_vendor -%}
                   <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
                   <div>{{ card_product.vendor }}</div>

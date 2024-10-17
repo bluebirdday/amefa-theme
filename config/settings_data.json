@@ -124,6 +124,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "show_breadcrumb_nav": true,
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
