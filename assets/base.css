@@ -3847,7 +3847,7 @@ details-disclosure > details {
 
 .shopify-app-block {
   &[id^='shopify-block-seo_variants_variants'] {
-    min-height: 75px;
+    min-height: 7.5rem;
 
     @media screen and (min-width: 750px) {
       min-height: 150px;
