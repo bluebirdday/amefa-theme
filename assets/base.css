@@ -3835,7 +3835,7 @@ details-disclosure > details {
 
 .shopify-app-block {
   &[id^='shopify-block-seo_variants_variants'] {
-    min-height: 150px;
+    min-height: 15rem;
   }
 
   &[id^='shopify-block-klaviyo_reviews_average_rating'] {
