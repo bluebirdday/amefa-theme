@@ -232,7 +232,7 @@
             "enabled": true,
             "id": "176128",
             "product_id_enabled": true,
-            "collection_id_enabled": true
+            "collection_id_enabled": false
           }
         }
       },
