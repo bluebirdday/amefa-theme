@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_KdMeAy": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -63,6 +70,7 @@
         }
       },
       "block_order": [
+        "text_KdMeAy",
         "title",
         "klaviyo_reviews_average_rating_LEWNCc",
         "price",
