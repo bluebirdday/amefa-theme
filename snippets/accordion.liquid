@@ -1,0 +1,28 @@
+<div class="accordion">
+  <details>
+    <summary role="button">
+      <div class="summary__title">
+        <h2 class="h4 accordion__title">{{ title |  t }}</h2>
+        {% render 'icon-caret' %}
+      </div>
+    </summary>
+    <div class="accordion__content">
+      {% if swatch %}
+        <span style="height: 20px; width: 20px; display: block; border-radius: 50%; background-color: {{ content }};"></span>
+      {% elsif productList %}
+        <ul>
+          {%- for product in content -%}
+            {%- assign product_obj = product | product -%}
+            {%- if product_obj -%}
+              <li>
+                <a href="{{ product_obj.url }}">{{ product_obj.title }}</a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+  </details>
+</div>
