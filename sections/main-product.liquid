@@ -119,20 +119,6 @@
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                   </div>
                 {%- endif -%}
-                {%- if cart.taxes_included or cart.duties_included or shop.shipping_policy.body != blank -%}
-                  <div class="product__tax caption rte">
-                    {%- if cart.duties_included and cart.taxes_included -%}
-                      {{ 'products.product.duties_and_taxes_included' | t }}
-                    {%- elsif cart.taxes_included -%}
-                      {{ 'products.product.taxes_included' | t }}
-                    {%- elsif cart.duties_included -%}
-                      {{ 'products.product.duties_included' | t }}
-                    {%- endif -%}
-                    {%- if shop.shipping_policy.body != blank -%}
-                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
                 {%- if product.selected_or_first_available_variant.available == false -%}
                   <div class="product-availability" {{ block.shopify_attributes }}>
                     {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
@@ -660,25 +646,37 @@
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
               {%- when 'usps' -%}
-              <div class="product-usps">
-                <ul class="usps">
-                  {% if block.settings.usp-1 %}
-                    <li>{% render 'icon-checkmark' %} {{ block.settings.usp-1 }}</li>
-                  {% endif %}
-                  {% if block.settings.usp-2 %}
-                    <li>{% render 'icon-checkmark' %} {{ block.settings.usp-2 }}</li>
-                  {% endif %}
-                  {% if block.settings.usp-3 %}
-                    <li>{% render 'icon-checkmark' %} {{ block.settings.usp-3 }}</li>
-                  {% endif %}
-                  {% if block.settings.usp-4 %}
-                    <li>{% render 'icon-checkmark' %} {{ block.settings.usp-4 }}</li>
-                  {% endif %}
-                </ul>
-                <div>
+                <div class="product-usps">
+                  <ul class="usps">
+                    {% if block.settings.usp-1 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-1 }}</li>
+                    {% endif %}
+                    {% if block.settings.usp-2 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-2 }}</li>
+                    {% endif %}
+                    {% if block.settings.usp-3 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-3 }}</li>
+                    {% endif %}
+                    {% if block.settings.usp-4 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-4 }}</li>
+                    {% endif %}
+                  </ul>
+                  <ul aria-hidden="true" class="usps">
+                    {% if block.settings.usp-1 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-1 }}</li>
+                    {% endif %}
+                    {% if block.settings.usp-2 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-2 }}</li>
+                    {% endif %}
+                    {% if block.settings.usp-3 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-3 }}</li>
+                    {% endif %}
+                    {% if block.settings.usp-4 %}
+                      <li>{% render 'icon-checkmark' %} {{ block.settings.usp-4 }}</li>
+                    {% endif %}
+                  </ul>
                   {% comment %} TODO: Thuiswinkel Waarborg {% endcomment %}
                 </div>
-              </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
