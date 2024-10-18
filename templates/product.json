@@ -199,6 +199,12 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "rebuy_crosssells_NfeBAJ": {
+      "type": "rebuy-crosssells",
+      "settings": {
+        "widget_id": "176128"
+      }
     }
   },
   "order": [
@@ -207,6 +213,7 @@
     "1727793334470db790",
     "related-products",
     "image-with-text",
-    "1727092571b3240962"
+    "1727092571b3240962",
+    "rebuy_crosssells_NfeBAJ"
   ]
 }
