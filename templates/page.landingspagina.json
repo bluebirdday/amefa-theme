@@ -23,7 +23,7 @@
         "heading_CGD9re": {
           "type": "heading",
           "settings": {
-            "heading": "Banner voor afbeeldingen",
+            "heading": "{{ page.title }}",
             "heading_size": "h1"
           }
         },
@@ -37,11 +37,11 @@
         "buttons_CbQXiU": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Knoplabel",
+            "button_label_1": "Bekijk de Amefa collectie",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_style_link_1": false,
-            "button_label_2": "Knoplabel",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
             "button_style_link_2": false,
@@ -55,6 +55,7 @@
         "buttons_CbQXiU"
       ],
       "settings": {
+        "image": "{{ page.metafields.custom.merkinformatie.value.merk_banner_afbeelding.value }}",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "full_width_banner": true,
@@ -75,12 +76,12 @@
     "featured_collection_Kb7cr6": {
       "type": "featured-collection",
       "settings": {
-        "title": "Uitgelichte collectie",
+        "title": "Bekijk de {{ page.metafields.custom.merkinformatie.value.merknaam.value }} collectie",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "{{ page.metafields.custom.merkinformatie.value.merk_collectie.value }}",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
