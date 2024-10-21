@@ -309,27 +309,27 @@ function createOptionPicker(option, activeVariant, inactiveCombinations) {
   variantHTML.push(`<p class="seo-variants__label">${option?.name}${activeValueName ? `: <span class="optionvalue">${activeValueName}</span>` : ''}</p>`);
 
   if (option.option_type === 'dropdown') {
-    variantHTML.push('<ul class="seo-variants__list is-style-dropdown">');
-    variantHTML.push('<li class="seo-variants__item">');
-    variantHTML.push(`<select class="seo-variants__dropdown" data-option-id="${option.id}">`);
-    option.option_values.forEach((value) => {
-      let isActive = activeVariant && activeVariant.option_value_ids.includes(value.id);
-      let isDisabled = filteredDisabledValues && filteredDisabledValues.includes(value.id);
-      variantHTML.push(`<option value="${value.id}" ${isActive ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}>${value.name}</option>`);
-    });
-    variantHTML.push('</select></li></ul>');
+    // variantHTML.push('<ul class="seo-variants__list is-style-dropdown">');
+    // variantHTML.push('<li class="seo-variants__item">');
+    // variantHTML.push(`<select class="seo-variants__dropdown" data-option-id="${option.id}">`);
+    // option.option_values.forEach((value) => {
+    //   let isActive = activeVariant && activeVariant.option_value_ids.includes(value.id);
+    //   let isDisabled = filteredDisabledValues && filteredDisabledValues.includes(value.id);
+    //   variantHTML.push(`<option value="${value.id}" ${isActive ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}>${value.name}</option>`);
+    // });
+    // variantHTML.push('</select></li></ul>');
   } else if (option.option_type === 'image') {
-    variantHTML.push('<ul class="seo-variants__list is-style-image">');
-    option.option_values.forEach((value) => {
-      let isActive = activeVariant && activeVariant.option_value_ids.includes(value.id);
-      let isDisabled = filteredDisabledValues && filteredDisabledValues.includes(value.id);
-      variantHTML.push(`<div class="seo-variants__item ${isActive ? 'active' : ''} ${isDisabled ? 'inactive' : ''}">`);
-      variantHTML.push('<div class="seo-variants__tooltip">');
-      variantHTML.push(`<button id="${value.id}" data-option-id="${option.id}" ${isDisabled || isActive ? 'disabled' : ''} ${isActive ? 'class="active"' : ''}>`);
-      variantHTML.push(`<img src="${value.image}" alt="${value.name}" />`);
-      variantHTML.push(`<span class="seo-variants__tooltiptext seo-variants__tooltip-top">${value.name}</span></div></button></div>`);
-    });
-    variantHTML.push('</ul>');
+    // variantHTML.push('<ul class="seo-variants__list is-style-image">');
+    // option.option_values.forEach((value) => {
+    //   let isActive = activeVariant && activeVariant.option_value_ids.includes(value.id);
+    //   let isDisabled = filteredDisabledValues && filteredDisabledValues.includes(value.id);
+    //   variantHTML.push(`<div class="seo-variants__item ${isActive ? 'active' : ''} ${isDisabled ? 'inactive' : ''}">`);
+    //   variantHTML.push('<div class="seo-variants__tooltip">');
+    //   variantHTML.push(`<button id="${value.id}" data-option-id="${option.id}" ${isDisabled || isActive ? 'disabled' : ''} ${isActive ? 'class="active"' : ''}>`);
+    //   variantHTML.push(`<img src="${value.image}" alt="${value.name}" />`);
+    //   variantHTML.push(`<span class="seo-variants__tooltiptext seo-variants__tooltip-top">${value.name}</span></div></button></div>`);
+    // });
+    // variantHTML.push('</ul>');
   } else if (option.option_type === 'color') {
     variantHTML.push('<ul class="seo-variants__list is-style-color">');
     option.option_values.forEach((value) => {
@@ -343,14 +343,14 @@ function createOptionPicker(option, activeVariant, inactiveCombinations) {
     });
     variantHTML.push('</ul>');
   } else {
-    variantHTML.push('<ul class="seo-variants__list">');
-    option.option_values.forEach((value) => {
-      let isActive = activeVariant && activeVariant.option_value_ids.includes(value.id);
-      let isDisabled = filteredDisabledValues && filteredDisabledValues.includes(value.id);
-      variantHTML.push(`<li class="seo-variants__item ${isActive ? 'active' : ''} ${isDisabled ? 'inactive' : ''}">`);
-      variantHTML.push(`<button id="${value.id}" data-option-id="${option.id}" ${isDisabled || isActive ? 'disabled' : ''} ${isActive ? 'class="active"' : ''}>${value.name}</button></li>`);
-    });
-    variantHTML.push('</ul>');
+    // variantHTML.push('<ul class="seo-variants__list">');
+    // option.option_values.forEach((value) => {
+    //   let isActive = activeVariant && activeVariant.option_value_ids.includes(value.id);
+    //   let isDisabled = filteredDisabledValues && filteredDisabledValues.includes(value.id);
+    //   variantHTML.push(`<li class="seo-variants__item ${isActive ? 'active' : ''} ${isDisabled ? 'inactive' : ''}">`);
+    //   variantHTML.push(`<button id="${value.id}" data-option-id="${option.id}" ${isDisabled || isActive ? 'disabled' : ''} ${isActive ? 'class="active"' : ''}>${value.name}</button></li>`);
+    // });
+    // variantHTML.push('</ul>');
   }
 
   return variantHTML.join('');
@@ -394,8 +394,9 @@ function handlePickerClick(button, event, productGroup, activeVariant, inactiveC
   event.preventDefault();
   const clickedValueId = parseInt(button.id);
   const optionId = parseInt(button.dataset.optionId);
+  const product = event.target.closest('[data-product-id]');
 
-  const selectedValues = getSelectedValues(optionId, clickedValueId, activeVariant, inactiveCombinations);
+  const selectedValues = getSelectedValues(product,optionId, clickedValueId, activeVariant, inactiveCombinations);
 
   const selectedVariant = findMatchingVariant(selectedValues, productGroup);
 
@@ -410,8 +411,8 @@ function handlePickerClick(button, event, productGroup, activeVariant, inactiveC
 function handleDropdownChange(dropdown, productGroup, activeVariant, inactiveCombinations) {
   const selectedValueId = parseInt(dropdown.value);
   const optionId = parseInt(dropdown.dataset.optionId);
-
-  const selectedValues = getSelectedValues(optionId, selectedValueId, activeVariant, inactiveCombinations);
+  const product = dropdown.closest('[data-product-id]')
+  const selectedValues = getSelectedValues(product, optionId, selectedValueId, activeVariant, inactiveCombinations);
 
   const selectedVariant = findMatchingVariant(selectedValues, productGroup);
 
@@ -423,9 +424,9 @@ function handleDropdownChange(dropdown, productGroup, activeVariant, inactiveCom
 }
 
 // Function to get the selected values
-function getSelectedValues(optionId, selectedValueId, activeVariant, inactiveCombinations) {
+function getSelectedValues(product, optionId, selectedValueId, activeVariant, inactiveCombinations) {
   const selectedValues = [];
-  const variantPickerContent = document.getElementById('variant-picker-content');
+  const variantPickerContent = product.querySelector('.card__swatches');
 
   // Add the selected value ID
   selectedValues.push(selectedValueId);
