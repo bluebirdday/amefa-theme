@@ -52,6 +52,7 @@
         {% if horizontal_class %} card--horizontal{% endif %}
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      data-product-id="{{ card_product.id }}"
     >
       <div
         class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
@@ -162,8 +163,27 @@
                     {{ card_product.title | escape }}
                   </a>
                 </h3>
-                <div class="subtitle">
-                  {{ card_product.metafields.plytix.setsize }} - {{ card_product.metafields.plytix.Personen }} - {{ card_product.metafields.plytix.kleur }}
+                <div class="card__subtitle">
+                  <ul class="product-features">
+                    {% if card_product.metafields.plytix.setsize %}
+                    <li class="product-feature">
+                      {{ card_product.metafields.plytix.setsize }}
+                    </li>
+                    {% endif %}
+                    {% if card_product.metafields.plytix.Personen %}
+                    <li class="product-feature">
+                      {{ card_product.metafields.plytix.Personen }}
+                    </li>
+                    {% endif %}
+                    {% if card_product.metafields.plytix.kleur %}
+                    <li class="product-feature">
+                      {{ card_product.metafields.plytix.kleur }}
+                    </li>
+                    {% endif %}
+                  </ul>
+                </div>
+                <div class="card__swatches">
+                  swatches
                 </div>
                 {%- if show_vendor -%}
                   <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
