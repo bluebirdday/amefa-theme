@@ -147,12 +147,28 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "video_XCJK4N": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "{{ page.metafields.custom.merkinformatie.value.merk_video_upload_mov.value }}",
+        "video_url": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_LHD9ek",
     "featured_collection_Kb7cr6",
-    "image_with_text_Dkncbp"
+    "image_with_text_Dkncbp",
+    "video_XCJK4N"
   ]
 }
