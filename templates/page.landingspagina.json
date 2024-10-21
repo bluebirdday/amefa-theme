@@ -30,7 +30,7 @@
         "text_GmBUGV": {
           "type": "text",
           "settings": {
-            "text": "Geef klanten details over de bannerafbeelding(en) of content op de template.",
+            "text": "{{ page.metafields.custom.merkinformatie.value.merk_subtitel.value }}",
             "text_style": "body"
           }
         },
