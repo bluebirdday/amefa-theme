@@ -306,7 +306,7 @@ function createOptionPicker(option, activeVariant, inactiveCombinations) {
   // Get the active value name for this option
   const activeValueName = option.option_values.find(value => activeVariant.option_value_ids.includes(value.id))?.name || '';
 
-  variantHTML.push(`<p class="seo-variants__label">${option?.name}${activeValueName ? `: <span class="optionvalue">${activeValueName}</span>` : ''}</p>`);
+  // variantHTML.push(`<p class="seo-variants__label">${option?.name}${activeValueName ? `: <span class="optionvalue">${activeValueName}</span>` : ''}</p>`);
 
   if (option.option_type === 'dropdown') {
     // variantHTML.push('<ul class="seo-variants__list is-style-dropdown">');

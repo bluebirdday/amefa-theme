@@ -146,6 +146,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
+          <div class="card__swatches">&nbsp;</div>
           <div class="card-information">
             <div class="card__name-container">
               <div class="card__name">
@@ -163,28 +164,6 @@
                     {{ card_product.title | escape }}
                   </a>
                 </h3>
-                <div class="card__subtitle">
-                  <ul class="product-features">
-                    {% if card_product.metafields.plytix.setsize %}
-                    <li class="product-feature">
-                      {{ card_product.metafields.plytix.setsize }}
-                    </li>
-                    {% endif %}
-                    {% if card_product.metafields.plytix.Personen %}
-                    <li class="product-feature">
-                      {{ card_product.metafields.plytix.Personen }}
-                    </li>
-                    {% endif %}
-                    {% if card_product.metafields.plytix.kleur %}
-                    <li class="product-feature">
-                      {{ card_product.metafields.plytix.kleur }}
-                    </li>
-                    {% endif %}
-                  </ul>
-                </div>
-                <div class="card__swatches">
-                  swatches
-                </div>
                 {%- if show_vendor -%}
                   <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
                   <div>{{ card_product.vendor }}</div>
@@ -318,6 +297,23 @@
               <a href="{{ card_product.url }}" class="link"><span>Bekijk</span><span class="icon-wrap">{% render 'icon-spoon' %}</span></a>
             {% endif %}
           </div>
+          <ul class="product-features">
+            {% if card_product.metafields.plytix.setsize %}
+              <li class="product-feature">
+                {{ card_product.metafields.plytix.setsize }}
+              </li>
+            {% endif %}
+            {% if card_product.metafields.plytix.Personen %}
+              <li class="product-feature">
+                {{ card_product.metafields.plytix.Personen }}
+              </li>
+            {% endif %}
+            {% if card_product.metafields.plytix.kleur %}
+              <li class="product-feature">
+                {{ card_product.metafields.plytix.kleur }}
+              </li>
+            {% endif %}
+          </ul>
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
@@ -399,6 +395,7 @@
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
                         {{ 'products.product.add_to_cart' | t }}
+                        {% render 'icon-spoon' %}
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}
