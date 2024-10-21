@@ -36,6 +36,14 @@
   }
 {%- endstyle -%}
 
+{% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}
+
+{% if metafield_data %}
+  <script>
+    window.metafieldData = {{ metafield_data.value | json }};
+  </script>
+{% endif %}
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -192,6 +200,8 @@
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
+
+<script src="{{ 'amefa-plp-swatches.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
