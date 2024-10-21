@@ -133,7 +133,6 @@
     padding: 1rem;
     width: 100%;
     flex-grow: 1;
-    position: relative;
 }
 
 .card__content--auto-margins {
@@ -611,7 +610,7 @@
     }
 
     .product-features {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         display: flex;
         justify-content: flex-start;
         padding: 0;
@@ -619,16 +618,18 @@
         list-style: none;
         gap: .5rem;
         position: absolute;
-        top: -3.4rem;
+        bottom: 1rem;
         left: 1rem;
         transition: opacity .2s;
         will-change: opacity;
+        z-index: 2;
 
         li {
             background: var(--color-white);
             border-radius: .3rem;
             line-height: 1;
             padding: .5rem;
+            color: var(--color-black);
         }
     }
 
