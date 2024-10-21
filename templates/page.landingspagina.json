@@ -38,7 +38,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Bekijk de Amefa collectie",
-            "button_link_1": "",
+            "button_link_1": "{{ page.metafields.custom.merkinformatie.value.merk_collectie_url.value }}",
             "button_style_secondary_1": false,
             "button_style_link_1": false,
             "button_label_2": "",
@@ -122,7 +122,7 @@
           "type": "button",
           "settings": {
             "button_label": "Knoplabel",
-            "button_link": "",
+            "button_link": "{{ page.metafields.custom.merkinformatie.value.merk_collectie_url.value }}",
             "button_style_secondary": false
           }
         }
