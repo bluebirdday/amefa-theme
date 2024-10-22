@@ -209,6 +209,61 @@
         "padding_bottom": 36
       }
     },
+    "collection_list_pXTwmh": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_rQhbTt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gekleurd-bestek"
+          }
+        },
+        "featured_collection_WPk74x": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "zwart-bestek"
+          }
+        },
+        "featured_collection_CfDMfA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "goud-bestek"
+          }
+        },
+        "featured_collection_XTYy9H": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "koper-bestek"
+          }
+        },
+        "featured_collection_cLEBCL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "overige-kleuren"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_rQhbTt",
+        "featured_collection_WPk74x",
+        "featured_collection_CfDMfA",
+        "featured_collection_XTYy9H",
+        "featured_collection_cLEBCL"
+      ],
+      "settings": {
+        "title": "Bestek op kleur",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -330,6 +385,7 @@
     "rich_text_yEFBxU",
     "image_with_text_RPwJDY",
     "featured_collection_KwXmPb",
+    "collection_list_pXTwmh",
     "collage",
     "collection_list_V8y77J",
     "featured_blog_HmNcNE"
