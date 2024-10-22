@@ -32,6 +32,7 @@
         "text_GbtGrp"
       ],
       "settings": {
+        "hide_on_mobile": true,
         "image": "{{ collection.metafields.custom.collection_banner.value.image.value }}",
         "height": "small",
         "desktop_image_width": "small",
