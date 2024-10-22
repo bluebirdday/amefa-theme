@@ -1,5 +1,20 @@
+.collection-row-wrapper {
+    .collection-row {
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: 750px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .slider-buttons {
+        @media screen and (min-width: 750px) {
+            display: none;
+        }
+    }
+}
+
 .collection-row {
-    display: flex;
     margin: 0;
     list-style-type: none;
     padding: 0;
@@ -8,58 +23,67 @@
 }
 
 .collection-row__item {
-    flex: 0 0 12.5%;
-    padding-right: 1rem;
-    width: 12.5%;
+    flex: 0 0 calc(75% - var(--grid-mobile-horizontal-spacing));
+    width: calc(75% - var(--grid-mobile-horizontal-spacing));
+    position: relative;
+
+    @media screen and (min-width: 750px) {
+        flex: 0 0 15%;
+        width: 15%;
+    }
+
+    &.slider__slide {
+        padding: 0 !important;
+    }
+
+    &::after {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        border-bottom-left-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 75%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .card--media {
+        .card__inner {
+            height: 0;
+            padding-bottom: 25%;
+        }
+
+        .card__content {
+            bottom: 0;
+            left: 0;
+            padding: 0.5rem 1rem;
+            position: absolute;
+            z-index: 1;
+
+            .card__information {
+                padding: 0;
+
+                a {
+                    color: var(--color-white);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
 
 .collection-card-small-wrapper .card__heading a {
     display: flex;
     justify-content: flex-start;
-    font-size: 1.4rem;
-}
-
-@media screen and (max-width: 749px) {
-    .collection-row__item {
-        flex: 0 0 25%;
-        width: 25%;
-    }
-
-    .section-collection-row .page-width {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .section-collection-row .collection-row {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 @media screen and (min-width: 750px) {
     .collection-row__item a:hover {
         box-shadow: none;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .collection-row {
-        flex-flow: row wrap;
-    }
-
-    .collection-card-small-wrapper .card__heading {
-        height: 100%;
-    }
-
-    .collection-card-small-wrapper .card__heading a {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.2rem;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    .collection-card-small-wrapper .card__heading .icon-wrap {
-        margin: auto 0 0;
     }
 }

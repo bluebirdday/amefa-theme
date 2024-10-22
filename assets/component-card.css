@@ -1,8 +1,28 @@
 .card-wrapper {
     color: inherit;
-    height: auto;
     position: relative;
     text-decoration: none;
+    height: 100%;
+}
+
+.product-grid .card-wrapper {
+    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border-radius: var(--media-radius);
+    transition: all .2s ease;
+    will-change: transform, box-shadow;
+    padding: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .product-grid .card-wrapper:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05),
+        0 2px 2px rgba(0,0,0,0.05),
+        0 4px 4px rgba(0,0,0,0.05),
+        0 8px 8px rgba(0,0,0,0.05),
+        0 16px 16px rgba(0,0,0,0.05),
+        0 32px 32px rgba(0,0,0,0.05);
+    }
 }
 
 .card {
@@ -76,7 +96,6 @@
     overflow: hidden;
     z-index: 0;
     border-radius: var(--media-radius);
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .card--card .card__inner .card__media {
