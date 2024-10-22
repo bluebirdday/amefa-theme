@@ -33,11 +33,11 @@
             "button_link_1": "shopify://collections/besteksets",
             "button_style_secondary_1": false,
             "button_style_link_1": false,
-            "button_label_2": "Bekijk het assortiment",
+            "button_label_2": "",
             "button_link_2": "shopify://collections",
             "button_style_secondary_2": false,
-            "button_style_link_2": false,
-            "inline_buttons": true
+            "button_style_link_2": true,
+            "inline_buttons": false
           }
         }
       },
