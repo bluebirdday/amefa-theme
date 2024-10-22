@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b"
+      }
+    },
     "collection_row_FPhT34": {
       "type": "collection-row",
       "blocks": {
@@ -70,25 +78,60 @@
         "padding_bottom": 48
       }
     },
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
-    },
     "17271006391055c802": {
       "type": "apps",
       "settings": {
         "include_margins": true
       }
+    },
+    "rich_text_YphU3V": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RzQYLz": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.collection_banner.value.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_j8jfpb": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_tfCVCH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Knoplabel",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RzQYLz",
+        "text_j8jfpb",
+        "button_tfCVCH"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
+    "banner",
     "collection_row_FPhT34",
     "product-grid",
-    "banner",
-    "17271006391055c802"
+    "17271006391055c802",
+    "rich_text_YphU3V"
   ]
 }
