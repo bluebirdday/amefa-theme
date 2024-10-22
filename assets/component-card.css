@@ -645,3 +645,13 @@
 .card__information .card-information {
     min-height: 5.5rem;
 }
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        font-weight: 300;
+        margin-left: auto;
+    }
+}
