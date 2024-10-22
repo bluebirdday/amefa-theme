@@ -1,7 +1,7 @@
 const initPlpSwatches = () => {
   this.shop = window.Shopify.shop;
   this.apiURL = 'https://seo-variants-40d4a5e51792.herokuapp.com/api/v1';
-  const swatchMetaData = window.metafieldData;
+  const swatchMetaData = window.metafieldData || window.metafieldDataV2;
   const products = document.querySelectorAll('[data-product-id]');
   getCss(this.apiUrl);
 
