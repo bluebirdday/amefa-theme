@@ -3936,7 +3936,7 @@ details-disclosure > details {
                     justify-content: center;
                     align-items: flex-start;
                     flex-direction: column;
-                    background: var(--gradient-background);
+                    background: #e5e5dc; /* carrara */
                     padding: 2rem;
                     border-radius: var(--media-radius);
 
