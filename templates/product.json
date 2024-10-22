@@ -172,7 +172,7 @@
     "featured_collection_GV6Jwt": {
       "type": "featured-collection",
       "settings": {
-        "title": "Uitgelichte collectie",
+        "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
