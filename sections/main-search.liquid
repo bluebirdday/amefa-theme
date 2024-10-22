@@ -17,7 +17,7 @@
 {% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}
 
 {% if metafield_data %}
-  <script>
+  <script id="shopify-metafields">
     window.metafieldData = {{ metafield_data.value | json }};
   </script>
 {% endif %}
