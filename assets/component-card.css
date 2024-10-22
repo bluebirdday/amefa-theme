@@ -1,8 +1,11 @@
 .card-wrapper {
     color: inherit;
-    height: auto;
     position: relative;
     text-decoration: none;
+    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border-radius: var(--media-radius);
+    padding: 1.5rem;
+    height: 100%;
 }
 
 .card {
@@ -76,7 +79,6 @@
     overflow: hidden;
     z-index: 0;
     border-radius: var(--media-radius);
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .card--card .card__inner .card__media {
@@ -604,11 +606,13 @@
     }
 }
 
-.card {
-    &:hover .product-features {
-        opacity: 0
+@media screen and (min-width: 769px) {
+    .card:hover .product-features {
+        opacity: 0;
     }
+}
 
+.card {
     .product-features {
         font-size: 1.4rem;
         display: flex;
@@ -642,4 +646,14 @@
 
 .card__information .card-information {
     min-height: 5.5rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        font-weight: 300;
+        margin-left: auto;
+    }
 }

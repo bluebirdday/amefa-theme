@@ -1736,7 +1736,7 @@ details[open] > .share-button__fallback {
 select,
 select.select__select,
 select.field__input {
-  background-image: var(--input-chevron);
+  /*background-image: var(--input-chevron);*/
   background-position: center right .75rem;
   background-size: 1rem auto;
   background-repeat: no-repeat;
