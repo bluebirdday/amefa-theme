@@ -769,10 +769,10 @@
 
     <div class="product-info">
       <div class="product-media-images">
-        {% for media in product.media %}
-          {% if forloop.index > 1 %}
+        {% for impression_image in product.metafields.plytix.impression_images.value %}
+          {% if forloop.index <= 4 %}
             <div class="product-media-images__image-wrapper">
-              {{ media | image_url: width: 300, height: 300 | image_tag: class: 'product-media-images__image' }}
+              {{ impression_image | image_url: width: 800, height: 800 | image_tag: class: 'product-media-images__image' }}
             </div>
           {% endif %}
         {% endfor %}
