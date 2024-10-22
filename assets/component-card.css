@@ -604,11 +604,13 @@
     }
 }
 
-.card {
-    &:hover .product-features {
-        opacity: 0
+@media screen and (min-width: 769px) {
+    .card:hover .product-features {
+        opacity: 0;
     }
+}
 
+.card {
     .product-features {
         font-size: 1.4rem;
         display: flex;
