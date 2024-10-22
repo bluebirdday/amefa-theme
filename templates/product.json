@@ -177,7 +177,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "{{ product.metafields.custom.featured_collection.value }}",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
