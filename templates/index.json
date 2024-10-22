@@ -103,7 +103,7 @@
         "title": "",
         "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "enable_desktop_slider": false,
         "color_scheme": "",
         "show_view_all": false,
@@ -250,6 +250,7 @@
         "text_tTa7ML"
       ],
       "settings": {
+        "hide_on_mobile": false,
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
