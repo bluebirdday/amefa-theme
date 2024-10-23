@@ -33,11 +33,11 @@
             "button_link_1": "shopify://collections/besteksets",
             "button_style_secondary_1": false,
             "button_style_link_1": false,
-            "button_label_2": "Bekijk het assortiment",
+            "button_label_2": "",
             "button_link_2": "shopify://collections",
             "button_style_secondary_2": false,
-            "button_style_link_2": false,
-            "inline_buttons": true
+            "button_style_link_2": true,
+            "inline_buttons": false
           }
         }
       },
@@ -101,62 +101,38 @@
       ],
       "settings": {
         "title": "",
-        "heading_size": "h0",
+        "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
-        "enable_desktop_slider": true,
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
         "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
-    "image_with_text_RPwJDY": {
-      "type": "image-with-text",
+    "rich_text_yEFBxU": {
+      "type": "rich-text",
       "blocks": {
-        "heading_eiJq4X": {
-          "type": "heading",
-          "settings": {
-            "heading": "Keuzestress?",
-            "heading_size": "h1"
-          }
-        },
-        "text_tTa7ML": {
+        "text_JFxwKt": {
           "type": "text",
           "settings": {
-            "text": "<p>Het kiezen van de juiste bestekset is  niet gemakkelijk. Gelukkig hebben we een keuzehulp samengesteld zodat je zeker weet dat je de juiste set kiest!</p>",
-            "text_style": "body"
-          }
-        },
-        "button_H79iUb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Naar de keuzewijzer",
-            "button_link": "#quiz-BZHE1PR",
-            "button_style_secondary": false
+            "text": "<ul><li><strong>Stijlvol bestek</strong> voor onvergetelijke avonden</li><li>Meesterschap sinds <strong>1931</strong></li><li><strong>Gratis</strong> thuisbezorgd vanaf €50</li><li>Binnen <strong>1-3 werkdagen</strong> geleverd</li></ul><p></p>"
           }
         }
       },
       "block_order": [
-        "heading_eiJq4X",
-        "text_tTa7ML",
-        "button_H79iUb"
+        "text_JFxwKt"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "zoom-in",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
       }
     },
     "featured_collection_KwXmPb": {
@@ -185,6 +161,108 @@
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "collection_list_pXTwmh": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_rQhbTt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gekleurd-bestek"
+          }
+        },
+        "featured_collection_WPk74x": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "zwart-bestek"
+          }
+        },
+        "featured_collection_CfDMfA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "goud-bestek"
+          }
+        },
+        "featured_collection_XTYy9H": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "koper-bestek"
+          }
+        },
+        "featured_collection_cLEBCL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "overige-kleuren"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_rQhbTt",
+        "featured_collection_WPk74x",
+        "featured_collection_CfDMfA",
+        "featured_collection_XTYy9H",
+        "featured_collection_cLEBCL"
+      ],
+      "settings": {
+        "title": "Bestek op kleur",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_RPwJDY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eiJq4X": {
+          "type": "heading",
+          "settings": {
+            "heading": "Keuzestress?",
+            "heading_size": "h1"
+          }
+        },
+        "button_H79iUb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Naar de keuzewijzer",
+            "button_link": "#quiz-BZHE1PR",
+            "button_style_secondary": false
+          }
+        },
+        "text_tTa7ML": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Het kiezen van de juiste bestekset is  niet gemakkelijk. Gelukkig hebben we een keuzehulp samengesteld zodat je zeker weet dat je de juiste set kiest!</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eiJq4X",
+        "button_H79iUb",
+        "text_tTa7ML"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "collage": {
@@ -276,8 +354,27 @@
         "enable_desktop_slider": true,
         "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_HmNcNE": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Een vleugje inspiratie",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -286,9 +383,12 @@
   "order": [
     "image_banner",
     "collection_list_figdmd",
-    "image_with_text_RPwJDY",
+    "rich_text_yEFBxU",
     "featured_collection_KwXmPb",
+    "collection_list_pXTwmh",
+    "image_with_text_RPwJDY",
     "collage",
-    "collection_list_V8y77J"
+    "collection_list_V8y77J",
+    "featured_blog_HmNcNE"
   ]
 }
