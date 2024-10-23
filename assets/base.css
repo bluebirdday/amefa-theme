@@ -154,7 +154,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .header:not(.drawer-menu).page-width {
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 @media screen and (min-width: 990px) {
@@ -2566,10 +2566,21 @@ input[type='checkbox'] {
 
 .header__heading-link {
     display: inline-block;
-    transform: translateY(-14px);
+    margin-top: -14px;
     padding: 1px;
     text-decoration: none;
     word-break: break-word;
+
+    @media screen and (min-width: 990px) {
+        margin-top: 0;
+        transform: translateY(-14px);
+    }
+
+    .header__heading-logo {
+        @media screen and (max-width: 989px) {
+            width: 90px;
+        }
+    }
 }
 
 .header__heading-link:hover .h2 {
@@ -2741,7 +2752,7 @@ menu-drawer + .header__search {
     .header__search {
         left: 0rem;
         position: absolute;
-        top: 70px;
+        top: 5.5rem;
         width: 100%;
         background: white;
 
@@ -2984,23 +2995,9 @@ details[open] > .header__submenu {
     font-weight: 300;
 }
 
-.header__inline-menu .list-menu > li:first-of-type .list-menu__item:not(.link--text)::before {
-    background-image: url('./menu-black-20.svg');
-    background-size: contain;
-    content: '';
+.header__inline-menu .list-menu > li .list-menu__item .collection-icon {
     display: inline-block;
-    height: 20px;
-    margin-right: 10px;
-    width: 20px;
-}
-
-.header__inline-menu .list-menu > li:first-of-type .list-menu__item:not(.link--text)::after {
-    background-color: #d8d8d8;
-    content: '';
-    display: block;
-    height: 15px;
-    margin-left: 15px;
-    width: 1px;
+    margin-right: 1rem;
 }
 
 .header__inline-menu .list-menu--toggle .list-menu {

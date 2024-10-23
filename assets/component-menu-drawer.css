@@ -85,6 +85,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation {
+  display: flex;
+  flex-wrap: wrap;
   padding: 3rem 0;
 }
 
@@ -98,6 +100,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-bottom: 0.2rem;
 }
 
+.menu-drawer__menu {
+  flex: 0 0 100%;
+}
+
 .menu-drawer__menu-item {
   padding: 1.1rem 3rem;
   text-decoration: none;
@@ -106,6 +112,11 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer summary.menu-drawer__menu-item {
   padding-right: 5.2rem;
+
+  .collection-icon {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 }
 
 .menu-drawer__menu-item--active,
@@ -238,5 +249,93 @@ details[open].menu-opening > .menu-drawer__submenu {
     transform: none !important;
     filter: none !important;
     transition: none !important;
+  }
+}
+
+.menu-drawer__highlights {
+  flex: 0 0 100%;
+  padding: 0 3rem;
+  position: relative;
+
+  .highlight {
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.6rem;
+    display: flex;
+    height: 7rem;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.5rem;
+    }
+
+    &::after {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+      border-bottom-left-radius: 0.6rem;
+      border-bottom-right-radius: 0.6rem;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 75%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+
+    h4 {
+      bottom: 0;
+      color: var(--color-white);
+      font-size: 1.2rem;
+      left: 0;
+      margin: 0;
+      padding: 1rem;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
+
+.menu-drawer__brands {
+  flex: 0 0 100%;
+  padding: 0 3rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 10rem;
+    height: 100%;
+    position: absolute;
+    right: 2.6rem;
+    top: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  h5 {
+    margin: 1.3rem 0;
+  }
+
+  ul {
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: both;
+    max-width: calc(100dvw - 6.2rem);
+    gap: 3rem;
+
+    li {
+      display: inline-flex;
+      padding: 1.5rem 0;
+      scroll-snap-align: start;
+    }
   }
 }
