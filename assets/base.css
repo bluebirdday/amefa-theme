@@ -2701,6 +2701,11 @@ input[type='checkbox'] {
     padding: 0;
 }
 
+svg.icon.icon-cart {
+    height: auto;
+    width: auto;
+}
+
 .header__icon--cart {
     position: relative;
     margin-right: -1.2rem;
