@@ -655,9 +655,25 @@
     }
 
     .quick-add__submit {
-        background: var(--color-amefa-blue);
+        background: transparent;
         color: white;
-        border: 1px solid var(--color-amefa-blue);
+        border: none;
+
+        span {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        svg {
+            width: 3.3rem;
+            height: 2.7rem;
+        }
     }
 }
 

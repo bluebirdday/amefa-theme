@@ -306,7 +306,11 @@
                                             {% if card_product.selected_or_first_available_variant.available == false %}
                                                 disabled
                                             {% endif %}
-                                    >
+                                            title="{%- if card_product.selected_or_first_available_variant.available -%}
+                                                  {{ 'products.product.add_to_cart' | t }}
+                                              {%- else -%}
+                                                  {{ 'products.product.sold_out' | t }}
+                                              {%- endif -%}">
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
                           {{ 'products.product.add_to_cart' | t }}
@@ -318,6 +322,7 @@
                                         <span class="sold-out-message hidden">
                       {{ 'products.product.sold_out' | t }}
                     </span>
+                                        {% render 'icon-cart-add.liquid' %}
                                         {%- if horizontal_quick_add -%}
                                             <span class="icon-wrap">{% render 'icon-plus' %}</span>
                                         {%- endif -%}
