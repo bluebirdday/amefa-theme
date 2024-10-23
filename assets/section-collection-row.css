@@ -58,17 +58,25 @@
 
         .card__content {
             bottom: 0;
+            height: 100%;
             left: 0;
-            padding: 0.5rem 1rem;
             position: absolute;
             z-index: 1;
 
             .card__information {
                 padding: 0;
 
-                a {
-                    color: var(--color-white);
-                    font-weight: 600;
+                .card__heading {
+                    height: 100%;
+
+                    a {
+                        align-items: end;
+                        color: var(--color-white);
+                        display: flex;
+                        height: 100%;
+                        font-weight: 600;
+                        padding: 0.5rem 1rem;
+                    }
                 }
             }
         }
