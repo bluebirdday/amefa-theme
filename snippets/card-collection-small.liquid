@@ -93,13 +93,16 @@
                 class="full-unstyled-link "
               >
                 <span>
-                {%- if card_collection.title != blank -%}
-                  {{- card_collection.title | escape -}}
-                {%- else -%}
-                  {{ 'onboarding.collection_title' | t }}
-                {%- endif -%}
-                  </span>
-                  <span class="icon-wrap">{% render 'icon-spoon' %}</span>
+                  {%  if card_collection.metafields.custom.collection_icon %}
+                    {{ card_collection.metafields.custom.collection_icon | image_url: height: 12 | image_tag: class: 'icon collection-icon', preload: true }}
+                  {% endif %}
+                  {%- if card_collection.title != blank -%}
+                    {{- card_collection.title | escape -}}
+                  {%- else -%}
+                    {{ 'onboarding.collection_title' | t }}
+                  {%- endif -%}
+                </span>
+                <span class="icon-wrap">{% render 'icon-spoon' %}</span>
               </a>
             </div>
           </div>
@@ -119,13 +122,16 @@
               class="full-unstyled-link"
             >
               <span>
-              {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
-              {%- else -%}
-                {{ 'onboarding.collection_title' | t }}
-              {%- endif -%}
-                </span>
-                <span class="icon-wrap">{% render 'icon-spoon' %}</span>
+                {%  if card_collection.metafields.custom.collection_icon %}
+                  {{ card_collection.metafields.custom.collection_icon | image_url: height: 12 | image_tag: class: 'icon collection-icon', preload: true }}
+                {% endif %}
+                {%- if card_collection.title != blank -%}
+                  {{- card_collection.title | escape -}}
+                {%- else -%}
+                  {{ 'onboarding.collection_title' | t }}
+                {%- endif -%}
+              </span>
+              <span class="icon-wrap">{% render 'icon-spoon' %}</span>
             </a>
           </div>
         </div>

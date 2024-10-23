@@ -16,6 +16,9 @@
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
               >
+                {%  if link.object.metafields.custom.collection_icon %}
+                  {{ link.object.metafields.custom.collection_icon | image_url: height: 20 | image_tag: class: 'icon collection-icon', preload: true }}
+                {% endif %}
                 <span
                   {%- if link.child_active %}
                     class="header__active-menu-item"
@@ -27,11 +30,11 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup page-width"
                 tabindex="-1"
               >
                 <ul
-                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                  class="mega-menu__list{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                   role="list"
                 >
                   {%- for childlink in link.links -%}
@@ -44,6 +47,9 @@
                           aria-current="page"
                         {% endif %}
                       >
+                        {%  if childlink.object.metafields.custom.collection_icon %}
+                          {{ childlink.object.metafields.custom.collection_icon | image_url: height: 15 | image_tag: class: 'icon collection-icon', preload: true }}
+                        {% endif %}
                         {{ childlink.title | escape }}
                       </a>
                       {%- if childlink.links != blank -%}
@@ -67,6 +73,32 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                {% if link.object.metafields.custom.collection_brands %}
+                  <div class="shop-by-brand">
+                    <h5 class="shop-by-brand__title">{{ 'shop-by-brand' | t }}</h5>
+                    <ul>
+                      {%- for collection_brand in link.object.metafields.custom.collection_brands.value -%}
+                        <li>
+                          {% if collection_brand.merk_collectie_url %}
+                            <a href="{{ collection_brand.merk_collectie_url }}" target="_blank">
+                              {% if collection_brand.merklogo %}
+                                {{ collection_brand.merklogo | image_url: height: 20 | image_tag: class: 'brand brand-logo', alt: collection_brand.merknaam, title: collection_brand.merknaam, preload: true }}
+                              {% else %}
+                                <span>{{ collection_brand.merknaam }}</span>
+                              {% endif %}
+                            </a>
+                          {% else %}
+                            {% if collection_brand.merklogo %}
+                              {{ collection_brand.merklogo | image_url: height: 20 | image_tag: class: 'brand brand-logo', alt: collection_brand.merknaam, title: collection_brand.merknaam, preload: true }}
+                            {% else %}
+                              <span>{{ collection_brand.merknaam }}</span>
+                            {% endif %}
+                          {% endif %}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {% endif %}
               </div>
             </details>
           </header-menu>

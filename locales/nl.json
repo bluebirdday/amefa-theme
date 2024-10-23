@@ -8,6 +8,7 @@
 * ------------------------------------------------------------
 */
 {
+  "shop-by-brand": "Onze merken",
   "details": "Details",
   "view": "Bekijk",
   "care": "Onderhoud",
@@ -146,7 +147,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Toevoegen",
+      "add_to_cart": "Aan winkelwagen toevoegen",
       "description": "Beschrijving",
       "on_sale": "Aanbieding",
       "quantity": {
