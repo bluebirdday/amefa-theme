@@ -40,7 +40,7 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper underline-links-hover {% if card_background %}card-wrapper--background{% endif %}">
     <div
       class="
         card card--{{ settings.card_style }}
@@ -574,9 +574,6 @@
                 </quantity-popover>
               {% endif %}
             {%- endif -%}
-            {% if card_background %}
-              <a href="{{ card_product.url }}" class="link"><span>{{ 'view' | t }}</span><span class="icon-wrap">{% render 'icon-spoon' %}</span></a>
-            {% endif %}
           </div>
         </div>
         <div class="card__badge {{ settings.badge_position }}">
@@ -597,9 +594,6 @@
           {%- endif -%}
         </div>
       </div>
-      {% if card_background %}
-        <div class="card--background"></div>
-      {% endif %}
     </div>
   </div>
 {%- else -%}
