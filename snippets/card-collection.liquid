@@ -92,6 +92,9 @@
                 {% endif %}
                 class="full-unstyled-link"
               >
+                {%  if card_collection.metafields.custom.collection_icon %}
+                  {{ card_collection.metafields.custom.collection_icon | image_url: height: 20 | image_tag: class: 'icon collection-icon', preload: true }}
+                {% endif %}
                 {%- if card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
@@ -124,6 +127,9 @@
               {% endif %}
               class="full-unstyled-link"
             >
+              {%  if card_collection.metafields.custom.collection_icon %}
+                {{ card_collection.metafields.custom.collection_icon | image_url: height: 20 | image_tag: class: 'icon collection-icon', preload: true }}
+              {% endif %}
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
               {%- else -%}

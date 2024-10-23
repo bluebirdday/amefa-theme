@@ -677,6 +677,14 @@
         "name": "Collection list"
       }
     },
+    "brand-list": {
+      "name": "Brand list",
+      "settings": {
+        "title": {
+          "default": "Onze merken"
+        }
+      }
+    },
     "contact-form": {
       "name": "Contact Form",
       "presets": {
