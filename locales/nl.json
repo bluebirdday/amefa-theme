@@ -146,7 +146,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Aan winkelwagen toevoegen",
+      "add_to_cart": "Toevoegen",
       "description": "Beschrijving",
       "on_sale": "Aanbieding",
       "quantity": {
