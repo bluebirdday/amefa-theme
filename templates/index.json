@@ -113,26 +113,12 @@
         "padding_bottom": 16
       }
     },
-    "rich_text_yEFBxU": {
-      "type": "rich-text",
-      "blocks": {
-        "text_JFxwKt": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li><strong>Stijlvol bestek</strong> voor onvergetelijke avonden</li><li>Meesterschap sinds <strong>1931</strong></li><li><strong>Gratis</strong> thuisbezorgd vanaf €50</li><li>Binnen <strong>1-3 werkdagen</strong> geleverd</li></ul><p></p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_JFxwKt"
-      ],
+    "animated_usps_Lgr7nL": {
+      "type": "animated-usps",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
+        "amefa_usps": "<ul><li><strong>Stijlvol bestek</strong> voor onvergetelijke avonden</li><li>Meesterschap sinds <strong>1931</strong></li><li><strong>Gratis</strong> thuisbezorgd vanaf €50</li><li>Binnen <strong>1-3 werkdagen</strong> geleverd</li></ul>",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection_KwXmPb": {
@@ -383,7 +369,7 @@
   "order": [
     "image_banner",
     "collection_list_figdmd",
-    "rich_text_yEFBxU",
+    "animated_usps_Lgr7nL",
     "featured_collection_KwXmPb",
     "collection_list_pXTwmh",
     "image_with_text_RPwJDY",
