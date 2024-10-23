@@ -9,6 +9,45 @@
  */
 {
   "sections": {
+    "image_with_text_m4dACE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_iwNApd": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_GbtGrp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.collection_banner.value.short_description.value }}</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iwNApd",
+        "text_GbtGrp"
+      ],
+      "settings": {
+        "hide_on_mobile": true,
+        "image": "{{ collection.metafields.custom.collection_banner.value.image.value }}",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b",
+        "color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_row_FPhT34": {
       "type": "collection-row",
       "blocks": {
@@ -61,7 +100,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
-        "quick_add": "none",
+        "quick_add": "standard",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
@@ -70,25 +109,26 @@
         "padding_bottom": 48
       }
     },
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
-    },
     "17271006391055c802": {
       "type": "apps",
       "settings": {
         "include_margins": true
       }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b"
+      }
     }
   },
   "order": [
+    "image_with_text_m4dACE",
     "collection_row_FPhT34",
     "product-grid",
-    "banner",
-    "17271006391055c802"
+    "17271006391055c802",
+    "banner"
   ]
 }
