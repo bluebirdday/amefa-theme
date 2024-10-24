@@ -239,6 +239,9 @@
                     {% if collection.metafields.custom.collection_usps %}
                       {{ collection.metafields.custom.collection_usps.value.usp_list|metafield_tag }}
                       {{ collection.metafields.custom.collection_usps.value.usp_list|metafield_tag }}
+                    {% elsif localization.market.metafields.custom.default_collection_usps %}
+                      {{ localization.market.metafields.custom.default_collection_usps.value.usp_list|metafield_tag }}
+                      {{ localization.market.metafields.custom.default_collection_usps.value.usp_list|metafield_tag }}
                     {% endif %}
                 {% else %}
                   {% render 'card-product',
