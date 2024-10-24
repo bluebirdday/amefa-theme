@@ -226,7 +226,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Het kiezen van de juiste bestekset is  niet gemakkelijk. Gelukkig hebben we een keuzehulp samengesteld zodat je zeker weet dat je de juiste set kiest!</p>",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         }
       },
@@ -237,6 +237,7 @@
       ],
       "settings": {
         "hide_on_mobile": false,
+        "image": "shopify://shop_images/157000MBA1B60_1_Amefa_20Bologna_20-_2016_20delige_20bestekset-_204_20persoons_73d51f9a-c7e2-4f88-96b0-04380a2f0884.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
