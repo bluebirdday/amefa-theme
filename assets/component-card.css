@@ -660,7 +660,7 @@
     }
 
     .quick-add__submit {
-        background: transparent;
+        background: var(--color-amefa-blue);
         color: white;
         border: none;
 
@@ -678,6 +678,7 @@
         svg {
             width: 3.3rem;
             height: 2.7rem;
+            fill: var(--color-white);
         }
     }
 }
@@ -699,4 +700,19 @@
         font-weight: 300;
         margin-left: auto;
     }
+}
+
+.card__vendor__container {
+    order: 1;
+
+    div {
+        opacity: .85;
+        font-size: 1.4rem;
+    }
+}
+.card__name-container {
+    order: 2;
+}
+.card__footer {
+    order: 3;
 }
