@@ -1,0 +1,23 @@
+.brand-list {
+    @media screen and (min-width: 750px) {
+        justify-content: center;
+    }
+
+    &.slider {
+        margin-bottom: 2rem;
+    }
+
+    .brand-list__item {
+        &.slider__slide {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
+        .brand-logo {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}
