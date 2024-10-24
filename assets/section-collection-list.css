@@ -2,6 +2,53 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  &:not(.slider) {
+    @media screen and (max-width: 749px) {
+      gap: 0;
+    }
+
+    .collection-list__item {
+      @media screen and (min-width: 750px) {
+        height: 10rem;
+      }
+    }
+
+    .card-wrapper {
+      .card {
+        .card__inner {
+          @media screen and (max-width: 749px) {
+            display: none;
+          }
+        }
+
+        > .card__content {
+          @media screen and (max-width: 749px) {
+            border: 1px solid #e5e5e5;
+            border-radius: var(--media-radius);
+          }
+
+          .card__information {
+            align-items: end;
+            display: flex;
+            padding: 0;
+
+            .card__heading {
+              .full-unstyled-link {
+                font-size: 1.6rem;
+                font-weight: 700;
+                padding: 1rem;
+
+                .icon-wrap {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .card-wrapper {
     .card {
       position: relative;
@@ -12,23 +59,54 @@
       }
 
       > .card__content {
-        left: 2rem;
-        position: absolute;
-        top: 2rem;
-        width: calc(100% - 4rem);
+        @media screen and (max-width: 749px) {
+          justify-content: center;
+        }
+
+        @media screen and (min-width: 750px) {
+          bottom: 0;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          z-index: 1;
+        }
 
         .card__information {
+          display: flex;
           padding: 0;
+
+          @media screen and (min-width: 750px) {
+            align-items: end;
+          }
 
           .card__heading {
             .full-unstyled-link {
-              color: rgb(var(--color-background));
-              font-size: 1.8rem;
-              font-weight: 700;
-              line-height: 2.7rem;
+              align-items: center;
+              display: flex;
+              font-size: 1.2rem;
+              line-height: 2rem;
+              padding-top: 1rem;
+              text-align: center;
+
+              @media screen and (min-width: 750px) {
+                color: rgb(var(--color-background));
+                font-size: 1.6rem;
+                padding: 1rem;
+              }
+
+              .collection-icon {
+                margin-right: 1rem;
+
+                @media screen and (min-width: 750px) {
+                  filter: invert(1);
+                }
+              }
 
               .icon-wrap {
-                vertical-align: text-bottom;
+                @media screen and (max-width: 749px) {
+                  display: none;
+                }
               }
             }
           }
@@ -42,24 +120,32 @@
   margin: 0;
 }
 
-@media screen and (max-width: 749px) {
-  .collection-list:not(.slider) {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.collection-list__item {
+  position: relative;
 
-  .section-collection-list .collection-list:not(.slider) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  &:only-child {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
-.collection-list__item:only-child {
-  max-width: 100%;
-  width: 100%;
-}
-
 @media screen and (max-width: 749px) {
+  .collection-list {
+    &:not(.slider) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .grid__item.collection-list__item {
+      max-width: unset;
+      width: 100%;
+
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
   .slider.collection-list--1-items {
     padding-bottom: 0;
   }
@@ -75,8 +161,24 @@
 }
 
 @media screen and (min-width: 750px) {
-  .collection-list__item a:hover {
-    box-shadow: none;
+  .collection-list__item {
+    &::after {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 75%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+
+    a:hover {
+      box-shadow: none;
+    }
   }
 }
 
