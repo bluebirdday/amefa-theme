@@ -256,8 +256,8 @@
       "type": "brand-list",
       "settings": {
         "title": "Onze merken",
-        "heading_size": "h1",
-        "columns_desktop": 3,
+        "heading_size": "h2",
+        "columns_desktop": 4,
         "enable_desktop_slider": true,
         "color_scheme": "",
         "swipe_on_mobile": true,
