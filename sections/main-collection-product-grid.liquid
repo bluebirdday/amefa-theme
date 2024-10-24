@@ -228,6 +228,11 @@
                       <h3>{{ localization.market.metafields.custom.default_collection_banner.value.title }}</h3>
                       {% if localization.market.metafields.custom.default_collection_banner.value.subtitle %}
                         <h4>{{ localization.market.metafields.custom.default_collection_banner.value.subtitle }}</h4>
+                        {% if localization.market.metafields.custom.default_collection_banner.value.link and localization.market.metafields.custom.default_collection_banner.value.link.value.text %}
+                          <button class="button button--tertiary">
+                            {{ localization.market.metafields.custom.default_collection_banner.value.link.value.text }}
+                          </button>
+                        {% endif %}
                       {% endif %}
                       {% if localization.market.metafields.custom.default_collection_banner.value.link %}
                         </a>
