@@ -3159,7 +3159,7 @@ details-disclosure > details {
 
 @media screen and (min-width: 750px) {
     .header__search .predictive-search {
-        width: calc(183% + 0.2rem);
+        width: calc(70rem + 0.2rem);
     }
 }
 
@@ -3887,7 +3887,7 @@ details-disclosure > details {
   Amefa custom grid
  */
 @media screen and (min-width: 1024px) {
-    .product-grid-container .grid {
+    .product-grid-container .collection:not(.template-search__results) .grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr 1fr 5rem 1fr 1fr 1fr;
@@ -4054,7 +4054,7 @@ details-disclosure > details {
     }
 }
 
-.product-grid-container .grid {
+.product-grid-container .collection:not(.template-search__results) .grid {
     .grid__item {
         &.grid__item--banner {
             display: none;
