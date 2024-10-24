@@ -44,7 +44,7 @@
                                     class="rebuy-product-block"
                                     role="listitem"
                             >
-
+                                <div class="rebuy-product-wrapper">
                                 <div class="rebuy-product-media">
                                     <a
                                             class="rebuy-product-image"
@@ -59,23 +59,47 @@
                                              v-bind:src="itemImage(product, product.selected_variant, '400x400')"
                                              v-bind:alt="itemImageAlt(product, product.selected_variant)">
                                     </a>
+                                    <div class="rebuy-product-information" v-if="product.metafields.plytix.Personen || product.metafields.plytix.setsize">
+                                        <div v-if="product.metafields.plytix.Personen">{{ product.metafields.plytix.Personen
+                                            }}
+                                        </div>
+                                        <div v-if="product.metafields.plytix.setsize">{{ product.metafields.plytix.setsize
+                                            }}
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="rebuy-product-info">
-                                    <a
-                                            aria-level="5"
-                                            class="rebuy-product-title"
-                                            v-bind:href="learnMoreURL(product)"
-                                            v-on:click="learnMore(product, $event);"
-                                            v-html="product.metafields.plytix.pattern_name"
-                                            v-bind:class="[hasLearnMore() ? 'clickable' : '']"
-                                            v-bind:aria-label="'View ' + product.title"
-                                            rel="nofollow"
-                                    ></a>
-                                    <div v-if="product.metafields.plytix.Personen">{{ product.metafields.plytix.Personen
-                                        }}
-                                    </div>
-                                    <div v-if="product.metafields.plytix.setsize">{{ product.metafields.plytix.setsize
-                                        }}
+                                    <div class="rebuy-product__title-price">
+                                        <a
+                                                aria-level="5"
+                                                class="rebuy-product-title"
+                                                v-bind:href="learnMoreURL(product)"
+                                                v-on:click="learnMore(product, $event);"
+                                                v-html="product.metafields.plytix.pattern_name"
+                                                v-bind:class="[hasLearnMore() ? 'clickable' : '']"
+                                                v-bind:aria-label="'View ' + product.title"
+                                                rel="nofollow"
+                                        ></a>
+                                        <div class="rebuy-product-price">
+                                            <div v-if="variantOnSale(product, product.selected_variant)">
+                                              <span class="rebuy-money sale">
+                                                  <span class="sr-only">Sale price</span>
+                                                  <span tabindex="0"
+                                                        v-html="formatMoney(variantPrice(product, product.selected_variant))"></span>
+                                              </span>
+                                                            <span class="rebuy-money compare-at">
+                                                  <span class="sr-only">Original price</span>
+                                                  <span v-html="formatMoney(variantCompareAtPrice(product, product.selected_variant))"></span>
+                                              </span>
+                                                        </div>
+                                                        <div v-if="!(variantOnSale(product, product.selected_variant))">
+                                              <span class="rebuy-money">
+                                                  <span class="sr-only">Price</span>
+                                                  <span tabindex="0"
+                                                        v-html="formatMoney(variantPrice(product, product.selected_variant))"></span>
+                                              </span>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="rebuy-variant-title" v-if="showVariantTitle(product)"
                                          v-html="product.selected_variant.title"></div>
@@ -93,27 +117,6 @@
                                         v-bind:style="{ width: productReviewRatingPercentage(product) }"></span>
                               </span>
                                         <span class="rebuy-review-count" v-html="productReviewCount(product)"></span>
-                                    </div>
-
-                                    <div class="rebuy-product-price">
-                                        <div v-if="variantOnSale(product, product.selected_variant)">
-                                  <span class="rebuy-money sale">
-                                      <span class="sr-only">Sale price</span>
-                                      <span tabindex="0"
-                                            v-html="formatMoney(variantPrice(product, product.selected_variant))"></span>
-                                  </span>
-                                            <span class="rebuy-money compare-at">
-                                      <span class="sr-only">Original price</span>
-                                      <span v-html="formatMoney(variantCompareAtPrice(product, product.selected_variant))"></span>
-                                  </span>
-                                        </div>
-                                        <div v-if="!(variantOnSale(product, product.selected_variant))">
-                                  <span class="rebuy-money">
-                                      <span class="sr-only">Price</span>
-                                      <span tabindex="0"
-                                            v-html="formatMoney(variantPrice(product, product.selected_variant))"></span>
-                                  </span>
-                                        </div>
                                     </div>
                                     <div class="rebuy-product-description" v-if="showProductDescription(product)"
                                          v-html="text(product.body_html)"></div>
@@ -217,11 +220,14 @@
                                             v-bind:aria-label="buttonAriaLabel(product)"
                                             v-on:click="addToCart(product)"
                                             type="button">
-                                        <span v-html="buttonLabel(product)"></span>
+                                        <span class="visually-hidden" v-html="buttonLabel(product)"></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 22.8">
+                                            <path d="M16.9 11.8V6c0-.6-.4-1-1-1h-3V4c0-2.2-1.8-4-4-4s-4 1.8-4 4v1h-3c-.6 0-1 .4-1 1v11c0 1.7 1.3 3 3 3h7.7c1 1.5 2.6 2.4 4.5 2.4 3 0 5.4-2.4 5.4-5.4s-2-4.9-4.6-5.3ZM6.9 4c0-1.1.9-2 2-2s2 .9 2 2v1h-4V4Zm3.8 13.1v.9H3.9c-.6 0-1-.4-1-1V7h2v1c0 .6.4 1 1 1s1-.4 1-1V7h4v1c0 .6.4 1 1 1s1-.4 1-1V7h2v4.9c-2.4.6-4.1 2.7-4.1 5.2Zm8.3.5h-2.4V20h-1v-2.4h-2.4v-1h2.4v-2.4h1v2.4H19v1Z"/>
+                                        </svg>
                                     </button>
                                 </div>
                             </div>
-
+                            </div>
                         </div>
 
                         <div class="rebuy-modal-actions" v-if="showContinueButton()">
@@ -240,6 +246,8 @@
         </div>
     </script>
 {% endraw %}
+
+{{ 'rebuy.css' | asset_url | stylesheet_tag }}
 
 <div data-rebuy-id="{{ section.settings.widget_id }}" data-rebuy-shopify-product-ids="{{ product.id }}"></div>
 
