@@ -167,11 +167,12 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 }
 
 .predictive-search__item-vendor {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-bottom: .5rem;
 }
 
 .predictive-search__item-heading {
-  margin: 0;
+  margin: 0 0 .5rem;
 }
 
 .predictive-search__item-heading.secondary {
