@@ -4,6 +4,14 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
+{% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}
+
+{% if metafield_data %}
+  <script>
+    window.metafieldData = {{ metafield_data.value | json }};
+  </script>
+{% endif %}
+
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
