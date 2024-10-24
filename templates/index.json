@@ -192,10 +192,10 @@
       ],
       "settings": {
         "title": "Bestek op kleur",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
