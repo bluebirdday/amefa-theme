@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -7,12 +16,73 @@
         "padding_bottom": 36
       }
     },
-    "form": {
-      "type": "contact-form",
+    "collapsible_content_tXRdPK": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_TxrLay": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FAQ 1",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Bh4kqp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FAQ 2",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_8nUKTN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FAQ 3",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_jJFD3g": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FAQ 4",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_BtMgDE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "FAQ 5",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_TxrLay",
+        "collapsible_row_Bh4kqp",
+        "collapsible_row_8nUKTN",
+        "collapsible_row_jJFD3g",
+        "collapsible_row_BtMgDE"
+      ],
       "settings": {
-        "heading": "",
+        "caption": "",
+        "heading": "Veelgestelde vragen",
         "heading_size": "h1",
-        "color_scheme": "scheme-1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -20,6 +90,6 @@
   },
   "order": [
     "main",
-    "form"
+    "collapsible_content_tXRdPK"
   ]
 }
