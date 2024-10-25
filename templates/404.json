@@ -1,10 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "image_banner_YeMetP": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_HkTQFY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>We kunnen deze pagina niet vinden op onze tafel.</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_AYhAed": {
+          "type": "text",
+          "settings": {
+            "text": "Maar misschien brengen deze links je wel naar de juiste plek",
+            "text_style": "body"
+          }
+        },
+        "buttons_MjGGxi": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Terugkeren naar de winkel",
+            "button_link_1": "shopify://collections/frontpage",
+            "button_style_secondary_1": false,
+            "button_style_link_1": false,
+            "button_label_2": "Onze besteksets",
+            "button_link_2": "shopify://collections/besteksets",
+            "button_style_secondary_2": true,
+            "button_style_link_2": false,
+            "inline_buttons": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HkTQFY",
+        "text_AYhAed",
+        "buttons_MjGGxi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/192400RT41C40_2_Ventura_20-_2024-delige_20bestekset_20voor_206_20personen_7dedb16b-4af0-4938-b2f3-c4ae01214d2c.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "full_width_banner": true,
+        "rounded_corners": true,
+        "desktop_content_position": "middle-center",
+        "desktop_content_width": "half",
+        "show_text_box": true,
+        "text_box_color": "#ffffff",
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "dark_text": true,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_YeMetP"
   ]
 }
