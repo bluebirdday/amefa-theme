@@ -447,6 +447,10 @@
     /*display: none;*/
 }
 
+.card--standard.card--media .card__inner .card__information {
+    display: none;
+}
+
 .card--standard:not(.card--horizontal) .placeholder-svg {
     width: 100%;
 }
