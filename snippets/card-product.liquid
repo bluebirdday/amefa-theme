@@ -123,6 +123,20 @@
               {%- endif -%}
             </div>
           </div>
+        {% else %}
+          <div class="card__media card__media--fallback shape--square">
+              <div class="media">
+                  {{ settings.logo | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo motion-reduce',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                  }}
+              </div>
+          </div>
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">

@@ -325,6 +325,14 @@
     width: 100%;
 }
 
+.card__media.card__media--fallback .media {
+    background: var(--color-white);
+    
+    img {
+        object-fit: contain;
+    }
+}
+
 .card__inner:not(.ratio) > .card__content {
     height: 100%;
 }
