@@ -325,6 +325,14 @@
     width: 100%;
 }
 
+.card__media.card__media--fallback .media {
+    background: var(--color-white);
+
+    img {
+        object-fit: contain;
+    }
+}
+
 .card__inner:not(.ratio) > .card__content {
     height: 100%;
 }
@@ -436,7 +444,7 @@
 .card--standard:not(.card--horizontal) > .card__content .card__badge,
 .card--standard.card--text.article-card > .card__content .card__information,
 .card--standard > .card__content .card__caption {
-    display: none;
+    /*display: none;*/
 }
 
 .card--standard:not(.card--horizontal) .placeholder-svg {
