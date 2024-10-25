@@ -55,7 +55,7 @@
       "settings": {
         "image": "shopify://shop_images/192400RT41C40_2_Ventura_20-_2024-delige_20bestekset_20voor_206_20personen_7dedb16b-4af0-4938-b2f3-c4ae01214d2c.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "full_width_banner": true,
         "rounded_corners": true,
         "desktop_content_position": "middle-center",
@@ -68,7 +68,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     }
   },
