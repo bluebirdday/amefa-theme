@@ -9,6 +9,7 @@
 
     --color-white: #fff;
     --color-black: #000;
+    /* Amefa specific */
     --color-amefa-blue: #0079BF;
     --color-equator: #dcbb60;
     --color-fiery-orange: #a24410;
@@ -35,6 +36,7 @@
     --color-antiqued-aqua: #bbcdc2;
     --color-kettle-corn: #f6e4bd;
     --color-poisonous-pesticide: #32d13d;
+
 }
 
 .product-card-wrapper .card,
@@ -1409,7 +1411,8 @@ button.shopify-payment-button__button--unbranded {
         border: none;
         position: static;
         box-shadow: none;
-        background: url('./spoon.svg');
+        background-image: url('./spoon.svg');
+        background-repeat: no-repeat;
     }
 
     &:hover:after {
