@@ -2783,7 +2783,7 @@ menu-drawer + .header__search {
 }
 
 .header__search .field {
-    margin-bottom: .8rem;
+    margin-bottom: .8rem !important;
 }
 
 .header__search .field__label,
