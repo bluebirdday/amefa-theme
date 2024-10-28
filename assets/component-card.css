@@ -728,3 +728,112 @@
 .card__footer {
     order: 3;
 }
+
+.card.article-card {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .card__inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .card__content {
+        flex: 0 0 min(50vw, calc(75% - 5rem));
+        margin: 2rem;
+    }
+
+    .card__information {
+        background: var(--color-cararra);
+        z-index: 1;
+        padding: 2rem;
+        border-radius: var(--border-radius);
+
+        .button--link {
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 0;
+            border-bottom: 0;
+            position: static;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                display: block;
+                z-index: 2;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Colors */
+.blog-articles__article {
+    &:nth-child(2) .card__information {
+        background: var(--color-spanish-white);
+    }
+    &:nth-child(3) .card__information {
+        background: var(--color-barley-corn);
+    }
+    &:nth-child(4) .card__information {
+        background: var(--color-rob-roy);
+    }
+    &:nth-child(5) .card__information {
+        background: var(--color-calico);
+    }
+    &:nth-child(6) .card__information {
+        background: var(--color-tana-flat);
+    }
+    &:nth-child(7) .card__information {
+        background: var(--color-akaroa);
+    }
+    &:nth-child(8) .card__information {
+        background: var(--color-gray-nurse);
+    }
+    &:nth-child(9) .card__information {
+        background: var(--color-citrine-white);
+    }
+    &:nth-child(10) .card__information {
+        background: var(--color-janna);
+    }
+    &:nth-child(11) .card__information {
+        background: var(--color-pumice);
+    }
+    &:nth-child(12) .card__information {
+        background: var(--color-tana);
+    }
+}
+
+/* Widths */
+.blog-articles {
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width: 900px) {
+    .blog-articles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blog-articles__article {
+        &:nth-child(1),
+        &:nth-child(4) {
+            grid-column: span 2;
+
+            .card__content {
+                flex: 0 0 min(50vw, calc(50% - 5rem));
+                margin: 2rem;
+            }
+        }
+    }
+}
