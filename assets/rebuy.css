@@ -1,72 +1,116 @@
-.rebuy-product-block {
-    margin: 0 1rem;
-}
+.rebuy-widget {
+    .rebuy-product-block {
+        .rebuy-product-wrapper {
+            border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+            border-radius: var(--media-radius);
+            padding: 1.5rem;
 
-.rebuy-product-wrapper {
-    border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-    border-radius: var(--media-radius);
-    padding: 1.5rem;
-}
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 32px;
+                transition: all .2s ease;
 
-.rebuy-product-media {
-    position: relative;
+                &:hover {
+                    transform: translateY(-1rem);
+                    box-shadow: 0 1px 1px rgba(0,0,0,0.05),
+                    0 2px 2px rgba(0,0,0,0.05),
+                    0 4px 4px rgba(0,0,0,0.05),
+                    0 8px 8px rgba(0,0,0,0.05),
+                    0 16px 16px rgba(0,0,0,0.05),
+                    0 32px 32px rgba(0,0,0,0.05);
 
-    img {
-        border-radius: var(--media-radius);
+                    .rebuy-product-image img {
+                        transform: scale(1.03);
+                    }
+                }
+
+                .rebuy-product-image img {
+                    transition: transform 500ms ease;
+                }
+            }
+
+            .rebuy-product-media {
+                position: relative;
+
+                .rebuy-product-information {
+                    position: absolute;
+                    left: 1rem;
+                    bottom: 1rem;
+                    font-size: 1.4rem;
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    gap: .5rem;
+
+                    > div {
+                        background: var(--color-white);
+                        border-radius: .3rem;
+                        line-height: 1;
+                        padding: .5rem;
+                        color: var(--color-black);
+                    }
+                }
+
+                img {
+                    border-radius: var(--media-radius);
+                }
+            }
+
+            .rebuy-product-info {
+                .rebuy-product__title-price {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .rebuy-product-title {
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    text-transform: none;
+                    text-align: left;
+                }
+            }
+
+            .rebuy-product-actions {
+                text-align: right;
+
+                .rebuy-button {
+                    border-radius: 3px;
+                    display: inline-flex;
+                    margin-left: auto;
+                    width: auto;
+
+                    svg {
+                        width: 2.4rem;
+                        height: auto;
+                        fill: var(--color-white);
+                    }
+                }
+            }
+        }
+    }
+
+    .rebuy-carousel__arrows {
+        .rebuy-carousel__arrow {
+            background: none;
+        }
     }
 }
 
-.rebuy-product-information {
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: flex-start;
+[data-rebuy-component=cross-sell-widget] {
     padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: .5rem;
 
-    > div {
-        background: var(--color-white);
-        border-radius: .3rem;
-        line-height: 1;
-        padding: .5rem;
-        color: var(--color-black);
+    .rebuy-widget {
+        .rebuy-product-grid {
+            .splide__track {
+                padding-top: 2rem;
+
+                .splide__list {
+                    .rebuy-product-block {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
     }
-}
-
-.rebuy-widget .rebuy-product-block .rebuy-product-info {
-    .rebuy-product-title {
-        font-size: 1.7rem;
-        font-weight: 600;
-        text-transform: none;
-        text-align: left;
-    }
-}
-
-.rebuy-product__title-price {
-    display: flex;
-    justify-content: space-between;
-}
-
-.rebuy-product-actions {
-    text-align: right;
-}
-
-.rebuy-button {
-    display: inline-flex;
-    margin-left: auto;
-    width: auto;
-
-    svg {
-        width: 2.4rem;
-        height: auto;
-        fill: var(--color-white);
-    }
-}
-
-.splide__pagination {
-
 }
