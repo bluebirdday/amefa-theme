@@ -8,6 +8,8 @@
     }
 
     .brand-list__item {
+        text-align: center;
+
         &.slider__slide {
             align-items: center;
             display: flex;
