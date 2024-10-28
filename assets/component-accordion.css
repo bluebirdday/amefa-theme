@@ -60,7 +60,9 @@
 }
 
 .accordion {
-  .kl_reviews__summary {
+  .kl_reviews__summary,
+  .kl_reviews__list__tabs,
+  .kl_reviews__list > div:first-of-type {
     display: none !important;
   }
 }
