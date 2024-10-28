@@ -287,12 +287,20 @@
             "product": "felicity-bestekset-6-personen-24-delig-staal",
             "second_image": true
           }
+        },
+        "product_94K6tU": {
+          "type": "product",
+          "settings": {
+            "product": "accessories-magneetbar",
+            "second_image": false
+          }
         }
       },
       "block_order": [
         "collection-0",
         "product",
-        "product_9tCbAx"
+        "product_9tCbAx",
+        "product_94K6tU"
       ],
       "settings": {
         "heading": "Bekijk nu de Felicity Collectie",
