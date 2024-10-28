@@ -2809,8 +2809,11 @@ form[role="search"] .field__label {
 @media screen and (min-width: 990px) {
     .header__search .search__input.field__input {
         width: 20rem;
-        height: 4rem;
         border-bottom: 1px solid #000;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 3rem;
+        transform: translateY(.4rem);
     }
 }
 
