@@ -58,3 +58,9 @@
 .accordion__content img {
   max-width: 100%;
 }
+
+.accordion {
+  .kl_reviews__summary {
+    display: none !important;
+  }
+}
