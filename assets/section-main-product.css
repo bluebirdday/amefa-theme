@@ -1749,3 +1749,13 @@ a.product__text {
     transform: translateX(calc(-100% - 1rem));
   }
 }
+
+
+/** Klaviyo */
+.accordion {
+  .kl_reviews__summary__header,
+  .kl_reviews__summary__grid--2-1,
+  .kl_reviews__answers_grid {
+    display: none;
+  }
+}
