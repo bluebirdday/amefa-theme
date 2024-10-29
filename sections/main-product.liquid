@@ -879,27 +879,29 @@
           </details>
         </div>
 
-        <div class="accordion">
-          <details>
-            <summary role="button">
-              <div class="summary__title">
-                <h2 class="h4 accordion__title">{{ 'care' |  t }}</h2>
-                {% render 'icon-caret' %}
-              </div>
-            </summary>
-            <div class="accordion__content">
-              {%- if product.metafields.plytix.onderhoudsinstructies -%}
-                <h5>{{ 'maintenance-instructions' |  t }}</h5>
-                {{ product.metafields.plytix.onderhoudsinstructies | raw }}
-              {%- endif -%}
+        {%- if product.metafields.plytix.onderhoudsinstructies or product.metafields.plytix.cleaning_instructions -%}
+          <div class="accordion">
+            <details>
+              <summary role="button">
+                <div class="summary__title">
+                  <h2 class="h4 accordion__title">{{ 'care' |  t }}</h2>
+                  {% render 'icon-caret' %}
+                </div>
+              </summary>
+              <div class="accordion__content">
+                {%- if product.metafields.plytix.onderhoudsinstructies -%}
+                  <h5>{{ 'maintenance-instructions' |  t }}</h5>
+                  {{ product.metafields.plytix.onderhoudsinstructies | raw }}
+                {%- endif -%}
 
-              {%- if product.metafields.plytix.cleaning_instructions -%}
-                <h5>{{ 'cleaning-instructions' |  t }}</h5>
-                {{ product.metafields.plytix.cleaning_instructions | metafield_tag }}
-              {%- endif -%}
-            </div>
-          </details>
-        </div>
+                {%- if product.metafields.plytix.cleaning_instructions -%}
+                  <h5>{{ 'cleaning-instructions' |  t }}</h5>
+                  {{ product.metafields.plytix.cleaning_instructions | metafield_tag }}
+                {%- endif -%}
+              </div>
+            </details>
+          </div>
+        {%- endif -%}
 
         <div class="accordion">
           <details>
