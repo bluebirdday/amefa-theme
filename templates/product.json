@@ -105,7 +105,35 @@
     "rebuy_crosssells_FTfijP": {
       "type": "rebuy-crosssells",
       "settings": {
-        "widget_id": "176745"
+        "widget_id": "176128"
+      }
+    },
+    "featured_collection_GV6Jwt": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "{{ product.metafields.custom.featured_collection.value }}",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image-with-text": {
@@ -156,39 +184,12 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_GV6Jwt": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "{{ section.settings.collection.title }}",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "{{ product.metafields.custom.featured_collection.value }}",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": true,
-        "show_rating": true,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "173010787073ae44b8": {
       "type": "apps",
       "blocks": {
         "klaviyo_reviews_all_reviews_kdDWJR": {
           "type": "shopify://apps/klaviyo-reviews/blocks/all-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
           "settings": {
           }
         }
