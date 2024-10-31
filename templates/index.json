@@ -290,6 +290,7 @@
         },
         "product_94K6tU": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "accessories-magneetbar",
             "second_image": false
