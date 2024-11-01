@@ -284,7 +284,15 @@
 }
 
 .facets__header facet-remove {
+  display: flex;
   align-self: center;
+  min-width: 50%;
+  justify-content: flex-end;
+
+  a {
+    font-size: 1.4rem !important;
+    font-weight: normal !important;
+  }
 }
 
 .facets__list {
