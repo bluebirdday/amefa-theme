@@ -47,8 +47,9 @@
         "button"
       ],
       "custom_css": [
-        ".banner--desktop-transparent,.banner--desktop-transparent:after {margin-top: 1.5rem !important; border-radius: 6px !important; overflow: hidden !important;}",
-        ".banner__media,.banner__media img {border-radius: 6px !important}"
+        ".banner--desktop-transparent {margin-top: 1.5rem !important; border-radius: 6px !important; overflow: hidden !important;}",
+        ".banner--desktop-transparent:after {border-radius: 6px !important; overflow: hidden !important;}",
+        ".banner__media,.banner__media img {border-radius: 6px !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/website_banner_home_soprano_black.webp",
