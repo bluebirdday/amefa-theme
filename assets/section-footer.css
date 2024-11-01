@@ -122,6 +122,10 @@
 
 .footer__column--social {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__column--social .list-social {
@@ -570,4 +574,8 @@
       padding-left: 3rem;
     }
   }
+}
+
+.kiyoh-widget {
+  transform: scale(0.75) translate3d(0,0,0)
 }
