@@ -47,7 +47,7 @@
         "button"
       ],
       "custom_css": [
-        ".banner--desktop-transparent {margin-top: 1.5rem; border-radius: 10px; overflow: hidden;}"
+        ".banner--desktop-transparent {margin-top: 1.5rem !important; border-radius: 6px !important; overflow: hidden !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/website_banner_home_soprano_black.webp",
