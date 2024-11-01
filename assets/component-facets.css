@@ -584,6 +584,7 @@ button.facets__button {
 }
 
 span.active-facets__button-inner {
+  background: var(--color-white);
   color: rgb(var(--color-foreground));
   box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
   border-radius: 2.6rem;
@@ -653,7 +654,7 @@ span.active-facets__button-inner:after {
 }
 
 .active-facets__button--light:hover .active-facets__button-inner {
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-foreground), 0.4);
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-foreground), 1);
 }
 
 a.active-facets__button:focus-visible {
