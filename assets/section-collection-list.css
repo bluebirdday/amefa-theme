@@ -3,23 +3,17 @@
   margin-bottom: 0;
 
   &:not(.slider) {
-    @media screen and (max-width: 749px) {
-      gap: 0;
-    }
 
     .collection-list__item {
-      @media screen and (min-width: 750px) {
-        height: 10rem;
-      }
+        aspect-ratio: 1 / 1;
+
+        @media screen and (min-width: 750px) {
+            aspect-ratio: 16 / 9;
+        }
     }
 
     .card-wrapper {
       .card {
-        .card__inner {
-          @media screen and (max-width: 749px) {
-            display: none;
-          }
-        }
 
         > .card__content {
           @media screen and (max-width: 749px) {
@@ -59,53 +53,39 @@
       }
 
       > .card__content {
-        @media screen and (max-width: 749px) {
-          justify-content: center;
-        }
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
 
-        @media screen and (min-width: 750px) {
-          bottom: 0;
-          height: 100%;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          z-index: 1;
-        }
 
         .card__information {
           display: flex;
           padding: 0;
-
-          @media screen and (min-width: 750px) {
-            align-items: end;
-          }
+          align-items: end;
 
           .card__heading {
             .full-unstyled-link {
               align-items: center;
               display: flex;
-              font-size: 1.2rem;
               line-height: 2rem;
-              padding-top: 1rem;
               text-align: center;
-
-              @media screen and (min-width: 750px) {
-                color: rgb(var(--color-background));
-                font-size: 1.6rem;
-                padding: 1rem;
-              }
+              color: rgb(var(--color-background));
+              font-size: 1.6rem;
+              padding: 1rem;
 
               .collection-icon {
                 margin-right: 1rem;
+                filter: invert(1);
 
-                @media screen and (min-width: 750px) {
-                  filter: invert(1);
-                }
-              }
-
-              .icon-wrap {
-                @media screen and (max-width: 749px) {
-                  display: none;
+                @media screen and (max-width: 750px) {
+                    margin-right: 0;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
                 }
               }
             }
@@ -129,27 +109,27 @@
   }
 }
 
-@media screen and (max-width: 749px) {
-  .collection-list {
-    &:not(.slider) {
-      padding-left: 0;
-      padding-right: 0;
-    }
+/*@media screen and (max-width: 749px) {*/
+/*  .collection-list {*/
+/*    &:not(.slider) {*/
+/*      padding-left: 0;*/
+/*      padding-right: 0;*/
+/*    }*/
 
-    .grid__item.collection-list__item {
-      max-width: unset;
-      width: 100%;
+/*    .grid__item.collection-list__item {*/
+/*      max-width: unset;*/
+/*      width: 100%;*/
 
-      &:not(:last-of-type) {
-        margin-bottom: 1.5rem;
-      }
-    }
-  }
+/*      &:not(:last-of-type) {*/
+/*        margin-bottom: 1.5rem;*/
+/*      }*/
+/*    }*/
+/*  }*/
 
-  .slider.collection-list--1-items {
-    padding-bottom: 0;
-  }
-}
+/*  .slider.collection-list--1-items {*/
+/*    padding-bottom: 0;*/
+/*  }*/
+/*}*/
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .slider.collection-list--1-items,
@@ -160,8 +140,7 @@
   }
 }
 
-@media screen and (min-width: 750px) {
-  .collection-list__item {
+.collection-list__item {
     &::after {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
       border-bottom-left-radius: var(--border-radius);
@@ -179,7 +158,6 @@
     a:hover {
       box-shadow: none;
     }
-  }
 }
 
 @media screen and (max-width: 989px) {
