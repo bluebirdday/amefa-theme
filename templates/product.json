@@ -104,6 +104,7 @@
     },
     "rebuy_crosssells_FTfijP": {
       "type": "rebuy-crosssells",
+      "disabled": true,
       "settings": {
         "widget_id": "176128"
       }
