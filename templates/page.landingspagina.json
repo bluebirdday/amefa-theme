@@ -133,6 +133,7 @@
         "button_qy8Qbi"
       ],
       "settings": {
+        "hide_on_mobile": false,
         "image": "{{ page.metafields.custom.merkinformatie.value.merklogo.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -150,6 +151,7 @@
     },
     "video_XCJK4N": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
