@@ -35,7 +35,7 @@
         "hide_on_mobile": true,
         "image": "{{ collection.metafields.custom.collection_banner.value.image.value }}",
         "height": "small",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
