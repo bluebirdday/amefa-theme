@@ -35,11 +35,6 @@
           "settings": {
           }
         },
-        "seo_variants_variants_bztqtn": {
-          "type": "shopify://apps/seo-variants/blocks/variants/1a12d8ea-3d28-4abf-b7a1-d161ffe1dc17",
-          "settings": {
-          }
-        },
         "variant_picker_dbT8an": {
           "type": "variant_picker",
           "settings": {
@@ -79,7 +74,6 @@
         "title",
         "klaviyo_reviews_average_rating_LEWNCc",
         "price",
-        "seo_variants_variants_bztqtn",
         "variant_picker_dbT8an",
         "quantity_selector",
         "buy_buttons",
