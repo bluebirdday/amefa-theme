@@ -12,27 +12,13 @@
   }
 
   .grid__item {
-    &:first-of-type {
-      .card-wrapper--background {
-          background-color: var(--color-hush-puppy);
-      }
-    }
+    --card-background: var(--color-hush-puppy);
 
-    &:nth-of-type(2) {
-      .card-wrapper--background {
-          background-color: var(--color-antiqued-aqua)
-      }
-    }
+    .card-wrapper--background {
+      background-color: var(--card-background);
 
-    &:nth-of-type(3) {
-      .card-wrapper--background {
-          background-color: var(--color-kettle-corn);
-      }
-    }
-
-    &:nth-of-type(4) {
-      .card-wrapper--background {
-          background-color: var(--color-tana-flat);
+      .card--text-white {
+        --color-foreground: 255, 255, 255;
       }
     }
 

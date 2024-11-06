@@ -119,10 +119,8 @@
               class="grid__item
               {% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}
               {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
+              {% if settings.animations_reveal_on_scroll %} data-cascade {% endif %}
+              style="{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }}; {% endif %}{% if product.metafields.custom.brand_color.value.color %} --card-background: {{ product.metafields.custom.brand_color.value.color }}{% endif %}"
             >
               {% render 'card-product',
                 card_product: product,
