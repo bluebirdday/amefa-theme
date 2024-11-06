@@ -730,6 +730,7 @@
 }
 
 .card.article-card {
+    --card-background: var(--color-cararra);
     flex-direction: row;
     justify-content: flex-end;
 
@@ -749,7 +750,7 @@
     }
 
     .card__information {
-        background: var(--color-cararra);
+        background: var(--card-background);
         z-index: 1;
         padding: 2rem;
         border-radius: var(--border-radius);
@@ -777,43 +778,14 @@
             }
         }
     }
-}
 
-/* Colors */
-.blog-articles__article,
-.article {
-    &:nth-child(2) .card__information {
-        background: var(--color-spanish-white);
-    }
-    &:nth-child(3) .card__information {
-        background: var(--color-barley-corn);
-    }
-    &:nth-child(4) .card__information {
-        background: var(--color-rob-roy);
-    }
-    &:nth-child(5) .card__information {
-        background: var(--color-calico);
-    }
-    &:nth-child(6) .card__information {
-        background: var(--color-tana-flat);
-    }
-    &:nth-child(7) .card__information {
-        background: var(--color-akaroa);
-    }
-    &:nth-child(8) .card__information {
-        background: var(--color-gray-nurse);
-    }
-    &:nth-child(9) .card__information {
-        background: var(--color-citrine-white);
-    }
-    &:nth-child(10) .card__information {
-        background: var(--color-janna);
-    }
-    &:nth-child(11) .card__information {
-        background: var(--color-pumice);
-    }
-    &:nth-child(12) .card__information {
-        background: var(--color-tana);
+    &.article-card--text-white {
+        color: var(--color-white);
+
+        .article-card__info,
+        .button--link {
+            color: currentColor;
+        }
     }
 }
 
