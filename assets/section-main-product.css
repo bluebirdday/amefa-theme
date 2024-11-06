@@ -1617,15 +1617,14 @@ a.product__text {
   flex-wrap: wrap;
 
   @media screen and (min-width: 750px) {
-    align-items: flex-start;
-    gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
+    justify-content: space-between;
   }
 
   .product-media-images {
     display: none;
 
     @media screen and (min-width: 750px) {
-      display: flex;
+      display: inline-flex;
       flex-wrap: wrap;
       gap: var(--grid-desktop-horizontal-spacing);
       justify-content: center;
@@ -1659,10 +1658,10 @@ a.product__text {
     width: 100%;
 
     @media screen and (min-width: 750px) {
-      margin-bottom: 10rem;
+      position: -webkit-sticky;
       position: sticky;
-      top: 50%;
-      height: max-content;
+      top: 0;
+      margin-bottom: 10rem;
       width: calc(50% - var(--grid-desktop-horizontal-spacing));
     }
 
