@@ -29,8 +29,8 @@
   }
 
   .collection-hero__inner {
-    align-items: center;
     flex-direction: row;
+    align-items: flex-start;
     padding-bottom: 0;
   }
 }
@@ -77,10 +77,8 @@
     rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
-@media screen and (max-width: 749px) {
-  .collection-hero__image-container {
-    height: 20rem;
-  }
+.collection-hero__image-container {
+  aspect-ratio: 3/2;
 }
 
 @media screen and (min-width: 750px) {
@@ -90,9 +88,7 @@
   }
 
   .collection-hero__image-container {
-    align-self: stretch;
     flex: 1 0 50%;
     margin-left: 3rem;
-    min-height: 20rem;
   }
 }
