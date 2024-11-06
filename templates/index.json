@@ -270,55 +270,6 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "amefa-felicity-collectie"
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "felicity-bestekset-6-personen-24-delig-goud",
-            "second_image": true
-          }
-        },
-        "product_9tCbAx": {
-          "type": "product",
-          "settings": {
-            "product": "felicity-bestekset-6-personen-24-delig-staal",
-            "second_image": true
-          }
-        },
-        "product_94K6tU": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "accessories-magneetbar",
-            "second_image": false
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "product_9tCbAx",
-        "product_94K6tU"
-      ],
-      "settings": {
-        "heading": "Bekijk nu de Felicity Collectie",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_blog_HmNcNE": {
       "type": "featured-blog",
       "settings": {
@@ -337,6 +288,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "17308147745b78a458": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_MFNwnT": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_MFNwnT"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -345,9 +312,9 @@
     "animated_usps_Lgr7nL",
     "featured_collection_KwXmPb",
     "collection_list_pXTwmh",
+    "17308147745b78a458",
     "image_with_text_RPwJDY",
     "brand_list_QGUqED",
-    "collage",
     "featured_blog_HmNcNE"
   ]
 }
