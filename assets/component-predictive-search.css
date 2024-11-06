@@ -33,6 +33,7 @@
     right: 0;
     left: 0;
     top: 100%;
+    width: 100%;
   }
 
   .predictive-search__results-groups-wrapper {
