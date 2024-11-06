@@ -36,13 +36,13 @@
   }
 {%- endstyle -%}
 
-{% comment %}{% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}{% endcomment %}
-{% comment %}{% endcomment %}
-{% comment %}{% if metafield_data %}{% endcomment %}
-  {% comment %}<script>{% endcomment %}
-    {% comment %}window.metafieldData = {{ metafield_data.value | json }};{% endcomment %}
-  {% comment %}</script>{% endcomment %}
-{% comment %}{% endif %}{% endcomment %}
+{% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}
+
+{% if metafield_data %}
+  <script>
+    window.metafieldData = {{ metafield_data.value | json }};
+  </script>
+{% endif %}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
@@ -173,9 +173,8 @@
                 >
                 {% if forloop.index == 3 %}
                   {% if collection.metafields.custom.collection_grid_banner %}
-                    {{ collection.metafields.custom.collection_grid_banner }}
                     <figure class="collection-banner collection-banner--from-collection">
-                      {{ collection.metafields.custom.collection_grid_banner.value.grid_banner.image |  image_url: width: 770 |  image_tag }}
+                      {{ collection.metafields.custom.collection_grid_banner.value.image |  image_url: width: 770 |  image_tag }}
 
                       {% if collection.metafields.custom.collection_grid_banner.value.link %}
                         <a href="{{ collection.metafields.custom.collection_grid_banner.value.link.value.url }}" title="{{ collection.metafields.custom.collection_grid_banner.value.link.value.text }}">
@@ -250,7 +249,7 @@
   {%- endif -%}
 </div>
 
-{% comment %}<script src="{{ 'amefa-plp-swatches.js' | asset_url }}" defer="defer"></script>{% endcomment %}
+<script src="{{ 'amefa-plp-swatches.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
