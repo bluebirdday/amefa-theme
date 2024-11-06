@@ -72,6 +72,13 @@
           "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
           }
+        },
+        "text_aJTEUQ": {
+          "type": "text",
+          "settings": {
+            "text": "Tekstblok",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -84,7 +91,8 @@
         "quantity_selector",
         "buy_buttons",
         "usps_XdzjcR",
-        "klaviyo_reviews_product_reviews_yJVW9L"
+        "klaviyo_reviews_product_reviews_yJVW9L",
+        "text_aJTEUQ"
       ],
       "settings": {
         "enable_sticky_info": true,
