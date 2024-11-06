@@ -3918,7 +3918,9 @@ details-disclosure > details {
                     height: 100%;
                     border-radius: var(--media-radius);
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
                     flex: 0 0 100%;
                 }
 
