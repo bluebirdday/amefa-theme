@@ -123,6 +123,10 @@
 
     li {
       display: inline-flex;
+
+      a {
+        line-height: 0;
+      }
     }
   }
 }

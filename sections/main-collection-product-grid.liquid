@@ -36,13 +36,13 @@
   }
 {%- endstyle -%}
 
-{% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}
-
-{% if metafield_data %}
-  <script>
-    window.metafieldData = {{ metafield_data.value | json }};
-  </script>
-{% endif %}
+{% comment %}{% assign metafield_data = shop.metafields.seo_variants_app.product_groups_v2 %}{% endcomment %}
+{% comment %}{% endcomment %}
+{% comment %}{% if metafield_data %}{% endcomment %}
+  {% comment %}<script>{% endcomment %}
+    {% comment %}window.metafieldData = {{ metafield_data.value | json }};{% endcomment %}
+  {% comment %}</script>{% endcomment %}
+{% comment %}{% endif %}{% endcomment %}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
@@ -172,56 +172,26 @@
                   {% endif %}
                 >
                 {% if forloop.index == 3 %}
-                  {% if collection.metafields.custom.collection_banner %}
-                    <figure class="collection-banner">
-                      <img
-                              srcset="
-                  {%- if card_product.featured_media.width >= 165 -%}{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 360 -%}{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 360 }} 360w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 533 -%}{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 533 }} 533w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 720 -%}{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 720 }} 720w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 940 -%}{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 940 }} 940w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 1066 -%}{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                  {{ collection.metafields.custom.collection_banner.value.image | image_url }} {{ collection.metafields.custom.collection_banner.value.image.width }}w
-                "
-                              src="{{ collection.metafields.custom.collection_banner.value.image | image_url: width: 533 }}"
-                              sizes="(min-width: 770px) {{ 770 | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                              alt="{{ card_product.featured_media.alt | escape }}"
-                              class="motion-reduce"
-                              width="{{ collection.metafields.custom.collection_banner.value.image.width }}"
-                              height="{{ collection.metafields.custom.collection_banner.value.image.height }}"
-                      >
-                      {% if collection.metafields.custom.collection_banner.value.link %}
-                        <a href="{{ collection.metafields.custom.collection_banner.value.link.value.url }}" title="{{ collection.metafields.custom.collection_banner.value.link.value.text }}">
+                  {% if collection.metafields.custom.collection_grid_banner %}
+                    {{ collection.metafields.custom.collection_grid_banner }}
+                    <figure class="collection-banner collection-banner--from-collection">
+                      {{ collection.metafields.custom.collection_grid_banner.value.grid_banner.image |  image_url: width: 770 |  image_tag }}
+
+                      {% if collection.metafields.custom.collection_grid_banner.value.link %}
+                        <a href="{{ collection.metafields.custom.collection_grid_banner.value.link.value.url }}" title="{{ collection.metafields.custom.collection_grid_banner.value.link.value.text }}">
                       {% endif %}
-                      <h3>{{ collection.metafields.custom.collection_banner.value.title }}</h3>
-                      {% if collection.metafields.custom.collection_banner.value.subtitle %}
-                        <h4>{{ collection.metafields.custom.collection_banner.value.subtitle }}</h4>
+                      <h3>{{ collection.metafields.custom.collection_grid_banner.value.title }}</h3>
+                      {% if collection.metafields.custom.collection_grid_banner.value.subtitle %}
+                        <h4>{{ collection.metafields.custom.collection_grid_banner.value.subtitle }}</h4>
                       {% endif %}
-                      {% if collection.metafields.custom.collection_banner.value.link %}
+                      {% if collection.metafields.custom.collection_grid_banner.value.link %}
                         </a>
                       {% endif %}
                     </figure>
                   {% else %}
                     {% if localization.market.metafields.custom.default_collection_banner %}
-                    <figure class="collection-banner">
-                      <img
-                              srcset="
-                  {%- if card_product.featured_media.width >= 165 -%}{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 360 -%}{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 360 }} 360w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 533 -%}{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 533 }} 533w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 720 -%}{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 720 }} 720w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 940 -%}{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 940 }} 940w,{%- endif -%}
-                  {%- if card_product.featured_media.width >= 1066 -%}{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 1066 }} 1066w,{%- endif -%}
-                  {{ localization.market.metafields.custom.default_collection_banner.value.image | image_url }} {{ localization.market.metafields.custom.default_collection_banner.value.image.width }}w
-                "
-                              src="{{ localization.market.metafields.custom.default_collection_banner.value.image | image_url: width: 533 }}"
-                              sizes="(min-width: 770px) {{ 770 | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                              alt="{{ card_product.featured_media.alt | escape }}"
-                              class="motion-reduce"
-                              width="{{ localization.market.metafields.custom.default_collection_banner.value.image.width }}"
-                              height="{{ localization.market.metafields.custom.default_collection_banner.value.image.height }}"
-                      >
+                    <figure class="collection-banner collection-banner--from-market">
+                      {{ localization.market.metafields.custom.default_collection_banner.value.image |  image_url: width: 770 |  image_tag }}
                       {% if localization.market.metafields.custom.default_collection_banner.value.link %}
                         <a href="{{ localization.market.metafields.custom.default_collection_banner.value.link.value.url }}" title="{{ localization.market.metafields.custom.default_collection_banner.value.link.value.text }}">
                       {% endif %}
@@ -280,7 +250,7 @@
   {%- endif -%}
 </div>
 
-<script src="{{ 'amefa-plp-swatches.js' | asset_url }}" defer="defer"></script>
+{% comment %}<script src="{{ 'amefa-plp-swatches.js' | asset_url }}" defer="defer"></script>{% endcomment %}
 
 {% schema %}
 {
