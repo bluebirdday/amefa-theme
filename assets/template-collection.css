@@ -135,6 +135,10 @@
 
 .collection__title.title-wrapper {
   margin-bottom: 2.5rem;
+
+  @media screen and (min-width: 750px) {
+    max-width: calc(100% - 170px);
+  }
 }
 
 .collection__title .title:not(:only-child) {

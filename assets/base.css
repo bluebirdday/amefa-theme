@@ -175,7 +175,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
     .page-width-desktop {
         max-width: var(--page-width);
-        padding: 0 5rem;
     }
 }
 
@@ -1089,13 +1088,13 @@ summary::-webkit-details-marker {
         width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
     }
 
-    .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item,
-    .grid--peek .grid__item {
+    .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item {
         width: calc(50% - var(--grid-mobile-horizontal-spacing) - 3rem);
     }
 
     .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
-    .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
+    .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item,
+    .grid--peek .grid__item {
         width: calc(100% - var(--grid-mobile-horizontal-spacing) - 3rem);
     }
 }
@@ -1112,10 +1111,6 @@ summary::-webkit-details-marker {
     .slider--tablet.grid--peek.grid--2-col-tablet .grid__item,
     .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item {
         width: calc(50% - var(--grid-desktop-horizontal-spacing) - 3rem);
-    }
-
-    .slider--tablet.grid--peek .grid__item:first-of-type {
-        margin-left: 1.5rem;
     }
 
     .grid--2-col-tablet-down .grid__item {
