@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner_fChe9k": {
@@ -22,7 +22,7 @@
         "text_7PLiTi": {
           "type": "text",
           "settings": {
-            "text": "Als je uit eten gaat, is de kans groot dat je daar met Amefa bestek eet. Al tientallen jaren zijn wij de grootste leverancier van bestek in de horeca. En dat is niet zonder reden. Al sinds 1931 maakt Amefa bestek met oog voor detail en altijd in het nu. ",
+            "text": "Bij Amefa staan we voor kwaliteit, vakmanschap en duurzaamheid, en onder onze vlag vallen diverse merken die elk hun eigen unieke geschiedenis en specialiteit hebben. Deze merken bieden een breed scala aan producten, van bestek en messen tot keukenaccessoires, die je keuken en eettafel tot leven brengen. Hieronder een kort overzicht van de merken die we trots vertegenwoordigen:",
             "text_style": "body"
           }
         }
@@ -31,14 +31,19 @@
         "heading_DAdypU",
         "text_7PLiTi"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/3319_FELICITY_MOS_SOCIAL_desktop_2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
+        "full_width_banner": true,
+        "rounded_corners": true,
         "desktop_content_position": "middle-left",
+        "desktop_content_width": "half",
         "show_text_box": true,
+        "text_box_color": "#ffffff",
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-2",
+        "dark_text": true,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -59,10 +64,10 @@
         "row_QPQ7eY": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Over_amefa_felicity.jpg",
-            "caption": "Elke dag",
-            "heading": "Voor de genieters, de liefhebbers en de fijnproevers",
-            "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. Voor iedereen bij wie zelfstandig eten niet vanzelfsprekend hebben wij aangepast bestek.</p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
+            "image": "shopify://shop_images/1170ZTMDF3C40_3_undefined_4824cf04-a0d1-4fc0-b09d-c661361042ef.jpg",
+            "caption": "over amefa",
+            "heading": "Ontdek de Merken onder de Vlag van Amefa",
+            "text": "<p>Écht Nederlands meesterschap. Ons assortiment varieert van tijdloze besteksets met elegante lijnen tot trendy gekleurd bestek, vrolijk kinderbestek en bestek met een bijzondere afwerking – passend bij elk budget. </p><p>Wij zijn er voor de dagelijkse genieters, de liefhebbers en de fijnproevers. Voor iedereen die weet dat écht meesterschap voor altijd is.</p>",
             "button_label": "Bekijk onze collectie",
             "button_link": "shopify://collections/collectie"
           }
@@ -80,6 +85,7 @@
         },
         "row_4j884w": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/amefa_onze_merken_copy_2.jpg",
             "caption": "Amefa & meer",
@@ -110,11 +116,106 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multirow_UX7Qeq": {
+      "type": "multirow",
+      "blocks": {
+        "row_6gKizr": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/192300RT41C40_9_Moderno_20-_2024-delige_20bestekset_20voor_206_20personen_ef2ac55f-4551-4be6-acd0-9c76ca1a9e56.jpg",
+            "caption": "Amefa",
+            "heading": "Meesterschap sinds 1931",
+            "text": "<p>Amefa is al meer dan een eeuw een betrouwbare naam als het gaat om hoogwaardige besteksets en keukenaccessoires. Ons merk is synoniem met vakmanschap en stijlvolle ontwerpen die zowel functioneel als esthetisch zijn. Amefa biedt een breed assortiment, van klassiek tot modern, en is de perfecte keuze voor zowel dagelijks gebruik als bijzondere gelegenheden.</p>",
+            "button_label": "Bekijk de Amefa collectie",
+            "button_link": "shopify://collections/alle-amefa-producten"
+          }
+        },
+        "row_4xF4pR": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/R135APK519K20_1_undefined_655607f5-8f1d-460d-b95b-513f226a6694.jpg",
+            "caption": "Richardson Sheffield",
+            "heading": "Rij",
+            "text": "<p>Richardson Sheffield staat bekend om zijn premium messen, die vakmanschap en precisie combineren. Het merk heeft een rijke geschiedenis in het maken van messen van topkwaliteit, en elk mes wordt met de grootste zorg en passie vervaardigd. Of je nu een hobbykok of een professionele chef bent, een mes van Richardson Sheffield is een onmiskenbaar hulpmiddel in de keuken.</p>",
+            "button_label": "Bekijk de Richardson Sheffield collectie",
+            "button_link": "shopify://collections/alle-richardson-sheffield-producten"
+          }
+        },
+        "row_phCq7Y": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/251300AF14C40_1_Lou_20Laguiole_2024-delige_20Bestekset_20Jet_20spiegel_20zilverkleurig.jpg",
+            "caption": "Lou Laguiole",
+            "heading": "Rij",
+            "text": "<p>Lou Laguiole brengt de beroemde Franse messen traditie naar jouw keuken. Met zijn iconische ontwerp en scherpe lemmet is een Lou Laguiole-mes een symbool van elegantie en precisie. Het merk is vernoemd naar het dorp Laguiole in Zuid-Frankrijk, waar dit type mes zijn oorsprong vindt. Een Lou Laguiole mes is niet alleen een praktisch keukengerei, maar ook een prachtig stuk vakmanschap.</p>",
+            "button_label": "Bekijk de Lou Laguiole collectie",
+            "button_link": "shopify://collections/alle-lou-laguiole-producten"
+          }
+        },
+        "row_HRKkLb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/C50700WV35C41_1_Couzon_20Pix_elle_20Bestekset_20-_2024-delig.jpg",
+            "caption": "Couzon",
+            "heading": "Rij",
+            "text": "<p>Couzon is een Franse specialist in bestek en keukengerei van de hoogste kwaliteit. Dit merk staat bekend om zijn verfijnde ontwerpen en de perfecte balans tussen functionaliteit en esthetiek. Met Couzon kies je voor elegantie en luxe aan tafel, of je nu een formele gelegenheid organiseert of gewoon een mooie maaltijd thuis wilt serveren.</p>",
+            "button_label": "Knoplabel",
+            "button_link": ""
+          }
+        },
+        "row_f6rn8j": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/865700STPC132_1_undefined_c805d6e6-0fb6-4a7d-b54d-5343d8219e4d.jpg",
+            "caption": "Sabatier Trompette",
+            "heading": "Rij",
+            "text": "<p>Sabatier Trompette is een klassiek Frans merk dat zijn oorsprong vindt in de stad Thiers, het hart van de Franse messenmakerij. Dit merk maakt messen die al generaties lang worden geprezen om hun scherpte en duurzaamheid. Sabatier Trompette is de keuze voor degenen die op zoek zijn naar traditionele messen van topkwaliteit die hun werk doen in de keuken en jarenlang meegaan.</p>",
+            "button_label": "Knoplabel",
+            "button_link": ""
+          }
+        },
+        "row_wYfNgr": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Medard de Noblat",
+            "heading": "Rij",
+            "text": "<p>Medard de Noblat is een merk dat zich richt op het vervaardigen van luxe besteksets en tafelaankleding. De handgemaakte producten staan bekend om hun unieke uitstraling en verfijnde afwerking. Medard de Noblat biedt een perfecte balans tussen Franse elegantie en moderne stijl, en maakt van elke maaltijd een bijzondere ervaring.</p><p>Bij Amefa bieden we dus meer dan alleen gebruiksvoorwerpen; we bieden een ervaring van kwaliteit, design en functionaliteit. Elk van onze merken heeft zijn eigen karakter, maar samen delen ze onze passie voor het maken van producten die de toets der tijd doorstaan. Welk merk je ook kiest, je kiest altijd voor vakmanschap en tijdloze kwaliteit.</p>",
+            "button_label": "Bekijk de Medard de Noblat collectie",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6gKizr",
+        "row_4xF4pR",
+        "row_phCq7Y",
+        "row_HRKkLb",
+        "row_f6rn8j",
+        "row_wYfNgr"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_fChe9k",
     "main",
-    "multirow_HU9b87"
+    "multirow_HU9b87",
+    "multirow_UX7Qeq"
   ]
 }
