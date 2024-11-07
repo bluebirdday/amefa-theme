@@ -270,11 +270,11 @@
         {%- endif -%}
       </div>
 
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
-
       <a href="javascript:void(0)" class="header__icon header__icon--search link focus-inset hide-on-desktop" id="mobile-search-toggle">
         {% render 'icon-search' %}
       </a>
+
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset">
@@ -488,11 +488,13 @@
 
 <script>
   const searchToggle = document.querySelector('#mobile-search-toggle'),
-    headerSearch = document.querySelector('#header-search');
+    headerSearch = document.querySelector('#header-search .search__input');
 
   searchToggle.onclick = function() {
     searchToggle.classList.toggle('active');
-    headerSearch.classList.toggle('active');
+    if (searchToggle.classList.contains('active')) {
+      headerSearch.focus();
+    }
   };
 </script>
 
