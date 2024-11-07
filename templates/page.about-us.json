@@ -172,6 +172,16 @@
             "button_label": "Knoplabel",
             "button_link": ""
           }
+        },
+        "row_wYfNgr": {
+          "type": "row",
+          "settings": {
+            "caption": "Medard de Noblat",
+            "heading": "Rij",
+            "text": "<p>Medard de Noblat is een merk dat zich richt op het vervaardigen van luxe besteksets en tafelaankleding. De handgemaakte producten staan bekend om hun unieke uitstraling en verfijnde afwerking. Medard de Noblat biedt een perfecte balans tussen Franse elegantie en moderne stijl, en maakt van elke maaltijd een bijzondere ervaring.</p><p>Bij Amefa bieden we dus meer dan alleen gebruiksvoorwerpen; we bieden een ervaring van kwaliteit, design en functionaliteit. Elk van onze merken heeft zijn eigen karakter, maar samen delen ze onze passie voor het maken van producten die de toets der tijd doorstaan. Welk merk je ook kiest, je kiest altijd voor vakmanschap en tijdloze kwaliteit.</p>",
+            "button_label": "Bekijk de Medard de Noblat collectie",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -179,7 +189,8 @@
         "row_4xF4pR",
         "row_phCq7Y",
         "row_HRKkLb",
-        "row_f6rn8j"
+        "row_f6rn8j",
+        "row_wYfNgr"
       ],
       "settings": {
         "image_height": "medium",
