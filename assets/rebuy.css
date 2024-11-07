@@ -1,8 +1,11 @@
 .rebuy-widget {
     .rebuy-product-block {
+        padding: 0;
+
         .rebuy-product-wrapper {
             border: 0.1rem solid rgba(var(--color-foreground), 0.08);
             border-radius: var(--media-radius);
+            height: 100%;
             padding: 1.5rem;
 
             @media screen and (min-width: 1024px) {
@@ -21,6 +24,10 @@
                     .rebuy-product-image img {
                         transform: scale(1.03);
                     }
+
+                    .rebuy-product-information {
+                        opacity: 0;
+                    }
                 }
 
                 .rebuy-product-image img {
@@ -29,6 +36,8 @@
             }
 
             .rebuy-product-media {
+                border-radius: var(--media-radius);
+                overflow: hidden;
                 position: relative;
 
                 .rebuy-product-information {
@@ -52,8 +61,18 @@
                     }
                 }
 
-                img {
-                    border-radius: var(--media-radius);
+                .rebuy-product-image {
+                    padding-bottom: 100%;
+
+                    img {
+                        display: block;
+                        max-width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
             }
 
@@ -93,6 +112,34 @@
     .rebuy-carousel__arrows {
         .rebuy-carousel__arrow {
             background: none;
+
+            &.rebuy-carousel__arrow--prev {
+                left: -1.5rem;
+            }
+
+            &.rebuy-carousel__arrow--next {
+                right: -1.5rem;
+            }
+        }
+    }
+
+
+    .rebuy-product-grid.small-carousel {
+        @media (max-width: 480px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .splide__list {
+            gap: 2rem;
+
+            .rebuy-carousel__slide {
+                flex: 0 0 calc(100% / 4 - var(--grid-desktop-horizontal-spacing)* 3);
+
+                @media screen and (max-width: 749px) {
+                    flex: 0 0 calc(100% - var(--grid-mobile-horizontal-spacing) - 3rem);
+                }
+            }
         }
     }
 }
@@ -107,7 +154,7 @@
 
                 .splide__list {
                     .rebuy-product-block {
-                        padding: 1rem;
+                        flex: 0 0 calc(50% - var(--grid-mobile-horizontal-spacing));
                     }
                 }
             }
