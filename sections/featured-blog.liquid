@@ -54,7 +54,7 @@
               {% if show_desktop_slider %} slider-component-desktop{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper contains-card contains-card--article grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider
+          class="blog__posts articles-wrapper contains-card contains-card--article grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop grid--1-col slider
           {% if settings.blog_card_style == 'standard' %} contains-card--standard{% endif %}
           {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}
           {% if show_desktop_slider %} slider--desktop{% endif %}"

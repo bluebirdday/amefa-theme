@@ -130,6 +130,12 @@
             padding-right: 0;
         }
 
+        .splide__track {
+            @media screen and (min-width: 750px) {
+                overflow: visible;
+            }
+        }
+
         .splide__list {
             gap: 2rem;
 
@@ -139,7 +145,18 @@
                 @media screen and (max-width: 749px) {
                     flex: 0 0 calc(100% - var(--grid-mobile-horizontal-spacing) - 3rem);
                 }
+
+                @media screen and (min-width: 750px) and (max-width: 989px) {
+                    flex: 0 0 calc(100% / 3 - var(--grid-desktop-horizontal-spacing) - 3rem);
+                }
             }
+        }
+    }
+
+    .rebuy-product-grid.large-carousel {
+        @media (min-width: 768px) {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }
