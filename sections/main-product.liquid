@@ -102,9 +102,14 @@
               {%- when '@app' -%}
                 {% unless block.id contains 'klaviyo_reviews_product_reviews' %}
                   {% if block.id contains 'seo_variants' %}
-                    {% if product.metafields.plytix.has_variants %}
-                      {% render block %}
-                    {% endif %}
+                    {% assign metafieldData = shop.metafields.seo_variants_app.product_groups_v2.value[0].variants %}
+                    {% for swatchMetaData in metafieldData %}
+                      {% assign swatchId = 'gid://shopify/Product/' | append: product.id %}
+                      {% if swatchMetaData.shopify_id == swatchId %}
+                        {% render block %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
                   {% else %}
                     {% render block %}
                   {% endif %}
