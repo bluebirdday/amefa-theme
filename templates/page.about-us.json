@@ -145,11 +145,11 @@
         "row_phCq7Y": {
           "type": "row",
           "settings": {
-            "caption": "Bijschrift",
+            "caption": "Lou Laguiole",
             "heading": "Rij",
-            "text": "<p>Plaats een afbeelding bij stukken tekst om de aandacht op je gekozen product, collectie of blogpost te richten. Voeg details over beschikbaarheid en stijl toe of plaats een productrecensie.</p>",
-            "button_label": "Knoplabel",
-            "button_link": ""
+            "text": "<p>Lou Laguiole brengt de beroemde Franse messen traditie naar jouw keuken. Met zijn iconische ontwerp en scherpe lemmet is een Lou Laguiole-mes een symbool van elegantie en precisie. Het merk is vernoemd naar het dorp Laguiole in Zuid-Frankrijk, waar dit type mes zijn oorsprong vindt. Een Lou Laguiole mes is niet alleen een praktisch keukengerei, maar ook een prachtig stuk vakmanschap.</p>",
+            "button_label": "Bekijk de Lou Laguiole collectie",
+            "button_link": "shopify://collections/alle-lou-laguiole-producten"
           }
         }
       },
