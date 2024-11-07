@@ -162,13 +162,24 @@
             "button_label": "Knoplabel",
             "button_link": ""
           }
+        },
+        "row_f6rn8j": {
+          "type": "row",
+          "settings": {
+            "caption": "Sabatier Trompette",
+            "heading": "Rij",
+            "text": "<p>Sabatier Trompette is een klassiek Frans merk dat zijn oorsprong vindt in de stad Thiers, het hart van de Franse messenmakerij. Dit merk maakt messen die al generaties lang worden geprezen om hun scherpte en duurzaamheid. Sabatier Trompette is de keuze voor degenen die op zoek zijn naar traditionele messen van topkwaliteit die hun werk doen in de keuken en jarenlang meegaan.</p>",
+            "button_label": "Knoplabel",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "row_6gKizr",
         "row_4xF4pR",
         "row_phCq7Y",
-        "row_HRKkLb"
+        "row_HRKkLb",
+        "row_f6rn8j"
       ],
       "settings": {
         "image_height": "medium",
