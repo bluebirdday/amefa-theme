@@ -776,7 +776,7 @@
     <div class="product-info">
       <div class="product-media-images">
         {% if product.metafields.plytix.impression_images %}
-          {% for impression_image in product.metafields.plytix.impression_images.value %}
+          {% for impression_image in product.metafields.plytix.impression_images.value limit: 4  %}
             {% if forloop.index <= 4 %}
               <div class="product-media-images__image-wrapper">
                 {{ impression_image | image_url: width: 800, height: 800 | image_tag: class: 'product-media-images__image' }}
@@ -784,12 +784,18 @@
             {% endif %}
           {% endfor %}
         {% elsif variant_images.size > 1 or product.media.size %}
-          {% for variant_image in variant_images %}
+          {% assign size_variant_images = variant_images | size %}
+          {% assign start_variant_images = size_variant_images | minus: 4 %}
+          {% assign sliced_variant_images = variant_images | slice: start_variant_images, 4 %}
+          {% for variant_image in sliced_variant_images  %}
             <div class="product-media-images__image-wrapper">
               {{ variant_image | image_url: width: 800, height: 800 | image_tag: class: 'product-media-images__image' }}
             </div>
           {% endfor %}
-          {% for product_image in product.media %}
+          {% assign size_product_media = product.media | size %}
+          {% assign start_product_media = size_product_media | minus: 4 %}
+          {% assign sliced_product_media = product.media | slice: start_product_media, 4 %}
+          {% for product_image in sliced_product_media  %}
             <div class="product-media-images__image-wrapper">
               {{ product_image | image_url: width: 800, height: 800 | image_tag: class: 'product-media-images__image' }}
             </div>

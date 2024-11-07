@@ -1617,7 +1617,7 @@ a.product__text {
   flex-wrap: wrap;
 
   @media screen and (min-width: 750px) {
-    align-items: flex-start;
+    align-items: center;
     gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
   }
 
@@ -1659,21 +1659,14 @@ a.product__text {
     width: 100%;
 
     @media screen and (min-width: 750px) {
-      position: -webkit-sticky;
       position: sticky;
-      top: 50%;
+      top: 0;
       height: max-content;
-      margin-bottom: 10rem;
       width: calc(50% - var(--grid-desktop-horizontal-spacing));
     }
 
     @media screen and (min-width: 990px) {
-      margin-bottom: 17.5rem;
       max-width: 50%;
-    }
-
-    @media screen and (min-width: 1400px) {
-      margin-bottom: 25rem;
     }
   }
 
