@@ -152,12 +152,23 @@
             "button_label": "Bekijk de Lou Laguiole collectie",
             "button_link": "shopify://collections/alle-lou-laguiole-producten"
           }
+        },
+        "row_HRKkLb": {
+          "type": "row",
+          "settings": {
+            "caption": "Couzon",
+            "heading": "Rij",
+            "text": "<p>Couzon is een Franse specialist in bestek en keukengerei van de hoogste kwaliteit. Dit merk staat bekend om zijn verfijnde ontwerpen en de perfecte balans tussen functionaliteit en esthetiek. Met Couzon kies je voor elegantie en luxe aan tafel, of je nu een formele gelegenheid organiseert of gewoon een mooie maaltijd thuis wilt serveren.</p>",
+            "button_label": "Knoplabel",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "row_6gKizr",
         "row_4xF4pR",
-        "row_phCq7Y"
+        "row_phCq7Y",
+        "row_HRKkLb"
       ],
       "settings": {
         "image_height": "medium",
