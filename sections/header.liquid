@@ -269,6 +269,11 @@
           </localization-form>
         {%- endif -%}
       </div>
+
+      <a href="javascript:void(0)" class="header__icon header__icon--search link focus-inset hide-on-desktop" id="mobile-search-toggle">
+        {% render 'icon-search' %}
+      </a>
+
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -480,6 +485,18 @@
     }
   </script>
 {%- endif -%}
+
+<script>
+  const searchToggle = document.querySelector('#mobile-search-toggle'),
+    headerSearch = document.querySelector('#header-search .search__input');
+
+  searchToggle.onclick = function() {
+    searchToggle.classList.toggle('active');
+    if (searchToggle.classList.contains('active')) {
+      headerSearch.focus();
+    }
+  };
+</script>
 
 {% schema %}
 {

@@ -184,7 +184,7 @@ product-info {
   }
 
   .product__column-sticky {
-    max-width: 60rem;
+    max-width: 55rem;
   }
 }
 
@@ -488,10 +488,7 @@ a.product__text {
 
 .product__media-list {
   gap: 0;
-  margin-left: -1.5rem;
   margin-bottom: 1rem;
-  width: calc(100% + 3rem);
-
 }
 
 .slider.product__media-list::-webkit-scrollbar {
@@ -1059,15 +1056,14 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product--thumbnail_slider .thumbnail-slider {
-    display: none;
     align-items: center;
   }
 
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
     display: flex;
-    padding: 0.5rem;
+    padding: 0;
     flex: 1;
-    scroll-padding-left: 0.5rem;
+    scroll-padding-left: 0.8rem;
   }
 
   .product__media-wrapper .slider-mobile-gutter .slider-button {
@@ -1081,15 +1077,19 @@ a.product__text {
   .product--thumbnail_slider .slider-mobile-gutter .slider-button {
     display: flex;
   }
+
+  .product--thumbnail_slider .thumbnail-slider .slider-button {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 990px) {
   .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
     width: calc(25% - 0.8rem);
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-    width: calc(20% - 0.8rem);
+    width: calc(25% - 0.8rem);
   }
 }
 
@@ -1104,6 +1104,7 @@ a.product__text {
   color: rgb(var(--color-foreground));
   cursor: pointer;
   background-color: transparent;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .thumbnail:hover {
@@ -1115,7 +1116,6 @@ a.product__text {
 }
 
 .thumbnail[aria-current] {
-  box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground));
   border-color: rgb(var(--color-foreground));
 }
 
@@ -1389,7 +1389,7 @@ a.product__text {
 }
 
 .product-media-container.constrain-height .media {
-  padding-top: min(var(--constrained-height), var(--ratio-percent));
+  padding-top: 100%;
 }
 
 @media screen and (max-width: 749px) {
@@ -1617,7 +1617,7 @@ a.product__text {
   flex-wrap: wrap;
 
   @media screen and (min-width: 750px) {
-    align-items: flex-start;
+    align-items: center;
     gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
   }
 
@@ -1659,20 +1659,14 @@ a.product__text {
     width: 100%;
 
     @media screen and (min-width: 750px) {
-      margin-bottom: 10rem;
       position: sticky;
-      top: 50%;
+      top: 0;
       height: max-content;
       width: calc(50% - var(--grid-desktop-horizontal-spacing));
     }
 
     @media screen and (min-width: 990px) {
-      margin-bottom: 17.5rem;
       max-width: 50%;
-    }
-
-    @media screen and (min-width: 1400px) {
-      margin-bottom: 25rem;
     }
   }
 
