@@ -1617,14 +1617,15 @@ a.product__text {
   flex-wrap: wrap;
 
   @media screen and (min-width: 750px) {
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
   }
 
   .product-media-images {
     display: none;
 
     @media screen and (min-width: 750px) {
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
       gap: var(--grid-desktop-horizontal-spacing);
       justify-content: center;
@@ -1660,7 +1661,8 @@ a.product__text {
     @media screen and (min-width: 750px) {
       position: -webkit-sticky;
       position: sticky;
-      top: 0;
+      top: 50%;
+      height: max-content;
       margin-bottom: 10rem;
       width: calc(50% - var(--grid-desktop-horizontal-spacing));
     }
