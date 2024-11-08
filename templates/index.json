@@ -223,6 +223,7 @@
       "block_order": [
         "klaviyo_reviews_featured_reviews_carousel_MFNwnT"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -275,45 +276,6 @@
         "padding_bottom": 48
       }
     },
-    "collage_DPBBfz": {
-      "type": "collage",
-      "blocks": {
-        "image_wAyXtG": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/331923AYB8E26_1_Felicity_20-_2042-delige_20bestekset_20voor_206_20personen.jpg"
-          }
-        },
-        "product_ipik7h": {
-          "type": "product",
-          "settings": {
-            "product": "felicity-bestekset-6-personen-24-delig-staal",
-            "second_image": false
-          }
-        },
-        "collection_46XXUU": {
-          "type": "collection",
-          "settings": {
-            "collection": "amefa-felicity-collectie"
-          }
-        }
-      },
-      "block_order": [
-        "image_wAyXtG",
-        "product_ipik7h",
-        "collection_46XXUU"
-      ],
-      "settings": {
-        "heading": "De Felicity Collectie",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "brand_list_QGUqED": {
       "type": "brand-list",
       "settings": {
@@ -345,6 +307,45 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collage_DPBBfz": {
+      "type": "collage",
+      "blocks": {
+        "image_wAyXtG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/331923AYB8E26_1_Felicity_20-_2042-delige_20bestekset_20voor_206_20personen.jpg"
+          }
+        },
+        "product_ipik7h": {
+          "type": "product",
+          "settings": {
+            "product": "felicity-bestekset-6-personen-24-delig-staal",
+            "second_image": false
+          }
+        },
+        "collection_46XXUU": {
+          "type": "collection",
+          "settings": {
+            "collection": "amefa-felicity-collectie"
+          }
+        }
+      },
+      "block_order": [
+        "image_wAyXtG",
+        "product_ipik7h",
+        "collection_46XXUU"
+      ],
+      "settings": {
+        "heading": "De Felicity Collectie",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -355,8 +356,8 @@
     "collection_list_pXTwmh",
     "17308147745b78a458",
     "image_with_text_RPwJDY",
-    "collage_DPBBfz",
     "brand_list_QGUqED",
-    "featured_blog_HmNcNE"
+    "featured_blog_HmNcNE",
+    "collage_DPBBfz"
   ]
 }
