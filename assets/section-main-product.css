@@ -184,7 +184,7 @@ product-info {
   }
 
   .product__column-sticky {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 }
 
@@ -1056,6 +1056,7 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product--thumbnail_slider .thumbnail-slider {
+    display: none;
     align-items: center;
   }
 

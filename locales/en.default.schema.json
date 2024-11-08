@@ -538,6 +538,9 @@
           "default": "Multimedia collage",
           "label": "Heading"
         },
+        "subheading": {
+          "label": "Subheading"
+        },
         "desktop_layout": {
           "label": "Desktop layout",
           "options__1": {

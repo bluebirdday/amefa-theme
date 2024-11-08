@@ -90,6 +90,16 @@
                     {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
                 </div>
+                {% if block.settings.image-title or block.settings.image-subtitle %}
+                  <div class="media-content">
+                    {% if block.settings.image-title %}
+                      <h3 class="h2">{{ block.settings.image-title }}</h3>
+                    {% endif %}
+                    {% if block.settings.image-subtitle %}
+                      <span class="subheading">{{ block.settings.image-subtitle }}</span>
+                    {% endif %}
+                  </div>
+                {% endif %}
               </div>
             {%- when 'product' -%}
               {%- assign placeholder_image = 'product-apparel-' | append: placeholder_image_index -%}
@@ -344,7 +354,17 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.collage.blocks.image.settings.image.label"
-        }
+        },
+        {
+          "type": "inline_richtext",
+          "id": "image-title",
+          "label": "t:sections.collage.settings.heading.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "image-subtitle",
+          "label": "t:sections.collage.settings.subheading.label"
+        },
       ]
     },
     {
