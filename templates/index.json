@@ -314,7 +314,9 @@
         "image_wAyXtG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/331923AYB8E26_1_Felicity_20-_2042-delige_20bestekset_20voor_206_20personen.jpg"
+            "image": "shopify://shop_images/331923AYB8E26_1_Felicity_20-_2042-delige_20bestekset_20voor_206_20personen.jpg",
+            "image-title": "De Felicity Collectie",
+            "image-subtitle": "Van Amefa"
           }
         },
         "product_ipik7h": {
@@ -337,9 +339,9 @@
         "collection_46XXUU"
       ],
       "settings": {
-        "heading": "De Felicity Collectie",
+        "heading": "",
         "heading_size": "h1",
-        "desktop_layout": "right",
+        "desktop_layout": "left",
         "mobile_layout": "collage",
         "card_styles": "product-card-wrapper",
         "color_scheme": "",
