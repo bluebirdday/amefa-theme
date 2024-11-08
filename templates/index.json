@@ -112,6 +112,7 @@
         "enable_desktop_slider": false,
         "color_scheme": "",
         "show_view_all": false,
+        "columns_tablet": "3",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 16,
@@ -148,6 +149,7 @@
         "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
+        "columns_tablet": "3",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -203,10 +205,26 @@
         "enable_desktop_slider": true,
         "color_scheme": "",
         "show_view_all": false,
+        "columns_tablet": "3",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "17308147745b78a458": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_MFNwnT": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_MFNwnT"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "image_with_text_RPwJDY": {
@@ -257,6 +275,45 @@
         "padding_bottom": 48
       }
     },
+    "collage_DPBBfz": {
+      "type": "collage",
+      "blocks": {
+        "image_wAyXtG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/331923AYB8E26_1_Felicity_20-_2042-delige_20bestekset_20voor_206_20personen.jpg"
+          }
+        },
+        "product_ipik7h": {
+          "type": "product",
+          "settings": {
+            "product": "felicity-bestekset-6-personen-24-delig-staal",
+            "second_image": false
+          }
+        },
+        "collection_46XXUU": {
+          "type": "collection",
+          "settings": {
+            "collection": "amefa-felicity-collectie"
+          }
+        }
+      },
+      "block_order": [
+        "image_wAyXtG",
+        "product_ipik7h",
+        "collection_46XXUU"
+      ],
+      "settings": {
+        "heading": "De Felicity Collectie",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "brand_list_QGUqED": {
       "type": "brand-list",
       "settings": {
@@ -288,22 +345,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "17308147745b78a458": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_featured_reviews_carousel_MFNwnT": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_featured_reviews_carousel_MFNwnT"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -314,6 +355,7 @@
     "collection_list_pXTwmh",
     "17308147745b78a458",
     "image_with_text_RPwJDY",
+    "collage_DPBBfz",
     "brand_list_QGUqED",
     "featured_blog_HmNcNE"
   ]
