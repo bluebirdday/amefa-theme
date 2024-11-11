@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -276,7 +276,7 @@
       "settings": {
         "heading": "Een vleugje inspiratie voor jou",
         "heading_size": "h2",
-        "blog": "news",
+        "blog": "inspiratie",
         "post_limit": 4,
         "columns_desktop": 3,
         "enable_desktop_slider": true,
