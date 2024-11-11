@@ -12,8 +12,22 @@
   }
 
   .grid__item {
+    /* Predefined card colors styling */
     --card-background: var(--color-hush-puppy);
 
+    &:nth-of-type(2n) {
+      --card-background: var(--color-antiqued-aqua);
+    }
+
+    &:nth-of-type(3n) {
+      --card-background: var(--color-kettle-corn);
+    }
+
+    &:nth-of-type(4n) {
+      --card-background: var(--color-tana-flat);
+    }
+
+    /* Selected card color styling */
     .card-wrapper--background {
       background-color: var(--card-background);
 
