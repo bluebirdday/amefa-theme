@@ -26,7 +26,9 @@ product-info {
 
 .product__info-wrapper {
   #variant-picker-content {
-    columns: 2;
+    display: grid !important;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 
     .seo-variants__label:not(:first-of-type),
     .seo-variants__list:last-of-type {
@@ -37,7 +39,13 @@ product-info {
 
   .seo-variants__label {
     font-weight: 400;
+    grid-row: 1;
     margin: 0 0 1rem;
+
+    &:nth-of-type(0),
+    &:nth-of-type(1) {
+      grid-column: 1;
+    }
 
     .optionvalue {
       font-weight: 800;
@@ -46,7 +54,13 @@ product-info {
 
   .seo-variants__list {
     gap: 1rem;
+    grid-row: 2;
     margin: 1rem 0 0;
+
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      grid-column: 2;
+    }
 
     &.is-style-color {
       .seo-variants__item {
@@ -100,7 +114,11 @@ product-info {
           border: 1px solid var(--color-black);
           box-shadow: none;
           height: 2.4rem;
-          padding: 0 1.6rem;
+          padding: 0 1rem;
+
+          @media screen and (min-width: 750px) {
+            padding: 0 1.6rem;
+          }
         }
       }
     }
