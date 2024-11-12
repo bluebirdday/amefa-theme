@@ -3964,7 +3964,7 @@ details-disclosure > details {
                     margin-top: 1rem;
                 }
 
-                a {
+                a, span {
                     color: black;
                     text-decoration: none;
                     display: flex;

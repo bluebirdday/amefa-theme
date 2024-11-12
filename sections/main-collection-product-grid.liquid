@@ -178,6 +178,8 @@
 
                       {% if collection.metafields.custom.collection_grid_banner.value.link %}
                         <a href="{{ collection.metafields.custom.collection_grid_banner.value.link.value.url }}" title="{{ collection.metafields.custom.collection_grid_banner.value.link.value.text }}">
+                      {% else %}
+                        <span>
                       {% endif %}
                       <h3>{{ collection.metafields.custom.collection_grid_banner.value.title }}</h3>
                       {% if collection.metafields.custom.collection_grid_banner.value.subtitle %}
@@ -185,6 +187,8 @@
                       {% endif %}
                       {% if collection.metafields.custom.collection_grid_banner.value.link %}
                         </a>
+                      {% else %}
+                        </span>
                       {% endif %}
                     </figure>
                   {% else %}
