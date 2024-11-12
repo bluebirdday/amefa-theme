@@ -662,6 +662,7 @@
             line-height: 1;
             padding: .5rem;
             color: var(--color-black);
+            text-transform: lowercase;
         }
     }
 
