@@ -36,7 +36,6 @@
                              v-html="config.language.description"></div>
 
                         <div class="rebuy-product-grid" v-bind:class="layoutClasses" tabindex="0" role="list">
-
                             <div
                                     v-for="(product, product_index) in products"
                                     v-bind:class="[product.handle, 'product-id-' + product.id, cartHasProduct(product) ? 'cart-has-item' : '', productTagClasses(product)]"
@@ -69,16 +68,17 @@
                                     </div>
                                 </div>
                                 <div class="rebuy-product-info">
+                                    <div class="rebuy-product__vendor" v-html="product.vendor"></div>
                                     <div class="rebuy-product__title-price">
                                         <a
-                                                aria-level="5"
-                                                class="rebuy-product-title"
-                                                v-bind:href="learnMoreURL(product)"
-                                                v-on:click="learnMore(product, $event);"
-                                                v-html="product.metafields.plytix.pattern_name"
-                                                v-bind:class="[hasLearnMore() ? 'clickable' : '']"
-                                                v-bind:aria-label="'View ' + product.title"
-                                                rel="nofollow"
+                                          aria-level="5"
+                                          class="rebuy-product-title"
+                                          v-bind:href="learnMoreURL(product)"
+                                          v-on:click="learnMore(product, $event);"
+                                          v-html="product.metafields.plytix.productname"
+                                          v-bind:class="[hasLearnMore() ? 'clickable' : '']"
+                                          v-bind:aria-label="'View ' + product.title"
+                                          rel="nofollow"
                                         ></a>
                                         <div class="rebuy-product-price">
                                             <div v-if="variantOnSale(product, product.selected_variant)">
