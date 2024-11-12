@@ -64,6 +64,8 @@
 
     &::after {
       background: linear-gradient(0deg,#00000080,#fff0);
+      border-bottom-left-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
+      border-bottom-right-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
       bottom: 0;
       content: '';
       display: block;
