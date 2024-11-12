@@ -53,11 +53,12 @@
                     gap: .5rem;
 
                     > div {
-                        background: var(--color-white);
+                        background: var(--color-merino);
                         border-radius: .3rem;
                         line-height: 1;
                         padding: .5rem;
                         color: var(--color-black);
+                        text-transform: lowercase;
                     }
                 }
 
@@ -80,6 +81,13 @@
                 .rebuy-product__title-price {
                     display: flex;
                     justify-content: space-between;
+                    align-items: flex-start;
+                    line-height: 1.4;
+                    gap: 2rem;
+
+                    .rebuy-product-price {
+                        margin-top: 0;
+                    }
                 }
 
                 .rebuy-product-title {
@@ -87,6 +95,7 @@
                     font-weight: 600;
                     text-transform: none;
                     text-align: left;
+                    margin-top: 0;
                 }
             }
 
@@ -121,6 +130,11 @@
                 right: -1.5rem;
             }
         }
+    }
+
+    .rebuy-product__vendor {
+        text-align: left;
+        font-size: 1.6rem;
     }
 
 
