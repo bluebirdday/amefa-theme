@@ -130,12 +130,6 @@
             padding-right: 0;
         }
 
-        .splide__track {
-            @media screen and (min-width: 750px) {
-                overflow: visible;
-            }
-        }
-
         .splide__list {
             gap: 2rem;
 
@@ -148,6 +142,44 @@
 
                 @media screen and (min-width: 750px) and (max-width: 989px) {
                     flex: 0 0 calc(100% / 3 - var(--grid-desktop-horizontal-spacing) - 3rem);
+                }
+            }
+        }
+
+        .splide__arrows {
+            display: none;
+        }
+
+        .splide__pagination {
+            gap: 1rem;
+
+            @media screen and (max-width: 749px) {
+                bottom: -1rem;
+            }
+
+            li {
+                &:first-of-type {
+                    .splide__pagination__page {
+                        background: url('./spoon.svg');
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &:last-of-type {
+                    .splide__pagination__page {
+                        background: url('./spoon.svg');
+                    }
+                }
+
+                .splide__pagination__page {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    opacity: 1;
+
+                    &.is-active {
+                        opacity: 0.3;
+                    }
                 }
             }
         }
@@ -168,6 +200,10 @@
         .rebuy-product-grid {
             .splide__track {
                 padding-top: 2rem;
+
+                @media screen and (min-width: 750px) {
+                    overflow: visible;
+                }
 
                 .splide__list {
                     .rebuy-product-block {
