@@ -11,30 +11,6 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement_bar_bpwa74": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_d3TanV": {
-          "type": "announcement",
-          "settings": {
-            "text": "Nieuwe webshop feestje! Ontvang automatisch 10% korting in je winkelmandje",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_d3TanV"
-      ],
-      "settings": {
-        "color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
-    },
     "header": {
       "type": "header",
       "settings": {
@@ -52,6 +28,30 @@
         "margin_bottom": 0,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "announcement_bar_bpwa74": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_d3TanV": {
+          "type": "announcement",
+          "settings": {
+            "text": "Nieuwe webshop feestje! Ontvang nu automatisch 10% korting in je winkelmandje",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_d3TanV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
       }
     }
   },
