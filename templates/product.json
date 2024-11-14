@@ -105,6 +105,7 @@
     },
     "featured_collection_GV6Jwt": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
@@ -125,6 +126,7 @@
         "show_vendor": true,
         "show_rating": true,
         "quick_add": "standard",
+        "columns_tablet": "3",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -162,6 +164,7 @@
         "image-with-text-1",
         "button_xzDnPq"
       ],
+      "disabled": true,
       "settings": {
         "hide_on_mobile": false,
         "image": "{{ product.metafields.custom.merk.value.merk_banner_afbeelding.value }}",
