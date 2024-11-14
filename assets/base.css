@@ -3920,7 +3920,7 @@ details-disclosure > details {
     .product-grid-container .collection:not(.template-search__results) .grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr 1fr 5rem 1fr 1fr 1fr;
+        /*grid-template-rows: 1fr 1fr 1fr 5rem 1fr 1fr 1fr;*/
         grid-column-gap: 2rem;
         grid-row-gap: 4rem;
 
