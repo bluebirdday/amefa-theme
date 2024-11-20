@@ -52,7 +52,7 @@
         ".banner__media,.banner__media img {border-radius: 6px !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/website_banner_home_soprano_black.webp",
+        "image": "shopify://shop_images/website_banner_home_soprano_black_3a410791-7d29-49f3-abe4-a60819c78847.webp",
         "image_overlay_opacity": 30,
         "image_height": "small",
         "full_width_banner": false,
@@ -96,13 +96,41 @@
           "settings": {
             "collection": "koffie-en-theelepels"
           }
+        },
+        "featured_collection_Kwwb9Y": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "goud-bestek"
+          }
+        },
+        "featured_collection_6mPVL4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "losse-keukenmessen"
+          }
+        },
+        "featured_collection_dXDLbD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kinderbestek"
+          }
+        },
+        "featured_collection_HB9MQ6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "los-bestek"
+          }
         }
       },
       "block_order": [
         "featured_collection_MbwUQG",
         "featured_collection_zr4PjM",
         "featured_collection_QcRGt4",
-        "featured_collection_iyGcMN"
+        "featured_collection_iyGcMN",
+        "featured_collection_Kwwb9Y",
+        "featured_collection_6mPVL4",
+        "featured_collection_dXDLbD",
+        "featured_collection_HB9MQ6"
       ],
       "settings": {
         "title": "",
