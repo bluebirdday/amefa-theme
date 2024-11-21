@@ -29,8 +29,8 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Bekijk alle besteksets",
-            "button_link_1": "shopify://collections/besteksets",
+            "button_label_1": "Bekijk alle Black Friday Deals",
+            "button_link_1": "shopify://collections/black-friday",
             "button_style_secondary_1": false,
             "button_style_link_1": false,
             "button_label_2": "",
@@ -52,7 +52,7 @@
         ".banner__media,.banner__media img {border-radius: 6px !important;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/website_banner_home_soprano_black_3a410791-7d29-49f3-abe4-a60819c78847.webp",
+        "image": "shopify://shop_images/Website_banner_Home_Black_Friday_zonder_kortingslint.webp",
         "image_overlay_opacity": 30,
         "image_height": "small",
         "full_width_banner": false,
