@@ -36,15 +36,14 @@
         "announcement_d3TanV": {
           "type": "announcement",
           "settings": {
-            "text": "Nieuwe webshop feestje! Ontvang nu automatisch 10% korting in je winkelmandje t/m 20 november",
-            "link": ""
+            "text": "Black Friday Deals - 25% korting op geselecteerde artikelen, korting wordt zichtbaar zodra het item in het winkelmandje zit. Actie loopt t/m 2 dec. Shop nu de deals",
+            "link": "shopify://collections/black-friday"
           }
         }
       },
       "block_order": [
         "announcement_d3TanV"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-e299e9bd-5503-4e12-a82e-cfc9b752747b",
         "show_line_separator": true,
