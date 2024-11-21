@@ -60,6 +60,7 @@
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
         {% if card_product.metafields.custom.brand_color.value.text-white %} card--text-white {% endif %}
+        {% if card_product.available == false %} card--sold-out {% endif %}
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       data-product-id="{{ card_product.id }}"
@@ -177,6 +178,12 @@
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
+            {% if card_product.metafields.custom.product_badge.value != blank %}
+                <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
+                  <span>{{ card_product.metafields.custom.product_badge.value.label }}</span>
+                </span>
+            {% endif %}
+
             {%- if card_product.available == false -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
@@ -622,6 +629,12 @@
           </div>
         </div>
         <div class="card__badge {{ settings.badge_position }}">
+          {% if card_product.metafields.custom.product_badge.value != blank %}
+            <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
+                    <span>{{ card_product.metafields.custom.product_badge.value.label }}</span>
+                  </span>
+          {% endif %}
+
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
