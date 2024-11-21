@@ -23,19 +23,20 @@
         "heading_CGD9re": {
           "type": "heading",
           "settings": {
-            "heading": "{{ page.title }}",
-            "heading_size": "h1"
+            "heading": "{{ page.title }} Deals",
+            "heading_size": "h2"
           }
         },
         "text_GmBUGV": {
           "type": "text",
           "settings": {
-            "text": "{{ page.metafields.custom.merkinformatie.value.merk_subtitel.value }}",
-            "text_style": "body"
+            "text": "{{ page.metafields.custom.merkinformatie.value.merk_subtitel.value }}<strong>Klaar om te Shoppen? </strong>De klok tikt, en de deals vliegen de deur uit! Wacht niet langer en sla je slag terwijl de kortingen nog beschikbaar zijn. Of je nu een nieuwe bestekset zoekt, je keuken wilt upgraden, of een cadeau wilt kopen, Amefa heeft voor ieder wat wils.  <strong>Zorg ervoor dat je niets mist – bestel nu voor het te laat is! Deals zijn beschikbaar van 21 November t/m 2 December 2024 </strong>",
+            "text_style": "subtitle"
           }
         },
         "buttons_CbQXiU": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Bekijk de Amefa collectie",
             "button_link_1": "{{ page.metafields.custom.merkinformatie.value.merk_collectie_url.value }}",
@@ -55,7 +56,7 @@
         "buttons_CbQXiU"
       ],
       "settings": {
-        "image": "{{ page.metafields.custom.merkinformatie.value.merk_banner_afbeelding.value }}",
+        "image": "shopify://shop_images/3319_Felicity_black_LR_Liggend.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "full_width_banner": true,
@@ -95,46 +96,46 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
+        "columns_tablet": "3",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "image_with_text_Dkncbp": {
+    "image_with_text_HD6AXL": {
       "type": "image-with-text",
       "blocks": {
-        "heading_Ug94kG": {
+        "heading_Bjb4UR": {
           "type": "heading",
           "settings": {
-            "heading": "Meer over {{ page.metafields.custom.merkinformatie.value.merknaam.value }}",
+            "heading": "Afbeelding met tekst",
             "heading_size": "h1"
           }
         },
-        "text_ELxRrG": {
+        "text_j8QRpg": {
           "type": "text",
           "settings": {
-            "text": "{{ page.metafields.custom.merkinformatie.value.merkinformatie | metafield_tag }}",
+            "text": "<p>Plaats een afbeelding bij stukken tekst om de aandacht op je gekozen product, collectie of blogpost te richten. Voeg details over beschikbaarheid en stijl toe of plaats een productrecensie.</p>",
             "text_style": "body"
           }
         },
-        "button_qy8Qbi": {
+        "button_4cxz9C": {
           "type": "button",
           "settings": {
             "button_label": "Knoplabel",
-            "button_link": "{{ page.metafields.custom.merkinformatie.value.merk_collectie_url.value }}",
+            "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading_Ug94kG",
-        "text_ELxRrG",
-        "button_qy8Qbi"
+        "heading_Bjb4UR",
+        "text_j8QRpg",
+        "button_4cxz9C"
       ],
       "settings": {
         "hide_on_mobile": false,
-        "image": "{{ page.metafields.custom.merkinformatie.value.merklogo.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -164,13 +165,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1732173761145b19f0": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_4XxBr3": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_4XxBr3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "image_banner_LHD9ek",
     "featured_collection_Kb7cr6",
-    "image_with_text_Dkncbp",
-    "video_XCJK4N"
+    "image_with_text_HD6AXL",
+    "video_XCJK4N",
+    "1732173761145b19f0"
   ]
 }
