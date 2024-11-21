@@ -138,6 +138,10 @@
     width: calc(100% - 2 * var(--image-padding));
 }
 
+.card--sold-out .card__media {
+    opacity: .5;
+}
+
 .card--standard .card__media {
     margin: var(--image-padding);
 }
@@ -311,7 +315,11 @@
 }
 
 .card__badge.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-self: flex-end;
+    gap: .5rem;
 }
 
 .card:not(.card--horizontal) > .card__content > .card__badge {
