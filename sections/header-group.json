@@ -44,6 +44,7 @@
       "block_order": [
         "announcement_d3TanV"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-2",
         "show_line_separator": true,
