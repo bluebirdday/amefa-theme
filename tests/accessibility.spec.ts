@@ -20,9 +20,11 @@ test.describe('Amefa Homepage', () => {
       });
     }
     fs.writeFileSync("build/reports/accessibility-report.html", reportHTML);
+
+    expect(accessibilityScanResults.violations).toEqual([]);
   });
 });
-//
+
 // test.describe('homepage', () => {
 //   test.beforeEach(async({page}) => {
 //     await page.goto('/');
