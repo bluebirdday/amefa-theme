@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Bestek voor het kerstdiner",
+            "heading": "Bestek voor iedereen",
             "heading_size": "h0"
           }
         },
@@ -29,8 +29,8 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Bekijk alle Christmas Deals",
-            "button_link_1": "shopify://collections/christmas-deals",
+            "button_label_1": "Bekijk alle besteksets voor 6 personen",
+            "button_link_1": "shopify://collections/besteksets-voor-6-personen",
             "button_style_secondary_1": false,
             "button_style_link_1": false,
             "button_label_2": "",
